@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Raleway+Dots&family=Raleway:wght@100;200;300;400&family=Rubik+Pixels&family=Sacramento&family=Special+Elite&display=swap');
+
+$fancy-font: 'Gloria Hallelujah';
+$raleway-font: 'Raleway', sans-serif;
+$medium-purple: #443C68;
+$lighter-purple: #635985;
+$creamy-gray: #E5E5E5;
+$new-purple: #BFACE2;
+$light: #ECF2FF;
+
+.main-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-family: $raleway-font;
+  background-color: $medium-purple;
+  color: $creamy-gray;
+  font-size: clamp(0.9rem, 2vw, 1.5rem);
+
+  .main-text {
+    font-family: $fancy-font;
+    font-size: 5rem;
+    margin: 0;
+    height: 8rem;
+  }
+
+  .sub-text {
+    font-family: $fancy-font;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  
+  .top {
+    position: absolute;
+    top: 10px;
+    left: 20%;
+    z-index: 1;
+    font-weight: 300;
+  }
+
+  .top-icon {
+    position: absolute;
+    top: 30px;
+    right: 20%;
+    z-index: 1;
+    fill: $creamy-gray;
+    width: 60px;
+    height: 80px;
+  }
+
+  .right-icons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 20%;
+    right: -40px;
+    z-index: 1;
+    transform: rotate(90deg);
+  }
+
+  .bottom-icons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 20%;
+    right: 0px;
+    z-index: 1;
+    transform: rotate(90deg);
+  }
+
+  .left {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    z-index: 1;
+    transform: rotate(-90deg);
+    font-weight: 300;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+
+    .web,
+    .games {
+
+      font-weight: 300 !important;
+      
+    }
+  }
+    
+  .arrow-up {
+    position: fixed;
+    top: 20px;
+    right: 45%;
+    z-index: 1;
+    width: 50px;
+    fill: $creamy-gray;
+  }
+
+  .arrow-down {
+    position: fixed;
+    bottom: 20px;
+    right: 45%;
+    z-index: 1;
+    width: 50px;
+    transform: rotate(180deg);
+    fill: $creamy-gray;
+  }
+  
+  .linkedin,
+  .email,
+  .twitter,
+  .git,
+  .doc {
+    transform: rotate(-90deg);
+    padding-right: 20px;
+    width: 50px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 500px) {
+  .main-container {
+
+    .main-text {
+      height: fit-content;
+      text-align: center;
+      font-size: 3rem;
+    }
+    .sub-text {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .top {
+      top: 20%;
+      left: 20px;
+      transform: rotate(-90deg);
+    }
+    .top-icon {
+      top: 10px;
+      right: 20px;
+      
+    }
+    .bottom {
+      bottom: 20px;
+    }
+    .left{
+      position: absolute;
+      left: -20px;
+      top: 75%;
+      height: 1rem;
+      margin: 0 ;
+      
+    }
+  }
+}
+  
