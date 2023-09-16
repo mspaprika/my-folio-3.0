@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "//my-folio-3.0/static/css/main.f224967b.css",
-    "main.js": "//my-folio-3.0/static/js/main.7d78ba69.js",
-    "static/js/787.a6a197f2.chunk.js": "//my-folio-3.0/static/js/787.a6a197f2.chunk.js",
-    "static/media/arrow.svg": "//my-folio-3.0/static/media/arrow.ac1ef220aef3c83c5bc27faf5c92900d.svg",
-    "static/media/icons8-twitter.svg": "//my-folio-3.0/static/media/icons8-twitter.bba10fe60b63556b1c67db0566f8dd86.svg",
-    "static/media/icons8-github.svg": "//my-folio-3.0/static/media/icons8-github.895050b20cdc3aefa3177ef8508b789b.svg",
-    "static/media/logo.svg": "//my-folio-3.0/static/media/logo.3878ea568fd7b0cca64850c97c11b71c.svg",
-    "static/media/icons8-linkedin.svg": "//my-folio-3.0/static/media/icons8-linkedin.42bdd188754de5d746f53c7ddef28ca1.svg",
-    "static/media/icons8-doc.svg": "//my-folio-3.0/static/media/icons8-doc.100b877b89c24a74ef2794da30fedae1.svg",
-    "static/media/icons8-email.svg": "//my-folio-3.0/static/media/icons8-email.f83bb82f632f567cc70fc5dbfc82473d.svg",
-    "index.html": "//my-folio-3.0/index.html",
-    "main.f224967b.css.map": "//my-folio-3.0/static/css/main.f224967b.css.map",
-    "main.7d78ba69.js.map": "//my-folio-3.0/static/js/main.7d78ba69.js.map",
-    "787.a6a197f2.chunk.js.map": "//my-folio-3.0/static/js/787.a6a197f2.chunk.js.map"
+    "main.css": "/my-folio-3.0/static/css/main.f224967b.css",
+    "main.js": "/my-folio-3.0/static/js/main.e3095052.js",
+    "static/js/787.a6a197f2.chunk.js": "/my-folio-3.0/static/js/787.a6a197f2.chunk.js",
+    "static/media/arrow.svg": "/my-folio-3.0/static/media/arrow.ac1ef220aef3c83c5bc27faf5c92900d.svg",
+    "static/media/icons8-twitter.svg": "/my-folio-3.0/static/media/icons8-twitter.bba10fe60b63556b1c67db0566f8dd86.svg",
+    "static/media/icons8-github.svg": "/my-folio-3.0/static/media/icons8-github.895050b20cdc3aefa3177ef8508b789b.svg",
+    "static/media/logo.svg": "/my-folio-3.0/static/media/logo.3878ea568fd7b0cca64850c97c11b71c.svg",
+    "static/media/icons8-linkedin.svg": "/my-folio-3.0/static/media/icons8-linkedin.42bdd188754de5d746f53c7ddef28ca1.svg",
+    "static/media/icons8-doc.svg": "/my-folio-3.0/static/media/icons8-doc.100b877b89c24a74ef2794da30fedae1.svg",
+    "static/media/icons8-email.svg": "/my-folio-3.0/static/media/icons8-email.f83bb82f632f567cc70fc5dbfc82473d.svg",
+    "index.html": "/my-folio-3.0/index.html",
+    "main.f224967b.css.map": "/my-folio-3.0/static/css/main.f224967b.css.map",
+    "main.e3095052.js.map": "/my-folio-3.0/static/js/main.e3095052.js.map",
+    "787.a6a197f2.chunk.js.map": "/my-folio-3.0/static/js/787.a6a197f2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f224967b.css",
-    "static/js/main.7d78ba69.js"
+    "static/js/main.e3095052.js"
   ]
 }
