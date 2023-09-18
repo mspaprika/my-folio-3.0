@@ -1,0 +1,40 @@
+$fancy-font: 'Gloria Hallelujah';
+$raleway-font: 'Raleway', sans-serif;
+$medium-purple: #443C68;
+$lighter-purple: #635985;
+$creamy-gray: #E5E5E5;
+$new-purple: #BFACE2;
+$light: #ECF2FF;
+
+
+.skills-container {
+    background-color: $medium-purple;
+    width: 100%;
+    min-height: 100vh;
+
+    .headline {
+        position: absolute;
+        font-family: 'Gloria Hallelujah';
+        color: $creamy-gray;
+        font-size: 86px;
+        opacity: 0.5;
+        top: 10vh;
+        left: 10vw;
+    }
+
+    .skill-card {
+        height: 400px !important;
+
+    }
+
+    top-logo,
+    .logo-link {
+        position: absolute;
+        top: clamp(10px, 5vw, 15px);
+        right: clamp(10px, 5vw, 25px);
+        z-index: 5;
+        width: 60px;
+        height: 80px;
+
+    }
+}
