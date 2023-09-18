@@ -1,0 +1,24 @@
+
+$medium-purple: #443C68;
+$lighter-purple: #635985;
+$creamy-gray: #E5E5E5;
+
+.about-container {
+    background-color: $creamy-gray;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .headline {
+        position: absolute;
+        font-family: 'Gloria Hallelujah';
+        color: white;
+        font-size: 66px;
+        opacity: 0.7;
+        top: 10vh;
+        left: 10vw;
+    }
+}
