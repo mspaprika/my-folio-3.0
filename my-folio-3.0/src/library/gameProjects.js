@@ -8,16 +8,17 @@
 */
 
 
-import cave from "../data/screens/cave2.png";
-import ttt from "../data/screens/ttt1.png";
-import spy from "../data/screens/spy.png";
-import bounce from "../data/screens/bounce11.png";
+import cave from "../data/screens/cave12.png";
+import ttt from "../data/screens/ttt11.png";
+import spy from "../data/screens/spy12.png";
+import bounce from "../data/screens/bounce12.png";
 import spyGif from "../data/gifs/spy.gif";
 import bounceGif from "../data/gifs/bounce.gif";
 
 export const gameProjects = [
     {
         id: 1,
+        type: "game",
         title: "Sky High Spyder",
         description: "I created this game as part of internship at Sumo Digital. It's my very own version of Sky High Spy game! Built using C++ and playbuffer.",
         image: spy,
@@ -30,6 +31,7 @@ export const gameProjects = [
     },
     {
         id: 2,
+        type: "game",
         title: "Bouncy Game",
         description: "My very first game created using playbuffer and C++. Just bounce a ball and collect the coins. ",
         image: bounce,
@@ -42,6 +44,7 @@ export const gameProjects = [
     },
     {
         id: 3,
+        type: "game",
         title: "Escape Nuclear Mine",
         description: "This project is my favourite. You have no Idea how much fun I had while creating it! Sometimes life is harsh and we need some good silly laugh. This is a text game which works when you enter a right command. After entering START you'll find yourself in a cave system with lots of strange creatures. In each cave you'll be prompted to answer a question. And there's only 3 tries to get it right.",
         image: cave,
@@ -53,6 +56,7 @@ export const gameProjects = [
     },
     {
         id: 4,
+        type: "game",
         title: "Tic Tac toe",
         description: "Tic Tac Toe is a game built in React Native. It's my first project after completing the coding bootcamp. I always wanted to create a mobile app and this was a perfect opportunity. I used Expo to test it on my phone and Androis Studio to test it on an emulator. It was a great experience and I learned a lot. I am looking forward to build more mobile apps!",
         image: ttt,

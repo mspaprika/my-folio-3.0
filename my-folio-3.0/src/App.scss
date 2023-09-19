@@ -10,6 +10,11 @@ $light: #ECF2FF;
 
 $icons-panel-width: 100px;
 
+#root {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
 
 * {
   margin: 0;
@@ -224,11 +229,11 @@ $icons-panel-width: 100px;
 
     .arrow-down {
       bottom: $icons-panel-width;
-      left: 45vw;
+      left: 45%;
     }
 
     .arrow-up {
-      left: 45vw;
+      left: 45%;
     }
 
     .web {

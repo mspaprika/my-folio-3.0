@@ -6,6 +6,7 @@ $creamy-gray: #E5E5E5;
 $new-purple: #BFACE2;
 $light: #ECF2FF;
 $button-color: #f189a0;
+$border-radius: 0 35px 0 35px;
 
 
 .games-container,
@@ -102,15 +103,33 @@ $button-color: #f189a0;
                     flex-direction: column;
                     align-items: center;
 
+                    .card-title {
+                        padding:  20px 20px 20px 10px;
+                        
+                    }
+
+                    .card-middle {
+                        font-size: 1.2rem;
+                        padding: 20px 10px 20px 20px;
+                    }
+
                     .card-button {
                         width: 100px;
                         height: 30px;
                         background-color: $button-color;
                         color: white;
                         border: none;
-                        border-radius: 0 5px 0 5px;
+                        border-radius: 0 15px 0 15px;
                         cursor: pointer;
                         outline: none;
+                    }
+
+                    .link-section {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        width: 100%;
+                        padding: 20px 0 20px 0;
                     }
                 }               
             }           
@@ -137,8 +156,9 @@ $button-color: #f189a0;
 }
 
 @media screen and (min-width: 200px) and (max-width: 768px) {
-    .arrow-purple {
-        fill: $medium-purple !important;
-        bottom: 200px;
-      }
+    .arr-up,
+    .arr-down {
+        left: 45% !important;
+    }
+
 }

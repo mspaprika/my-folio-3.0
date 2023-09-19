@@ -1,4 +1,3 @@
-
 import '../App.scss';
 
 import { Link } from 'react-router-dom';
@@ -9,6 +8,11 @@ import { ReactComponent as Email } from '../data/svg/email.svg';
 import { ReactComponent as Twitter } from '../data/svg/twitter.svg';
 import { ReactComponent as Doc } from '../data/svg/doc.svg';
 import { useNavigate } from 'react-router-dom';
+
+import { ReactComponent as Arrow } from '../data/svg/arrow.svg';
+import { ReactComponent as Logo } from '../data/svg/logo.svg';
+
+import { myInfo } from '../library/myInfo';
 
 
 function Home() {
@@ -35,12 +39,33 @@ function Home() {
             </div>
 
             <div className='icon-wrapper'>
-                <Git className="git" />
-                <LinkedIn className="linkedin" />
-                <Doc className="doc" />
-                <Email className="email" />
-                <Twitter className="twitter" />
+                <a href={myInfo.gitHubLink} target="_blank" rel="noopener noreferrer" >
+                    <Git className="git" />
+                </a>
+                <a href={myInfo.linkedInLink} target="_blank" rel="noopener noreferrer" >
+                    <LinkedIn className="linkedin" />
+                </a>
+                <a href={myInfo.emailLink} target="_blank" rel="noopener noreferrer" >
+                    <Doc className="doc" />
+                </a>
+                <a href={myInfo.emailLink} target="_blank" rel="noopener noreferrer" >
+                    <Email className="email" />
+                </a>
+                <a href={myInfo.twitterLink} target="_blank" rel="noopener noreferrer" >
+                    <Twitter className="twitter" />
+                </a>
             </div>
+
+            <Link to="/" className="home-link">
+                <Arrow className="arrow-up" />
+            </Link>
+
+            <Link to="/" className="logo-link" >
+                <Logo className="top-logo" />
+            </Link>
+            <Link to="/games" className="">
+                <Arrow className="arrow-down" />
+            </Link>
         </>
     );
 }
