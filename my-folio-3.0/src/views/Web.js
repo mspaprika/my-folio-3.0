@@ -13,6 +13,7 @@ function Web(props) {
             <ProjectCard
                 key={index}
                 project={project}
+                setCurrentWeb={props.setCurrentWeb}
             />
         )
     }
@@ -24,7 +25,7 @@ function Web(props) {
                     <Arrow className="arr-up" />
                 </Link>
                 <div className="card-wrapper">
-                    <h1 className="headline">Web</h1>
+                    <h1 className="headline">Web...</h1>
                     {generateCards()}
                 </div>
 

@@ -1,5 +1,4 @@
 
-
 export const skills = [
     {
         type: "Games",
@@ -57,8 +56,6 @@ export const skills = [
             "VS Code",
         ],
     },
-
-
     {
         type: "Other",
         image: "",
@@ -74,3 +71,4 @@ export const skills = [
         ],
     },
 ]
+

@@ -5,7 +5,7 @@ import { ReactComponent as Arrow } from '../data/svg/arrow.svg';
 import { ReactComponent as Logo } from '../data/svg/logop.svg';
 import { gameProjects } from "../library/gameProjects";
 
-function Games() {
+function Games(props) {
 
     const generateCards = () => {
 
@@ -13,6 +13,7 @@ function Games() {
             <ProjectCard
                 key={index}
                 project={project}
+                setCurrentGame={props.setCurrentGame}
             />
         )
     }
@@ -24,7 +25,7 @@ function Games() {
                     <Arrow className="arr-up" />
                 </Link>
                 <div className="card-wrapper">
-                    <h1 className="headline">Games</h1>
+                    <h1 className="headline">Games...</h1>
                     {generateCards()}
                 </div>
 

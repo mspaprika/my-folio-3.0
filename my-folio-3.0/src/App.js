@@ -1,6 +1,9 @@
 
 import './App.scss';
 
+import GameProjectView from './views/GameProjectView';
+import WebProjectView from './views/WebProjectView';
+
 import Home from './views/Home';
 import About from './views/About';
 import Web from './views/Web';
@@ -15,27 +18,60 @@ import { Route, Routes, Link } from "react-router-dom";
 
 function App() {
 
+  const [currentGame, setCurrentGame] = useState({
+    id: 1,
+    title: "",
+    description: "",
+    image: "",
+    mainFeatures: "",
+    myCollab: "",
+    gitHub: "",
+    gitHubFront: "",
+    gitHubBack: "",
+    live: "",
+    lastUpdated: "",
+    message: "",
+
+  });
+  const [currentWeb, setCurrentWeb] = useState({
+    id: 1,
+    type: "",
+    title: "",
+    description: "",
+    image: "spy",
+    gif: "spyGif",
+    mainFeatures: "",
+    gitHub: "",
+    live: "",
+    lastUpdated: "",
+    message: "",
+  });
+
   return (
     <>
       <div className="main-container">
 
-        <Link to="/" className="home-link">
-          <Arrow className="arrow-up" />
-        </Link>
-
-        <Link to="/" className="logo-link" >
-          <Logo className="top-logo" />
-        </Link>
-        <Link to="/games" className="">
-          <Arrow className="arrow-down" />
-        </Link>
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/web" element={<Web />} />
-          <Route path="/games" element={<Games />} />
+          <Route path="/web" element={
+            <Web
+              setCurrentWeb={setCurrentWeb}
+            />} />
+          <Route path="/games" element={
+            <Games
+              setCurrentGame={setCurrentGame}
+            />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/gameview" element={
+            <GameProjectView
+              currentGame={currentGame}
+
+            />} />
+          <Route path="/webview" element={
+            <WebProjectView
+              currentWeb={currentWeb}
+            />} />
         </Routes>
 
       </div >
@@ -45,3 +81,6 @@ function App() {
 }
 
 export default App;
+
+/* 
+ */

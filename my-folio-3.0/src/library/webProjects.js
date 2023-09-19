@@ -11,14 +11,14 @@
 10. My Folio 2.0
 */
 
-import cats from "../data/screens/cat00.png";
-import cave from "../data/screens/cave.png";
-import fitness from "../data/screens/fit3.png";
-import weather from "../data/screens/weather12.png";
+import cats from "../data/screens/cats22.png";
+import cave from "../data/screens/cave12.png";
+import fitness from "../data/screens/fit33.png";
+import weather from "../data/screens/clouds.png";
 import quiz from "../data/screens/quiz1.png";
-import cypher from "../data/screens/cypher.png";
-import event from "../data/screens/event3.png";
-import sunny from "../data/screens/sunny11.png";
+import cypher from "../data/screens/cypher11.png";
+import event from "../data/screens/event33.png";
+import sunny from "../data/screens/sunny22.png";
 import folio from "../data/screens/folio1.png";
 
 export const webProjects = [

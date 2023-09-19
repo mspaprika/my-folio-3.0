@@ -9,6 +9,7 @@ $creamy-gray: #E5E5E5;
     min-height: 100vh;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     
@@ -16,9 +17,35 @@ $creamy-gray: #E5E5E5;
         position: absolute;
         font-family: 'Gloria Hallelujah';
         color: white;
-        font-size: 66px;
+        font-size: 86px;
         opacity: 0.7;
         top: 10vh;
         left: 10vw;
     }
+
+    .tech-icon-wrapper {
+
+        margin-top: 100px;
+        padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        height: 50px;
+
+        
+    }
+        
+        .icon {
+            scale: 2.5;
+        }
+
+        .another-wrapper {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            justify-content: space-evenly;
+        }
+
 }
