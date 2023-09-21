@@ -1,7 +1,13 @@
 
+$fancy-font: 'Gloria Hallelujah';
+$raleway-font: 'Raleway', sans-serif;
 $medium-purple: #443C68;
 $lighter-purple: #635985;
 $creamy-gray: #E5E5E5;
+$new-purple: #BFACE2;
+$light: #ECF2FF;
+$button-color: #f189a0;
+$border-radius: 0 35px 0 35px;
 
 .about-container {
     background-color: $creamy-gray;
@@ -9,43 +15,75 @@ $creamy-gray: #E5E5E5;
     min-height: 100vh;
     position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 200px 0 100px 0;;
     
     .headline {
         position: absolute;
         font-family: 'Gloria Hallelujah';
         color: white;
-        font-size: 86px;
+        font-size: 96px;
         opacity: 0.7;
         top: 10vh;
-        left: 10vw;
+        left: 3vw;
+    }
+
+    h6 {
+        color: $medium-purple;
+        font-size: 2.5rem;
+        font-family: $fancy-font;
+    }
+
+    .my-info {
+        width: 100%;
+        padding: 30px;
+        color: $medium-purple;
     }
 
     .tech-icon-wrapper {
-
-        margin-top: 100px;
+     
         padding: 50px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         width: 80%;
-        height: 50px;
-
-        
+        min-height: 50px;
+        column-gap: 50px;
+        row-gap: 30px;       
     }
-        
-        .icon {
-            scale: 2.5;
-        }
 
-        .another-wrapper {
-            display: flex;
-            width: 100%;
-            height: 50px;
-            justify-content: space-evenly;
-        }
+    .icon {
+        scale: 2.5;
+        margin-left: 20px;
+        margin-top : 20px;
+    }
+
+    .another-wrapper {
+        display: flex;
+        width: 100%;
+        height: 150px;
+        justify-content: center;
+        column-gap: 100px;
+        align-items: center;
+    }
+
+}
+
+@media  screen and (min-width: 200px) and (max-width: 768px) {
+    .headline {
+        font-size: 56px !important;
+    }
+
+    .my-info {
+       
+        font-size: 1.2rem;
+    }
+
+    .tech-icon-wrapper {
+        //justify-content: center !important;
+    }
 
 }
