@@ -14,6 +14,7 @@ function Games(props) {
                 key={index}
                 project={project}
                 setCurrentGame={props.setCurrentGame}
+                setCurrentWeb={props.setCurrentWeb}
             />
         )
     }

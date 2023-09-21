@@ -61,6 +61,7 @@ function App() {
           <Route path="/games" element={
             <Games
               setCurrentGame={setCurrentGame}
+              setCurrentWeb={setCurrentWeb}
             />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/gameview" element={

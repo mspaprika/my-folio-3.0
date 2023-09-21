@@ -111,6 +111,7 @@ $border-radius: 0 35px 0 35px;
                     .card-middle {
                         font-size: 1.2rem;
                         padding: 20px 10px 20px 20px;
+                        min-height: 100px;
                     }
 
                     .card-button {
@@ -139,10 +140,10 @@ $border-radius: 0 35px 0 35px;
             position: absolute;
             font-family: 'Gloria Hallelujah';
             color: $medium-purple;
-            font-size: 66px;
+            font-size: 106px;
             opacity: 0.7;
             top: 10vh;
-            left: 10vw;
+            left: 7vw;
         }
 
         .flip-card:hover .flip-card-inner {
@@ -159,6 +160,14 @@ $border-radius: 0 35px 0 35px;
     .arr-up,
     .arr-down {
         left: 45% !important;
+    }
+
+    .headline {
+        font-size: 29rem !important;
+    }
+
+    .card-title{
+        font-size: 1.5rem !important;
     }
 
 }

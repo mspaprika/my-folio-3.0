@@ -45,7 +45,7 @@ function Home() {
                 <a href={myInfo.linkedInLink} target="_blank" rel="noopener noreferrer" >
                     <LinkedIn className="linkedin" />
                 </a>
-                <a href={myInfo.emailLink} target="_blank" rel="noopener noreferrer" >
+                <a href={myInfo.cvLink} target="_blank" rel="noopener noreferrer" >
                     <Doc className="doc" />
                 </a>
                 <a href={myInfo.emailLink} target="_blank" rel="noopener noreferrer" >

@@ -5,14 +5,14 @@ export const skills = [
         image: "",
         color: "#ffd9d2",
         list: [
-            "C#",
             "C++",
+            "C#",
         ],
         tech: [
-            "Unity",
             "Visual Studio",
+            "PlayBuffer",
             "Unreal Engine",
-            "playbuffer"
+            "Unity"
         ],
     },
 
@@ -44,7 +44,6 @@ export const skills = [
             "CSS",
             "JavaScript",
             "React",
-            "React Native",
             "Sass",
             "jQuery",
             "Bootstrap",
@@ -61,13 +60,13 @@ export const skills = [
         image: "",
         color: "	#a0e9e9",
         list: [
-            "Python",
             "C",
             "Jest",
+            "Python",
             "React Native",
         ],
         tech: [
-            "Visual Studio",
+
         ],
     },
 ]
