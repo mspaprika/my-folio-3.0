@@ -2,14 +2,19 @@ import "../styles/GameProject.scss"
 
 import { Link } from 'react-router-dom';
 import { ReactComponent as Arrow } from '../data/svg/arrow.svg';
-import { ReactComponent as Logo } from '../data/svg/logo.svg';
 import { ReactComponent as Git } from '../data/svg/git2.svg';
+
+import { useEffect } from "react";
 
 function GameProjectView(props) {
 
     let isMobile = window.innerWidth < 700;
 
     const project = props.currentGame;
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <>
@@ -51,13 +56,10 @@ function GameProjectView(props) {
 
                 </div>
 
-                <Link to="/" className="home-link">
+                <Link to="/games" className="home-link">
                     <Arrow className="arrow-up" />
                 </Link>
 
-                <Link to="/" className="logo-link" >
-                    <Logo className="top-logo" />
-                </Link>
                 <Link to="/games" className="">
                     <Arrow className="arrow-down" />
                 </Link>

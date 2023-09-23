@@ -8,7 +8,12 @@
 */
 
 
-import cave from "../data/screens/cave12.png";
+import cave from "../data/screens/cave103.png";
+import cave2 from "../data/screens/cave12.png";
+import cave3 from "../data/screens/cave102.png";
+import cave4 from "../data/screens/cave101.png";
+import cave5 from "../data/screens/cave1.png";
+
 import ttt from "../data/screens/ttt11.png";
 import spy from "../data/screens/spy12.png";
 import bounce from "../data/screens/bounce12.png";
@@ -49,7 +54,7 @@ export const gameProjects = [
         title: "Escape Nuclear Mine",
         description: "This project is my favourite. You have no Idea how much fun I had while creating it! Sometimes life is harsh and we need some good silly laugh. This is a text game which works when you enter a right command. After entering START you'll find yourself in a cave system with lots of strange creatures. In each cave you'll be prompted to answer a question. And there's only 3 tries to get it right.",
         image: cave,
-        images: [cave],
+        images: [cave2, cave3, cave4, cave5],
         gifs: [],
         mainFeatures: "HTML, CSS, JavaScript, Bootstrap, OOP.",
         gitHub: "https://github.com/mspaprika/Text-Game",

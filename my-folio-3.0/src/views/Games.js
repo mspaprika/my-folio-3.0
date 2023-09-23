@@ -15,6 +15,8 @@ function Games(props) {
                 project={project}
                 setCurrentGame={props.setCurrentGame}
                 setCurrentWeb={props.setCurrentWeb}
+                setNextWeb={props.setNextWeb}
+
             />
         )
     }
@@ -26,16 +28,9 @@ function Games(props) {
                     <Arrow className="arr-up" />
                 </Link>
                 <div className="card-wrapper">
-                    <h1 className="headline">Games...</h1>
+                    <h1 className="headline-game">Games...</h1>
                     {generateCards()}
                 </div>
-
-                <div>
-                    <Arrow className="arr-down" />
-                </div>
-                <Link to="/" className="logo" >
-                    <Logo className="top-logo" />
-                </Link>
             </div>
         </>
     )

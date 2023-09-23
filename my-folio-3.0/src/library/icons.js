@@ -8,6 +8,7 @@ import { ReactComponent as Api } from '../data/svg/tech-icons/api.svg';
 import { ReactComponent as Cpp } from '../data/svg/tech-icons/c.svg';
 import { ReactComponent as MySql } from '../data/svg/tech-icons/sql.svg';
 import { ReactComponent as CSharp } from '../data/svg/tech-icons/csharp.svg';
+import { ReactComponent as Python } from '../data/svg/python.svg';
 
 
 
@@ -24,6 +25,7 @@ export const icons = {
     api: <Api className="icon" />,
     cpp: <Cpp className="icon" />,
     mySql: <MySql className="icon" />,
+    python: <Python className="icon" />,
     cSharp: <CSharp className="icon" />
 
 

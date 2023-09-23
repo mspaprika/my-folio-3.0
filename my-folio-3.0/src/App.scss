@@ -22,6 +22,10 @@ $icons-panel-width: 100px;
   box-sizing: border-box;
 }
 
+.html {
+  scroll-behavior: smooth;
+}
+
 .main-container {
   min-height: 100vh;
   width: 100%;
@@ -210,7 +214,7 @@ $icons-panel-width: 100px;
 
     .icon-wrapper {
       justify-content: center;
-      padding: 0 20px 0 20px;
+      padding: 0 20px 0 50px;
       width: 100vw;
       height: $icons-panel-width;
       position: absolute;

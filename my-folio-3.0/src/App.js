@@ -47,31 +47,84 @@ function App() {
     message: "",
   });
 
+  const [nextPage, setNextPage] = useState("/games")
+  const [nextGame, setNextGame] = useState({
+    id: 1,
+    title: "",
+    description: "",
+    image: "",
+    mainFeatures: "",
+    myCollab: "",
+    gitHub: "",
+    gitHubFront: "",
+    gitHubBack: "",
+    live: "",
+    lastUpdated: "",
+    message: "",
+  })
+
+
+  const [nextWeb, setNextWeb] = useState(
+    {
+      id: 1,
+      type: "",
+      title: "",
+      description: "",
+      image: "spy",
+      gif: "spyGif",
+      mainFeatures: "",
+      gitHub: "",
+      live: "",
+      lastUpdated: "",
+      message: "",
+    })
+
   return (
     <>
       <div className="main-container">
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/" element={
+            <Home
+              setNextPage={setNextPage}
+              setNextGame={setNextGame}
+              setNextWeb={setNextWeb}
+              nextPage={nextPage}
+              nextGame={nextGame}
+              nextWeb={nextWeb}
+            />} />
+          <Route path="/about" element={
+            <About
+              setNextPage={setNextPage}
+              nextPage={nextPage}
+            />} />
           <Route path="/web" element={
             <Web
               setCurrentWeb={setCurrentWeb}
+              setNextWeb={setNextWeb}
             />} />
           <Route path="/games" element={
             <Games
               setCurrentGame={setCurrentGame}
               setCurrentWeb={setCurrentWeb}
+              setNextGame={setNextGame}
+
             />} />
-          <Route path="/skills" element={<Skills />} />
+          <Route path="/skills" element={
+            <Skills
+              setNextPage={setNextPage}
+              nextPage={nextPage}
+            />} />
           <Route path="/gameview" element={
             <GameProjectView
               currentGame={currentGame}
+              nextGame={nextGame}
 
             />} />
           <Route path="/webview" element={
             <WebProjectView
               currentWeb={currentWeb}
+              nextWeb={nextWeb}
             />} />
         </Routes>
 

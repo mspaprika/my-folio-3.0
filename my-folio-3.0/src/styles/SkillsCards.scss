@@ -78,4 +78,26 @@ $light: #ECF2FF;
         height: 80px;
 
     }
+
+    .headline-skills {
+        position: absolute;
+        font-family: 'Gloria Hallelujah';
+        color: $creamy-gray;
+        font-size: 86px;
+        opacity: 0.7;
+        top: 10vh;
+        left: 7vw;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+    .skill-card {
+
+        .list-item {
+            font-size: 1.2rem !important;
+        }
+    }
+    .headline-skills{
+        left: 12vw !important;
+    }
 }

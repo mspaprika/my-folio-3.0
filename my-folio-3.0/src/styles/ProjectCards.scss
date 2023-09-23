@@ -136,11 +136,31 @@ $border-radius: 0 35px 0 35px;
             }           
         }
 
-        .headline {
+        .headline-web{
             position: absolute;
             font-family: 'Gloria Hallelujah';
             color: $medium-purple;
             font-size: 106px;
+            opacity: 0.7;
+            top: 8vh;
+            left: 7vw;
+        }
+
+        .headline-game {
+            position: absolute;
+            font-family: 'Gloria Hallelujah';
+            color: $medium-purple;
+            font-size: 106px;
+            opacity: 0.7;
+            top: 8vh;
+            left: 7vw;
+        }
+
+        .headline-skills {
+            position: absolute;
+            font-family: 'Gloria Hallelujah';
+            color: $medium-purple;
+            font-size: 86px;
             opacity: 0.7;
             top: 10vh;
             left: 7vw;
@@ -162,9 +182,10 @@ $border-radius: 0 35px 0 35px;
         left: 45% !important;
     }
 
-    .headline {
-        font-size: 29rem !important;
-    }
+    .headline-skills,
+    .headline-game {
+        font-size: 76px !important;
+    } 
 
     .card-title{
         font-size: 1.5rem !important;
