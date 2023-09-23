@@ -19,12 +19,16 @@ function ProjectCard(props) {
                 props.setCurrentWeb(project);
                 navigate("/webview")
             } else {
+
+
                 props.setCurrentGame(project);
                 navigate("/gameview")
             }
         }
 
         else {
+
+
             props.setCurrentWeb(project);
             navigate("/webview")
         }

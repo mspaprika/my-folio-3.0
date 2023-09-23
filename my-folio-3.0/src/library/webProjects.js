@@ -11,19 +11,52 @@
 10. My Folio 2.0
 */
 
-import cats5 from "../data/images/baby-milka.jpg";
+import cats5 from "../data/images/milka9.png";
 import cats from "../data/images/baby-milka2.jpg";
 import cats2 from "../data/images/cute.jpg";
 import cats3 from "../data/images/milka.jpg";
 import cats4 from "../data/images/garfie.jpeg";
-import cave from "../data/screens/cave12.png";
+
+import cave from "../data/screens/cave103.png";
+import cave2 from "../data/screens/cave12.png";
+import cave3 from "../data/screens/cave102.png";
+import cave4 from "../data/screens/cave101.png";
+import cave5 from "../data/screens/cave1.png";
+
 import fitness from "../data/screens/fit33.png";
+import fitness2 from "../data/screens/fit101.png";
+import fitness3 from "../data/screens/fit11.png";
+import fitness4 from "../data/screens/fit104.png";
+import fitness5 from "../data/screens/fit103.png";
+
 import weather from "../data/screens/clouds.png";
+
 import quiz from "../data/screens/quiz1.png";
+import quiz2 from "../data/screens/quiz101.png";
+import quiz3 from "../data/screens/quiz102.png";
+import quiz4 from "../data/screens/quiz103.png";
+import quiz5 from "../data/screens/quiz104.png";
+
 import cypher from "../data/screens/cypher11.png";
+
 import event from "../data/screens/event33.png";
+import event2 from "../data/screens/event101.png";
+import event3 from "../data/screens/cat101.png";
+import event4 from "../data/screens/event3.png";
+import event5 from "../data/screens/event4.png";
+
 import sunny from "../data/screens/sunny33.png";
+import sunny2 from "../data/screens/sunny55.png";
+import sunny3 from "../data/screens/sunny3.png";
+import sunny4 from "../data/screens/sunny2.png";
+import sunny5 from "../data/screens/sunny11.png";
+
 import folio from "../data/screens/folio1.png";
+import folio2 from "../data/screens/folio.png";
+import folio3 from "../data/screens/folio101.png";
+import folio4 from "../data/screens/folio102.png";
+import folio5 from "../data/screens/folio103.png";
+
 
 export const webProjects = [
     {
@@ -46,7 +79,7 @@ export const webProjects = [
         id: 2,
         title: "Escape Nuclear Mine",
         description: "This project is my favourite. You have no Idea how much fun I had while creating it! Sometimes life is harsh and we need some good silly laugh. This is a text game which works when you enter a right command. After entering START you'll find yourself in a cave system with lots of strange creatures. In each cave you'll be prompted to answer a question. And there's only 3 tries to get it right.",
-        images: [cave],
+        images: [cave5, cave2, cave3, cave4],
         image: cave,
         mainFeatures: "HTML, CSS, JavaScript, Bootstrap, OOP.",
         myCollab: "",
@@ -61,7 +94,7 @@ export const webProjects = [
         id: 3,
         title: "Fitness App",
         description: "A collaborative 4 week full-stack project developed during a bootcamp. The app is about wellness, food and social interractions. The user is able to register and login, set prefferences and account settings. Innitially temporrary username is assigned but its possible to change it (ONCE). Other features include: search for recipes and nutritional info; search for exercises and build workouts; create posts, write comments; search for users and add them to contacts list; send direct messages. The app is fully responsive and works on mobile devices as well. For authentication we used Express sessions, please note it takes a bit longer on mobile screens. ",
-        images: [fitness],
+        images: [fitness4, fitness5, fitness2, fitness3],
         image: fitness,
         mainFeatures: "Express.js, Node.js, MongoDB, Mongoose, React, React Router, APIs, SASS, Bootstrap, bcrypt, Axios.",
         myCollab: "[frontend] Recipes, Community, Custom workout and Library pages; [backend] Login/ Logout functionality, internal / external API calls, database models, routes, controllers.",
@@ -76,7 +109,7 @@ export const webProjects = [
         id: 4,
         title: "Quiz",
         description: "A simple quiz that displays a question and 4 possible answers. There are no good or bad answers, it's just for fun. The theme of this quiz is 'Which Simpson's character you are?'. I love Simpsons and really enjoyed coding this quiz. I created it very early on coding bootcamp when I didn't have much CSS skills. That's why layout is not responsive and might crash if you use it on a mobile device. ",
-        images: [quiz],
+        images: [quiz2, quiz3, quiz4, quiz5],
         image: quiz,
         mainFeatures: "HTML, CSS, JavaScript, Bootstrap, DOM manipulation.",
         myCollab: "",
@@ -91,7 +124,7 @@ export const webProjects = [
         id: 5,
         title: "Events App",
         description: "A collaborative full-stack project. The app is a platform for users to create an event post which then is displayed on the dashboard. Frontend is built with React and backend with Node.js/ MongoDB. Only logged in users can see the dashboard and their upcoming events. Some good events added for a laugh.",
-        images: [event],
+        images: [event2, event3, event4, event5],
         image: event,
         mainFeatures: "React, Node.js, Express.js, MongoDB, Mongoose, Axios, React Router, React Bootstrap.",
         myCollab: "event page and event cards, date/ time convertion functions, actual events",
@@ -136,7 +169,7 @@ export const webProjects = [
         id: 8,
         title: "Sunny Surfboards",
         description: "My very first website ever, built during a first bootcamp. This is complete beginner level project which is built using inline CSS and JavaScript, and items are aligned using float... It looks funny now, but back then it was nothing but awesome! It wasn't a requirement, but I had some fun with JavaScript and created few cool functions. One of them will calculate your wetsuit size according to weight/ height. Another will show/ hide descriptions of Surfboards. Just don't try it on mobile as it might look weird.",
-        images: [sunny],
+        images: [sunny3, sunny2, sunny4, sunny5],
         image: sunny,
         mainFeatures: "HTML, CSS, JavaScript.",
         myCollab: "",
@@ -151,7 +184,7 @@ export const webProjects = [
         id: 9,
         title: "My Folio",
         description: "My Folio is a website that was created in 2 days. This just couldn't go well... And it didn't. Time was very scarse and my mind went wild. It supposed to be my portfolio. But I submitted my assignment and din't want to look back. Why? Because of all pssible mistakes I made during it and impossible maintenace. The stress while dealing with this layaut whas immense and pain was felt physically. I decided to leave all bad memories behind, together with this website. But visualy it's quite nice, so I decided to leave it here.",
-        images: [folio],
+        images: [folio2, folio3, folio4, folio5],
         image: folio,
         mainFeatures: "HTML, CSS, Bootstrap.",
         myCollab: "",

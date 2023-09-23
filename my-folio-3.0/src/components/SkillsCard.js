@@ -1,8 +1,5 @@
 import "../styles/SkillsCards.scss"
 import "../styles/ProjectCards.scss"
-import { skills } from "../library/skillsList";
-
-import cave from "../data/images/cave.jpg";
 
 
 function SkillsCard(props) {

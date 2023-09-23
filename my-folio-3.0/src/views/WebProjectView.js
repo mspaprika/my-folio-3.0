@@ -2,10 +2,10 @@ import "../styles/WebProject.scss";
 
 import { Link } from 'react-router-dom';
 import { ReactComponent as Arrow } from '../data/svg/arrow.svg';
-import { ReactComponent as Logo } from '../data/svg/logo.svg';
 import { ReactComponent as Git } from '../data/svg/git2.svg';
 import { ReactComponent as Host } from '../data/svg/tower2.svg';
 
+import { useEffect } from "react";
 
 function WebProject(props) {
 
@@ -19,6 +19,10 @@ function WebProject(props) {
                 alt=""></img>
         )
     }
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <>
@@ -38,6 +42,11 @@ function WebProject(props) {
                     <p className="web-description">
                         {project.description}
                     </p>
+                    {project.myCollab ? <div className="collab-wrapper">
+                        <h3 className="collab-header">My collaboration...</h3>
+                        <p className="my-collab">{project.myCollab}</p>
+                    </div> : ""}
+
 
                     <h3 className="web-features">Main features...</h3>
                     <div className="web-features">
@@ -60,17 +69,17 @@ function WebProject(props) {
                                 <Host className="host link" />
                             </a>
                         </div>
+                        <span className="last-updated">
+                            Last updated: {project.lastUpdated}
+                        </span>
                     </div>
                 </div>
 
-                <Link to="/" className="home-link">
+                <Link to="/web" className="home-link">
                     <Arrow className="arrow-up" />
                 </Link>
 
-                <Link to="/" className="logo-link" >
-                    <Logo className="top-logo" />
-                </Link>
-                <Link to="/games" className="">
+                <Link to="/web" className="">
                     <Arrow className="arrow-down" />
                 </Link>
             </div>

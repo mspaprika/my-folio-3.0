@@ -14,6 +14,8 @@ function Web(props) {
                 key={index}
                 project={project}
                 setCurrentWeb={props.setCurrentWeb}
+                setNextWeb={props.setNextWeb}
+
             />
         )
     }
@@ -25,17 +27,9 @@ function Web(props) {
                     <Arrow className="arr-up" />
                 </Link>
                 <div className="card-wrapper">
-                    <h1 className="headline">Web...</h1>
+                    <h1 className="headline-web">Web...</h1>
                     {generateCards()}
                 </div>
-
-                <div>
-                    <Arrow className="arr-down" />
-                </div>
-
-                <Link to="/" className="logo" >
-                    <Logo className="top-logo" />
-                </Link>
             </div>
         </>
     )

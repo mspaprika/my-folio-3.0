@@ -9,7 +9,7 @@ import { myInfo } from "../library/myInfo";
 import { icons } from "../library/icons";
 import { Link } from 'react-router-dom';
 
-function About() {
+function About(props) {
     return (
         <div className="about-container">
 
@@ -31,8 +31,10 @@ function About() {
                 {icons.html}
                 {icons.css}
                 {icons.javascript}
+                {icons.python}
                 {icons.mongo}
                 {icons.mySql}
+
             </div>
 
             <h6>How I solve it...</h6>
@@ -50,9 +52,9 @@ function About() {
                 <Logo className="top-logo" />
             </Link>
 
-            <div>
-                <Arrow className="arr-down" />
-            </div>
+            <Link to="/skills" className="">
+                <Arrow className="arrow-down" />
+            </Link>
         </div>
     );
 }

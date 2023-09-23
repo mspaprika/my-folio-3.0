@@ -15,7 +15,7 @@ import { ReactComponent as Logo } from '../data/svg/logo.svg';
 import { myInfo } from '../library/myInfo';
 
 
-function Home() {
+function Home(props) {
 
     const navigate = useNavigate();
 
@@ -63,7 +63,7 @@ function Home() {
             <Link to="/" className="logo-link" >
                 <Logo className="top-logo" />
             </Link>
-            <Link to="/games" className="">
+            <Link to={props.nextPage} className="">
                 <Arrow className="arrow-down" />
             </Link>
         </>
