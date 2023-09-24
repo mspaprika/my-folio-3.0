@@ -22,6 +22,7 @@ $padding-left: 20px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 0 50px 0 50px;
 
         .top-image-wrapper {
             width: max(760px, 99vw);
@@ -40,13 +41,22 @@ $padding-left: 20px;
 
         }
 
-        h3 {
+        /* h3 {
             width: 100%;
             text-align: left;
             padding-left: 50px;
             font-family: $fancy-font;
+        } */
+
+        .web-title,
+        .web-description,
+        .web-features,
+        .collab-wrapper
+        {
+            margin: 20px !important;
         }
-            
+
+           
         .web-title {
             margin: 30px;
             font-family: $fancy-font;
@@ -54,18 +64,18 @@ $padding-left: 20px;
         }
 
         .web-description {
-            margin: 30px 40px;
+            width: 100%;
+            margin-bottom: 40px;
             
         }
 
         .web-features {
             width: 100%;
-            padding: 10px 50px 30px 50px;           
         }
 
         .message {
             width: 100%;
-            padding: 30px 50px;
+            //padding: 30px 50px;
         }
 
         .git {
@@ -80,14 +90,6 @@ $padding-left: 20px;
             justify-content: center;
             align-items: center;
             margin-top: 30px;
-
-            .git-wrapper
-            .live-wrapper {
-                width: 100vw !important;
-                //justify-content: right !important;
-                margin: 0 30px 0 20px !important;
-                padding-left: $padding-left !important;
-            }
 
             .link {
                 margin: 0 50px 0 20px;
@@ -108,14 +110,21 @@ $padding-left: 20px;
         }
 
         .collab-wrapper {
-            padding-left: $padding-left;
-            
-            .collab-header,
+            width: 100% ;
+            .collab-header {
+                margin-bottom: 20px;
+            }
+
             .my-collab {
-                padding-left: $padding-left !important;
-                margin-bottom: 30px;
+                margin-bottom: 40px;
             }
         }
+    }
+
+    .arr-up:hover,
+    .arr-down:hover {
+        fill: $new-purple;
+        cursor: pointer !important;
     }
 }
 
@@ -123,10 +132,11 @@ $padding-left: 20px;
     .web-wrapper {
         padding:  0 0 100px 0 !important;
         font-size: 1.2rem;
-        line-height: 1.8rem;;
+        line-height: 1.8rem;
 
-        .web-description{
-            margin: 30px 20px !important;
+        .web-title {
+            text-align: center;
+            line-height: 3rem;
         }
 
         .top-image-wrapper {
@@ -144,23 +154,25 @@ $padding-left: 20px;
             }
         }
 
+        .web-description,
+        .web-features,
+        .collab-wrapper, 
+        .message{
+            padding: 0 20px !important;
+        }
+
         .web-links {
 
             .git-wrapper {
-                padding-left: 30px !important;
+                margin-left: 20px !important;
+                margin-bottom: 20px;
             }
-        }
 
-        .collab-wrapper {
-            padding: 0 !important;
-            
-        }
-            .web-features,
-            .collab-header,
-            .my-collab
-            {
-                padding-left: 20px !important;
+            .live-wrapper {
+                
+                margin-bottom: 20px;
             }
+        }
             
         .link {
             margin-left: 10px !important;

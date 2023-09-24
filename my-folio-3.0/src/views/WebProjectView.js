@@ -5,11 +5,19 @@ import { ReactComponent as Arrow } from '../data/svg/arrow.svg';
 import { ReactComponent as Git } from '../data/svg/git2.svg';
 import { ReactComponent as Host } from '../data/svg/tower2.svg';
 
+import { webProjects } from "../library/webProjects";
+
+import { useNavigate } from 'react-router-dom';
+
 import { useEffect } from "react";
 
 function WebProject(props) {
 
     const project = props.currentWeb;
+    const nextWebProject = webProjects.filter(pro => pro.id === project.next);
+    const nextProject = nextWebProject[0];
+
+    const navigate = useNavigate();
 
     const showImages = () => {
         return project.images?.map((image, index) =>
@@ -20,8 +28,14 @@ function WebProject(props) {
         )
     }
 
+    const onClickHandler = () => {
+        navigate("/webview")
+        props.setCurrentWeb(nextProject)
+    }
+
     useEffect(() => {
-        window.scrollTo(0, 0)
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }, [])
 
     return (
@@ -69,9 +83,12 @@ function WebProject(props) {
                                 <Host className="host link" />
                             </a>
                         </div>
-                        <span className="last-updated">
-                            Last updated: {project.lastUpdated}
-                        </span>
+                        {project.lastUpdated ?
+                            <span className="last-updated">
+                                Last updated: {project.lastUpdated}
+                            </span> :
+                            ""}
+
                     </div>
                 </div>
 
@@ -79,9 +96,10 @@ function WebProject(props) {
                     <Arrow className="arrow-up" />
                 </Link>
 
-                <Link to="/web" className="">
-                    <Arrow className="arrow-down" />
-                </Link>
+                <Arrow onClick={onClickHandler} className="arrow-down" />
+
+                {/* <Link to="/webview" className="">
+                </Link> */}
             </div>
         </>
     )

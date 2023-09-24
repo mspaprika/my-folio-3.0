@@ -3,9 +3,12 @@ import "../styles/ProjectCards.scss"
 import { ReactComponent as Git } from '../data/svg/git.svg';
 import { ReactComponent as Host } from '../data/svg/tower.svg';
 
+import { webProjects } from "../library/webProjects";
+
 import { useNavigate } from 'react-router-dom';
 
 function ProjectCard(props) {
+
 
     const project = props.project;
 
@@ -19,16 +22,12 @@ function ProjectCard(props) {
                 props.setCurrentWeb(project);
                 navigate("/webview")
             } else {
-
-
                 props.setCurrentGame(project);
                 navigate("/gameview")
             }
         }
 
         else {
-
-
             props.setCurrentWeb(project);
             navigate("/webview")
         }

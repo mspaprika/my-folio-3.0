@@ -17,38 +17,49 @@ $padding-left: 20px;
     
     .game-wrapper {
         width: 100%;
-        height: 100%;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+       
 
-        h3 {
+        .game-h3 {
             width: 100%;
             text-align: left;
             padding-left: 50px;
             font-family: $fancy-font;
         }
 
+        .game-title,
+        .game-description,
+        .game-features, 
+        .message
+        {
+            
+            margin: 20px !important;
+            padding-left: 50px;
+        }
+
         .game-title {
             margin: 30px;
             font-family: $fancy-font;
+            font-size: 3rem;
         }
 
         .game-description {
-            margin: 30px 40px;
+            width: 100%;
+            padding-bottom: 30px;
             
         }
 
         .game-features {
             width: 100%;
-            padding: 10px 50px 30px 50px;             
+            margin-bottom: 10px !important;    
         }
 
         .message {
             width: 100%;
-            padding: 30px 50px;
+            padding-top: 40px;
         }
 
         .git {
@@ -74,7 +85,7 @@ $padding-left: 20px;
         }
         
         .project-gif {
-            max-width: 100%;
+            //width: 100%;
         }
         
         .project-gif-bottom {
@@ -82,6 +93,12 @@ $padding-left: 20px;
             position: absolute;
             bottom: 0;
         }
+    }
+
+    .arrow-up:hover,
+    .arrow-down:hover {
+        fill: $new-purple;
+        cursor: pointer;
     }
     
 }
@@ -92,14 +109,15 @@ $padding-left: 20px;
         padding: 0 0 100px 0 !important;
         font-size: 1.2rem;
 
-        .game-description{
-            margin: 30px 20px !important;
+        .game-description,
+        .game-features,
+        .message{
+            padding: 0 20px !important;
         }
 
-        .game-features,
-        h3,
-        .message {
-            padding: 10px 20px !important;
+        .game-title{
+            padding: 0 !important;
+            text-align: center;
         }
 
         .last-updated {
@@ -109,7 +127,6 @@ $padding-left: 20px;
 
         .project-image {
             width: 95%;
-            //height: 200px;
         }
         
         .project-gif {

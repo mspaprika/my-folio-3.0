@@ -33,6 +33,7 @@ function App() {
     message: "",
 
   });
+
   const [currentWeb, setCurrentWeb] = useState({
     id: 1,
     type: "",
@@ -48,6 +49,7 @@ function App() {
   });
 
   const [nextPage, setNextPage] = useState("/games")
+
   const [nextGame, setNextGame] = useState({
     id: 1,
     title: "",
@@ -118,12 +120,14 @@ function App() {
           <Route path="/gameview" element={
             <GameProjectView
               currentGame={currentGame}
+              setCurrentGame={setCurrentGame}
               nextGame={nextGame}
 
             />} />
           <Route path="/webview" element={
             <WebProjectView
               currentWeb={currentWeb}
+              setCurrentWeb={setCurrentWeb}
               nextWeb={nextWeb}
             />} />
         </Routes>

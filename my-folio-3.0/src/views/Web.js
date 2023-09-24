@@ -15,7 +15,6 @@ function Web(props) {
                 project={project}
                 setCurrentWeb={props.setCurrentWeb}
                 setNextWeb={props.setNextWeb}
-
             />
         )
     }
