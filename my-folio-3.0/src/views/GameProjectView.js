@@ -12,16 +12,26 @@ import { useEffect } from "react";
 
 function GameProjectView(props) {
 
-    const project = props.currentGame;
+    const navigate = useNavigate();
+    let project = props.currentGame;
+
+    if (!project) {
+        project = JSON.parse(window.localStorage.getItem("currentGame"))
+    }
+
     const nextGameProject = gameProjects.filter(pro => pro.id === project.next);
     const nextProject = nextGameProject[0];
 
-    const navigate = useNavigate();
 
     useEffect(() => {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }, [])
+
+    useEffect(() => {
+        window.localStorage.setItem("currentGame", JSON.stringify(project))
+    }, [project])
+
 
     const onClickHandler = () => {
         navigate("/gameview")
@@ -34,7 +44,7 @@ function GameProjectView(props) {
             <div className="game-project-container">
 
                 <div className="game-wrapper" >
-                    <img className="project-gif" src={project.gifs[0]} alt=""></img>
+                    <img className="project-gif" src={project?.gifs[0]} alt=""></img>
 
 
                     <div className="game-title">{project.title}</div>

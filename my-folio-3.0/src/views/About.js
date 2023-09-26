@@ -53,7 +53,7 @@ function About(props) {
             </Link>
 
             <Link to="/skills" className="">
-                <Arrow className="arrow-down" />
+                <Arrow className="arr-down" />
             </Link>
         </div>
     );

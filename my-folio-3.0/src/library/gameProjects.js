@@ -15,6 +15,12 @@ import cave4 from "../data/screens/cave101.png";
 import cave5 from "../data/screens/cave1.png";
 
 import ttt from "../data/screens/ttt11.png";
+import ttt1 from "../data/screens/ttt102.png";
+import ttt2 from "../data/images/ttt2.jpg";
+import ttt3 from "../data/screens/ttt101.png";
+import ttt4 from "../data/images/ttt3.jpg";
+
+
 import spy from "../data/screens/spy12.png";
 import cat from "../data/screens/cat_game.png";
 import spyGif from "../data/gifs/spyder3.gif";
@@ -38,7 +44,7 @@ export const gameProjects = [
     },
     {
         id: 2,
-        next: 3,
+        next: 1,
         type: "game",
         title: "Cat and Fleas",
         description: "My very first platform game created using playbuffer and C++. More info soon! ",
@@ -67,12 +73,12 @@ export const gameProjects = [
     },
     {
         id: 4,
-        next: 1,
+        next: 5,
         type: "game",
         title: "Tic Tac Toe",
         description: "Tic Tac Toe is a game built in React Native. It's my first project after completing the coding bootcamp. I always wanted to create a mobile app and this was a perfect opportunity. I used Expo to test it on my phone and Androis Studio to test it on an emulator. It was a great experience and I learned a lot. I am looking forward to build more mobile apps!",
         image: ttt,
-        images: [ttt],
+        images: [ttt2, ttt1, ttt3, ttt4],
         gifs: [],
         mainFeatures: "React Native, Expo, JavaScript.",
         gitHub: "https://github.com/mspaprika/tic-tac-toe",
