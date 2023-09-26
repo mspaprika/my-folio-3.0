@@ -13,7 +13,13 @@ import { useEffect } from "react";
 
 function WebProject(props) {
 
-    const project = props.currentWeb;
+    let project = props.currentWeb;
+
+    if (!project) {
+        project = JSON.parse(window.localStorage.getItem("currentWeb"))
+    }
+
+
     const nextWebProject = webProjects.filter(pro => pro.id === project.next);
     const nextProject = nextWebProject[0];
 
@@ -37,6 +43,10 @@ function WebProject(props) {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }, [])
+
+    useEffect(() => {
+        window.localStorage.setItem("currentWeb", JSON.stringify(project))
+    }, [project])
 
     return (
         <>

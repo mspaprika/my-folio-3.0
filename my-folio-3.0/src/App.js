@@ -18,35 +18,9 @@ import { Route, Routes, Link } from "react-router-dom";
 
 function App() {
 
-  const [currentGame, setCurrentGame] = useState({
-    id: 1,
-    title: "",
-    description: "",
-    image: "",
-    mainFeatures: "",
-    myCollab: "",
-    gitHub: "",
-    gitHubFront: "",
-    gitHubBack: "",
-    live: "",
-    lastUpdated: "",
-    message: "",
+  const [currentGame, setCurrentGame] = useState(null);
 
-  });
-
-  const [currentWeb, setCurrentWeb] = useState({
-    id: 1,
-    type: "",
-    title: "",
-    description: "",
-    image: "spy",
-    gif: "spyGif",
-    mainFeatures: "",
-    gitHub: "",
-    live: "",
-    lastUpdated: "",
-    message: "",
-  });
+  const [currentWeb, setCurrentWeb] = useState(null);
 
   const [nextPage, setNextPage] = useState("/games")
 
