@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-folio-3.0/static/css/main.135eb194.css",
-    "main.js": "/my-folio-3.0/static/js/main.3ed40b16.js",
+    "main.js": "/my-folio-3.0/static/js/main.712a4e66.js",
     "static/js/787.a6a197f2.chunk.js": "/my-folio-3.0/static/js/787.a6a197f2.chunk.js",
     "static/media/spyder3.gif": "/my-folio-3.0/static/media/spyder3.5052fdf98f193f3bbab8.gif",
     "static/media/spyder4.gif": "/my-folio-3.0/static/media/spyder4.97544b0b3b3f1da4fb6a.gif",
@@ -9,10 +9,12 @@
     "static/media/hurry.jpg": "/my-folio-3.0/static/media/hurry.ceed877e21dcfdf04577.jpg",
     "static/media/radar.jpg": "/my-folio-3.0/static/media/radar.4924d84f3ac3ace19a0a.jpg",
     "static/media/matrix.jpg": "/my-folio-3.0/static/media/matrix.b0b859f53eceed0037b3.jpg",
+    "static/media/ttt2.jpg": "/my-folio-3.0/static/media/ttt2.ed4b6acb4fc79071d82f.jpg",
     "static/media/cute.jpg": "/my-folio-3.0/static/media/cute.500082d9b938ec6afe8d.jpg",
     "static/media/milka.jpg": "/my-folio-3.0/static/media/milka.99692acabf7fd1f4a776.jpg",
     "static/media/torn.jpg": "/my-folio-3.0/static/media/torn.9d333e6e1e83b3a299ec.jpg",
     "static/media/baby-milka2.jpg": "/my-folio-3.0/static/media/baby-milka2.bba7915fa41967f8399d.jpg",
+    "static/media/ttt3.jpg": "/my-folio-3.0/static/media/ttt3.25ce90205372b9faaee2.jpg",
     "static/media/cave1.png": "/my-folio-3.0/static/media/cave1.5afdaf397f16ec4af328.png",
     "static/media/light.jpg": "/my-folio-3.0/static/media/light.d391557fa64b814d6d78.jpg",
     "static/media/folio1.png": "/my-folio-3.0/static/media/folio1.60c8c4261049c5033c4c.png",
@@ -53,6 +55,7 @@
     "static/media/cat101.png": "/my-folio-3.0/static/media/cat101.27b996b1164d69bf86a5.png",
     "static/media/cat_game.png": "/my-folio-3.0/static/media/cat_game.c0ba5f16e3d2c1d3ffd2.png",
     "static/media/cypher11.png": "/my-folio-3.0/static/media/cypher11.4594ec0b6324196bf58b.png",
+    "static/media/ttt101.png": "/my-folio-3.0/static/media/ttt101.2eb080a48d046cf9042b.png",
     "static/media/codewars.svg": "/my-folio-3.0/static/media/codewars.79abd7645c2f9dd48fad4dcc04a62e92.svg",
     "static/media/arrow.svg": "/my-folio-3.0/static/media/arrow.ac1ef220aef3c83c5bc27faf5c92900d.svg",
     "static/media/ttt11.png": "/my-folio-3.0/static/media/ttt11.262c4171874ffa5a6cef.png",
@@ -81,11 +84,11 @@
     "static/media/css.svg": "/my-folio-3.0/static/media/css.b072f246acdc133e21186cf72138a3b3.svg",
     "static/media/html.svg": "/my-folio-3.0/static/media/html.5a388de592bdf7a6f44ae2acc154efbc.svg",
     "main.135eb194.css.map": "/my-folio-3.0/static/css/main.135eb194.css.map",
-    "main.3ed40b16.js.map": "/my-folio-3.0/static/js/main.3ed40b16.js.map",
+    "main.712a4e66.js.map": "/my-folio-3.0/static/js/main.712a4e66.js.map",
     "787.a6a197f2.chunk.js.map": "/my-folio-3.0/static/js/787.a6a197f2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.135eb194.css",
-    "static/js/main.3ed40b16.js"
+    "static/js/main.712a4e66.js"
   ]
 }
