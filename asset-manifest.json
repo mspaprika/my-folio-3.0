@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/my-folio-3.0/static/css/main.135eb194.css",
-    "main.js": "/my-folio-3.0/static/js/main.712a4e66.js",
+    "main.css": "/my-folio-3.0/static/css/main.0341e4a9.css",
+    "main.js": "/my-folio-3.0/static/js/main.a185e189.js",
     "static/js/787.a6a197f2.chunk.js": "/my-folio-3.0/static/js/787.a6a197f2.chunk.js",
-    "static/media/spyder3.gif": "/my-folio-3.0/static/media/spyder3.5052fdf98f193f3bbab8.gif",
-    "static/media/spyder4.gif": "/my-folio-3.0/static/media/spyder4.97544b0b3b3f1da4fb6a.gif",
+    "static/media/spyder_in_space.gif": "/my-folio-3.0/static/media/spyder_in_space.e69c83c8fc6e8cf05151.gif",
+    "static/media/cat_newb2.gif": "/my-folio-3.0/static/media/cat_newb2.6a7ea71b64822ae11541.gif",
+    "static/media/cat_newb3.gif": "/my-folio-3.0/static/media/cat_newb3.4ee21a6ada323d8ef761.gif",
+    "static/media/spy101.gif": "/my-folio-3.0/static/media/spy101.c3781315650f6a9ebde0.gif",
     "static/media/pc.jpg": "/my-folio-3.0/static/media/pc.ce619cfd210019948e26.jpg",
     "static/media/hurry.jpg": "/my-folio-3.0/static/media/hurry.ceed877e21dcfdf04577.jpg",
     "static/media/radar.jpg": "/my-folio-3.0/static/media/radar.4924d84f3ac3ace19a0a.jpg",
@@ -34,7 +36,6 @@
     "static/media/sunny33.png": "/my-folio-3.0/static/media/sunny33.0665dfabea5e7dd76706.png",
     "static/media/sunny2.png": "/my-folio-3.0/static/media/sunny2.48da0b8a0b444022e91c.png",
     "static/media/sunny55.png": "/my-folio-3.0/static/media/sunny55.54e6ef5daf5c01186285.png",
-    "static/media/cat1.gif": "/my-folio-3.0/static/media/cat1.59d4fb99fdcd97c29631.gif",
     "static/media/quiz104.png": "/my-folio-3.0/static/media/quiz104.4cd0188f87e43e7602f7.png",
     "static/media/quiz102.png": "/my-folio-3.0/static/media/quiz102.1d30ab4a146027186789.png",
     "static/media/fit104.png": "/my-folio-3.0/static/media/fit104.f0dc0baf5a26f9bd2fe6.png",
@@ -51,9 +52,9 @@
     "static/media/fit103.png": "/my-folio-3.0/static/media/fit103.52493a140fd45fa3df7c.png",
     "static/media/event33.png": "/my-folio-3.0/static/media/event33.c25815df3586bf49d153.png",
     "static/media/event101.png": "/my-folio-3.0/static/media/event101.76f8bf0a847c18838237.png",
+    "static/media/cat_new.png": "/my-folio-3.0/static/media/cat_new.c28e0e2f7195fe9e3408.png",
     "static/media/cypher.png": "/my-folio-3.0/static/media/cypher.78b6eb7f19c2b761d2b7.png",
     "static/media/cat101.png": "/my-folio-3.0/static/media/cat101.27b996b1164d69bf86a5.png",
-    "static/media/cat_game.png": "/my-folio-3.0/static/media/cat_game.c0ba5f16e3d2c1d3ffd2.png",
     "static/media/cypher11.png": "/my-folio-3.0/static/media/cypher11.4594ec0b6324196bf58b.png",
     "static/media/ttt101.png": "/my-folio-3.0/static/media/ttt101.2eb080a48d046cf9042b.png",
     "static/media/codewars.svg": "/my-folio-3.0/static/media/codewars.79abd7645c2f9dd48fad4dcc04a62e92.svg",
@@ -83,12 +84,12 @@
     "index.html": "/my-folio-3.0/index.html",
     "static/media/css.svg": "/my-folio-3.0/static/media/css.b072f246acdc133e21186cf72138a3b3.svg",
     "static/media/html.svg": "/my-folio-3.0/static/media/html.5a388de592bdf7a6f44ae2acc154efbc.svg",
-    "main.135eb194.css.map": "/my-folio-3.0/static/css/main.135eb194.css.map",
-    "main.712a4e66.js.map": "/my-folio-3.0/static/js/main.712a4e66.js.map",
+    "main.0341e4a9.css.map": "/my-folio-3.0/static/css/main.0341e4a9.css.map",
+    "main.a185e189.js.map": "/my-folio-3.0/static/js/main.a185e189.js.map",
     "787.a6a197f2.chunk.js.map": "/my-folio-3.0/static/js/787.a6a197f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.135eb194.css",
-    "static/js/main.712a4e66.js"
+    "static/css/main.0341e4a9.css",
+    "static/js/main.a185e189.js"
   ]
 }
