@@ -42,6 +42,7 @@ $light: #ECF2FF;
         justify-content: left;
         align-items: left;
         padding: 20px;
+        position: relative;
 
         .list-item {
             width: 100%;
@@ -50,6 +51,15 @@ $light: #ECF2FF;
             color: $medium-purple;
             text-align: left;
             line-height: 0.5rem;
+
+            .skill-icon svg {
+                /* width: 20px;
+                height: 20px; */
+                position: absolute;
+                padding-bottom: 8px;
+                right: 20px;
+                margin-right: 10px;
+            }
         }
 
         .hr {

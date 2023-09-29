@@ -1,5 +1,6 @@
 import "../styles/ProjectCards.scss"
 import "../styles/About.scss"
+
 import { ReactComponent as Leet } from "../data/svg/leet.svg";
 import { ReactComponent as CodeWars } from "../data/svg/codewars.svg";
 import { ReactComponent as Logo } from '../data/svg/logop.svg';
@@ -10,6 +11,7 @@ import { icons } from "../library/icons";
 import { Link } from 'react-router-dom';
 
 function About(props) {
+
     return (
         <div className="about-container">
 
@@ -34,7 +36,6 @@ function About(props) {
                 {icons.python}
                 {icons.mongo}
                 {icons.mySql}
-
             </div>
 
             <h6>How I solve it...</h6>

@@ -1,14 +1,16 @@
-
-import SkillsCard from "../components/SkillsCard";
 import "../styles/ProjectCards.scss"
 import "../styles/SkillsCards.scss"
-import { skills } from "../library/skillsList.js"
+
 import { Link } from 'react-router-dom';
+
 import { ReactComponent as Logo } from '../data/svg/logo.svg';
 import { ReactComponent as Arrow } from '../data/svg/arrow.svg';
 
-function Skills(props) {
+import SkillsCard from "../components/SkillsCard";
+import { skills } from "../library/skillsList.js"
 
+
+function Skills(props) {
 
     const generateCards = () => {
         return skills.map((skill, index) =>

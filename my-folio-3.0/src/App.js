@@ -10,11 +10,9 @@ import Web from './views/Web';
 import Games from './views/Games';
 import Skills from './views/Skills';
 
-import { ReactComponent as Arrow } from './data/svg/arrow.svg';
-import { ReactComponent as Logo } from './data/svg/logo.svg';
-
 import React, { useState, useEffect } from "react";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+//import { FullScreen, useFullScreenHandle } from "react-full-screen";
 
 function App() {
 
@@ -60,6 +58,7 @@ function App() {
       <div className="main-container">
 
         <Routes>
+
           <Route path="/" element={
             <Home
               setNextPage={setNextPage}
@@ -69,41 +68,46 @@ function App() {
               nextGame={nextGame}
               nextWeb={nextWeb}
             />} />
+
           <Route path="/about" element={
             <About
               setNextPage={setNextPage}
               nextPage={nextPage}
             />} />
+
           <Route path="/web" element={
             <Web
               setCurrentWeb={setCurrentWeb}
               setNextWeb={setNextWeb}
             />} />
+
           <Route path="/games" element={
             <Games
               setCurrentGame={setCurrentGame}
               setCurrentWeb={setCurrentWeb}
               setNextGame={setNextGame}
-
             />} />
+
           <Route path="/skills" element={
             <Skills
               setNextPage={setNextPage}
               nextPage={nextPage}
             />} />
+
           <Route path="/gameview" element={
             <GameProjectView
               currentGame={currentGame}
               setCurrentGame={setCurrentGame}
               nextGame={nextGame}
-
             />} />
+
           <Route path="/webview" element={
             <WebProjectView
               currentWeb={currentWeb}
               setCurrentWeb={setCurrentWeb}
               nextWeb={nextWeb}
             />} />
+
         </Routes>
 
       </div >

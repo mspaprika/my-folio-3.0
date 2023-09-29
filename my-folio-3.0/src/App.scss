@@ -7,7 +7,6 @@ $lighter-purple: #635985;
 $creamy-gray: #E5E5E5;
 $new-purple: #BFACE2;
 $light: #ECF2FF;
-
 $icons-panel-width: 100px;
 
 #root {
@@ -108,7 +107,6 @@ $icons-panel-width: 100px;
     transform: rotate(-90deg);
   }
   
-
   .link {
     text-decoration: none;
     font-weight: 300;
@@ -198,7 +196,6 @@ $icons-panel-width: 100px;
     transform: rotate(0deg);
   }
 }
-  
 
 
 @media screen and (min-width: 200px) and (max-width: 700px) {
@@ -241,15 +238,13 @@ $icons-panel-width: 100px;
     .web {
       top: 20%;
       left: 10px;
-      transform: rotate(-90deg);
-      
+      transform: rotate(-90deg);     
     }
 
     .games {
       bottom: 20%;
       left: 5px;
-      transform: rotate(-90deg);
-      
+      transform: rotate(-90deg);      
     }
 
     .about {
@@ -285,9 +280,7 @@ $icons-panel-width: 100px;
       top: 0px;
       right: 10px;
     }
-
-  }
-  
+  } 
 }
 
   

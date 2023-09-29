@@ -82,7 +82,7 @@ export const webProjects = [
         live: "https://mspaprika.github.io/Cats/",
         lastUpdated: "10/03/2023",
         message: "",
-
+        icons: ["html", "css", "javascript"],
     },
     {
         id: 2,
@@ -99,6 +99,7 @@ export const webProjects = [
         live: "https://mspaprika.github.io/Text-Game/",
         lastUpdated: "",
         message: "Game is NOT mobile compatible yet (working on it...).",
+        icons: ["html", "css", "javascript"],
     },
     {
         id: 3,
@@ -115,6 +116,7 @@ export const webProjects = [
         live: "https://fitness-app-gs9y.onrender.com/",
         lastUpdated: "06/04/2023",
         message: "",
+        icons: ["html", "css", "javascript", "react", "sass", "mongo"],
     },
     {
         id: 4,
@@ -131,6 +133,7 @@ export const webProjects = [
         live: "https://mspaprika.github.io/Quiz/",
         lastUpdated: "28/05/2023",
         message: "Updating this website is very high on my list. Until then, please use it on a desktop and adjust screen resolution if needed.",
+        icons: ["html", "css", "javascript"],
     },
     {
         id: 5,
@@ -147,6 +150,7 @@ export const webProjects = [
         live: "https://events-app-sk5b.onrender.com/",
         lastUpdated: "15/03/2023",
         message: "Login credentials: [username]: Lucy ; [password]: IAmCat",
+        icons: ["html", "css", "javascript", "react", "mongo"],
     },
     {
         id: 6,
@@ -163,6 +167,7 @@ export const webProjects = [
         live: "https://mspaprika.github.io/weather-api-new/",
         lastUpdated: "",
         message: "",
+        icons: ["html", "css", "javascript", "react", "sass"],
     },
     {
         id: 7,
@@ -179,6 +184,7 @@ export const webProjects = [
         live: "https://mspaprika.github.io/caesar-cipher-test/",
         lastUpdated: "",
         message: "",
+        icons: ["html", "css", "javascript"],
     },
     {
         id: 8,
@@ -195,6 +201,7 @@ export const webProjects = [
         live: "https://mspaprika.github.io/sunny-surfboards/",
         lastUpdated: "",
         message: "***Update*** Website was slightly updated recently and is now live on GitHub! You will notice it's missing .js and .css files, but I intentionally left it as it was, simply to remeber the progress I made since then 🙂 .",
+        icons: ["html", "css", "javascript"],
     },
     {
         id: 9,
@@ -211,6 +218,7 @@ export const webProjects = [
         live: "https://mspaprika.github.io/my-folio/",
         lastUpdated: "never 😊",
         message: "",
+        icons: ["html", "css"],
     },
     // {
     //     id: 10,

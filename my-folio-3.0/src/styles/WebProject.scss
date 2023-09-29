@@ -15,7 +15,6 @@ $padding-left: 20px;
     display: flex;
     padding-bottom: 100px;
     
-
     .web-wrapper {
         width: 100%;
         display: flex;
@@ -36,17 +35,13 @@ $padding-left: 20px;
             .project-image {
                 width: 380px;
                 height: 380px;
-
             }
-
         }
 
-        /* h3 {
-            width: 100%;
-            text-align: left;
-            padding-left: 50px;
+        .collab-header {
             font-family: $fancy-font;
-        } */
+            width: 100%;
+        }
 
         .web-title,
         .web-description,
@@ -55,8 +50,7 @@ $padding-left: 20px;
         {
             margin: 20px !important;
         }
-
-           
+          
         .web-title {
             margin: 30px;
             font-family: $fancy-font;
@@ -65,17 +59,18 @@ $padding-left: 20px;
 
         .web-description {
             width: 100%;
-            margin-bottom: 40px;
-            
+            margin-bottom: 40px;           
         }
 
-        .web-features {
+        .web-features,
+        .message {
             width: 100%;
+            margin-bottom: 40px;
         }
 
         .message {
-            width: 100%;
-            //padding: 30px 50px;
+            margin-top: 20px;
+            color: $new-purple;
         }
 
         .git {
@@ -92,8 +87,7 @@ $padding-left: 20px;
             margin-top: 30px;
 
             .link {
-                margin: 0 50px 0 20px;
-                
+                margin: 0 50px 0 20px;              
             }
         }
 
@@ -101,6 +95,7 @@ $padding-left: 20px;
             width:100%;
             text-align: center;
             margin-top: 30px;
+            color: $new-purple;
         }
             
         
@@ -146,11 +141,9 @@ $padding-left: 20px;
             justify-content: center;
             flex-wrap: wrap;
 
-
             .project-image {
                 width: 100% !important;
-                object-fit: cover;
-                
+                object-fit: cover;             
             }
         }
 
@@ -168,8 +161,7 @@ $padding-left: 20px;
                 margin-bottom: 20px;
             }
 
-            .live-wrapper {
-                
+            .live-wrapper {               
                 margin-bottom: 20px;
             }
         }

@@ -11,10 +11,6 @@ import { ReactComponent as CSharp } from '../data/svg/tech-icons/csharp.svg';
 import { ReactComponent as Python } from '../data/svg/python.svg';
 
 
-
-
-
-
 export const icons = {
     react: <React className="icon" />,
     sass: <Sass className="icon" />,
@@ -27,6 +23,4 @@ export const icons = {
     mySql: <MySql className="icon" />,
     python: <Python className="icon" />,
     cSharp: <CSharp className="icon" />
-
-
 }
