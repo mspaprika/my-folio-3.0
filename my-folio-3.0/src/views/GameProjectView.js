@@ -1,14 +1,13 @@
 import "../styles/GameProject.scss"
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useEffect } from "react";
+
 import { ReactComponent as Arrow } from '../data/svg/arrow.svg';
 import { ReactComponent as Git } from '../data/svg/git2.svg';
 
 import { gameProjects } from "../library/gameProjects";
 
-import { useNavigate } from 'react-router-dom';
-
-import { useEffect } from "react";
 
 function GameProjectView(props) {
 
@@ -38,7 +37,6 @@ function GameProjectView(props) {
         props.setCurrentGame(nextProject)
     }
 
-
     return (
         <>
             <div className="game-project-container">
@@ -46,9 +44,7 @@ function GameProjectView(props) {
                 <div className="game-wrapper" >
                     <img className="project-gif" src={project?.gifs[0]} alt=""></img>
 
-
                     <div className="game-title">{project.title}</div>
-
 
                     <p className="game-description">
                         {project.description}
@@ -70,14 +66,12 @@ function GameProjectView(props) {
                     {project.lastUpdated ?
                         <span className="last-updated"
                             style={project.gifs[1] ? { marginBottom: "800px" } : { marginBottom: "30px" }}
-
                         >
                             Last updated: {project.lastUpdated}
                         </span> : ""}
 
                     {project.gifs[1] ?
                         <img className="project-gif-bottom" src={project.gifs[1]} alt=""></img> : ""}
-
                 </div>
 
                 <Link to="/games" className="home-link">

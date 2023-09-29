@@ -7,7 +7,6 @@
 
 */
 
-
 import cave from "../data/screens/cave103.png";
 import cave2 from "../data/screens/cave12.png";
 import cave3 from "../data/screens/cave102.png";
@@ -20,12 +19,13 @@ import ttt2 from "../data/images/ttt2.jpg";
 import ttt3 from "../data/screens/ttt101.png";
 import ttt4 from "../data/images/ttt3.jpg";
 
-
 import spy from "../data/screens/spy12.png";
-import cat from "../data/screens/cat_game.png";
-import spyGif from "../data/gifs/spyder3.gif";
-import spyGif2 from "../data/gifs/spyder4.gif";
-import catGif from "../data/gifs/cat1.gif";
+import cat from "../data/screens/cat_new.png";
+import spyGif from "../data/gifs/spy101.gif";
+import spyGif2 from "../data/gifs/spyder_in_space.gif";
+import catGif from "../data/gifs/cat_newb2.gif";
+import catGif2 from "../data/gifs/cat_newb3.gif";
+
 
 export const gameProjects = [
     {
@@ -39,22 +39,24 @@ export const gameProjects = [
         mainFeatures: "C++, playbuffer, Visual Studio.",
         gitHub: "https://github.com/mspaprika/Sky-High-Spyder",
         live: "",
-        lastUpdated: "15/09/2023",
+        lastUpdated: "28/09/2023",
         message: "I continue to fix bugs and add new features.",
+        icons: ["cpp"],
     },
     {
         id: 2,
         next: 1,
         type: "game",
-        title: "Cat and Fleas",
+        title: "Cat & Fleas",
         description: "My very first platform game created using playbuffer and C++. More info soon! ",
         image: cat,
-        gifs: [catGif],
+        gifs: [catGif, catGif2],
         mainFeatures: "C++, playbuffer, Visual Studio.",
         gitHub: "https://github.com/mspaprika/Bouncy-Game/tree/main/Tutorial%2003%20Solution/Tutorial03-A",
         live: "",
-        lastUpdated: "",
+        lastUpdated: "29/09/2023",
         message: "",
+        icons: ["cpp"],
     },
     {
         id: 3,
@@ -70,6 +72,7 @@ export const gameProjects = [
         live: "https://mspaprika.github.io/Text-Game/",
         lastUpdated: "",
         message: "Game is NOT mobile compatible yet (working on it...).",
+        icons: ["html", "css", "javascript"],
     },
     {
         id: 4,
@@ -85,6 +88,7 @@ export const gameProjects = [
         live: "",
         lastUpdated: "",
         message: "",
+        icons: ["react", "javascript"],
     },
     /* {
         id: 5,

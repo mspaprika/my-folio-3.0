@@ -1,15 +1,14 @@
 import "../styles/WebProject.scss";
 
-import { Link } from 'react-router-dom';
+import { useEffect } from "react";
+import { Link, useNavigate } from 'react-router-dom';
+
 import { ReactComponent as Arrow } from '../data/svg/arrow.svg';
 import { ReactComponent as Git } from '../data/svg/git2.svg';
 import { ReactComponent as Host } from '../data/svg/tower2.svg';
 
 import { webProjects } from "../library/webProjects";
 
-import { useNavigate } from 'react-router-dom';
-
-import { useEffect } from "react";
 
 function WebProject(props) {
 
@@ -18,7 +17,6 @@ function WebProject(props) {
     if (!project) {
         project = JSON.parse(window.localStorage.getItem("currentWeb"))
     }
-
 
     const nextWebProject = webProjects.filter(pro => pro.id === project.next);
     const nextProject = nextWebProject[0];
@@ -50,7 +48,6 @@ function WebProject(props) {
 
     return (
         <>
-
             <div className="web-project-container">
 
 
@@ -67,12 +64,12 @@ function WebProject(props) {
                         {project.description}
                     </p>
                     {project.myCollab ? <div className="collab-wrapper">
-                        <h3 className="collab-header">My collaboration...</h3>
+                        <h2 className="collab-header">My collaboration...</h2>
                         <p className="my-collab">{project.myCollab}</p>
                     </div> : ""}
 
 
-                    <h3 className="web-features">Main features...</h3>
+                    <h2 className="collab-header">Main features...</h2>
                     <div className="web-features">
                         {project.mainFeatures}
                     </div>
@@ -108,8 +105,6 @@ function WebProject(props) {
 
                 <Arrow onClick={onClickHandler} className="arrow-down" />
 
-                {/* <Link to="/webview" className="">
-                </Link> */}
             </div>
         </>
     )

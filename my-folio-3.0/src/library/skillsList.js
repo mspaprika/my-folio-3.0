@@ -7,6 +7,7 @@ export const skills = [
         list: [
             "C++",
             "C#",
+            "JavaScript",
         ],
         tech: [
             "Visual Studio",
@@ -14,6 +15,10 @@ export const skills = [
             "Unreal Engine",
             "Unity"
         ],
+        icons: [
+            "cpp",
+            "cSharp",
+        ]
     },
 
     {
@@ -21,11 +26,11 @@ export const skills = [
         image: "",
         color: "#829bb3",
         list: [
+            "MongoDB",
+            "MySQL",
             "Node.js",
             "Express",
-            "MongoDB",
             "REST API",
-            "MySQL",
         ],
         tech: [
             "MongoDB Atlas",
@@ -33,6 +38,10 @@ export const skills = [
             "Insomnia",
             "Render",
         ],
+        icons: [
+            "mongo",
+            "mySql",
+        ]
     },
 
     {
@@ -54,20 +63,31 @@ export const skills = [
             "GitHub Pages",
             "VS Code",
         ],
+        icons: [
+            "html",
+            "css",
+            "javascript",
+            "react",
+            "sass",
+        ]
     },
     {
         type: "Other",
         image: "",
         color: "	#a0e9e9",
         list: [
-            "C",
-            "Jest",
             "Python",
             "React Native",
+            "C",
+            "Jest",
         ],
         tech: [
 
         ],
+        icons: [
+            "python",
+            "react",
+        ]
     },
 ]
 

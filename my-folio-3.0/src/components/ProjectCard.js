@@ -1,14 +1,13 @@
 import "../styles/ProjectCards.scss"
 
+import { useNavigate } from 'react-router-dom';
+
 import { ReactComponent as Git } from '../data/svg/git.svg';
 import { ReactComponent as Host } from '../data/svg/tower.svg';
 
-import { webProjects } from "../library/webProjects";
-
-import { useNavigate } from 'react-router-dom';
+import { icons } from "../library/icons";
 
 function ProjectCard(props) {
-
 
     const project = props.project;
 
@@ -25,9 +24,7 @@ function ProjectCard(props) {
                 props.setCurrentGame(project);
                 navigate("/gameview")
             }
-        }
-
-        else {
+        } else {
             props.setCurrentWeb(project);
             navigate("/webview")
         }
@@ -48,9 +45,18 @@ function ProjectCard(props) {
                             <h3>{project.title}</h3>
                         </div>
                         <div className="card-middle">
+
+                            <div className="skill-icons">
+                                {project.icons.map((icon, index) =>
+                                    <span key={index}>
+                                        {icons[icon] ? icons[icon] : ""}
+                                    </span>
+                                )}
+                            </div>
                             {project.mainFeatures}
                         </div>
                         <button onClick={onClickHandler} className="card-button">See More</button>
+
 
                         <div className="link-section">
                             <a href={project.gitHub} target="_blank" rel="noopener noreferrer" >
@@ -66,7 +72,6 @@ function ProjectCard(props) {
                 </div>
             </div>
         </>
-
     )
 }
 

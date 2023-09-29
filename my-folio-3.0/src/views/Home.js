@@ -1,19 +1,16 @@
 import '../App.scss';
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { ReactComponent as Git } from '../data/svg/github.svg';
 import { ReactComponent as LinkedIn } from '../data/svg/linkedin.svg';
 import { ReactComponent as Email } from '../data/svg/email.svg';
 import { ReactComponent as Twitter } from '../data/svg/twitter.svg';
 import { ReactComponent as Doc } from '../data/svg/doc.svg';
-import { useNavigate } from 'react-router-dom';
-
 import { ReactComponent as Arrow } from '../data/svg/arrow.svg';
 import { ReactComponent as Logo } from '../data/svg/logo.svg';
 
 import { myInfo } from '../library/myInfo';
-
 
 function Home(props) {
 
