@@ -1,3 +1,5 @@
+@import './Animations.scss';
+
 
 $fancy-font: 'Gloria Hallelujah';
 $raleway-font: 'Raleway', sans-serif;
@@ -41,6 +43,7 @@ $border-radius: 0 35px 0 35px;
         padding: 45px;
         color: $medium-purple;
         font-size: 1.4rem;
+        animation: load-in 1.5s ease-in-out;
     }
 
     .tech-icon-wrapper {
@@ -60,6 +63,7 @@ $border-radius: 0 35px 0 35px;
         scale: 2.5;
         margin-left: 20px;
         margin-top : 20px;
+        animation: load-in-icons 1.5s ease-in-out;
     }
 
     .icon:hover {
@@ -75,6 +79,8 @@ $border-radius: 0 35px 0 35px;
         align-items: center;
     }
 }
+
+
 
 @keyframes ciunga-cianga {
     0% {     

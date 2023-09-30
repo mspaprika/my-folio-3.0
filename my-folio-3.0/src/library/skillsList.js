@@ -12,7 +12,6 @@ export const skills = [
         tech: [
             "Visual Studio",
             "PlayBuffer",
-            "Unreal Engine",
             "Unity"
         ],
         icons: [

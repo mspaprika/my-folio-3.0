@@ -25,10 +25,10 @@ function Home(props) {
 
     return (
         <>
-            <Link to="/skills" className="top link">Skills</Link>
-            <Link to="/games" className="games link ">Games</Link>
-            <Link to="/web" className="web link">Web</Link>
-            <Link to="/about" className="about link">About Me</Link>
+            <Link to="/skills" className="top link load-in load-out">Skills</Link>
+            <Link to="/games" className="games link load-in load-out ">Games</Link>
+            <Link to="/web" className="web link load-in load-out">Web</Link>
+            <Link to="/about" className="about link load-in load-out">About Me</Link>
 
             <div onClick={handleCircleClick()} className="big-circle">
                 <h1 className="main-text">I'm Arune</h1>
@@ -37,19 +37,19 @@ function Home(props) {
 
             <div className='icon-wrapper'>
                 <a href={myInfo.gitHubLink} target="_blank" rel="noopener noreferrer" >
-                    <Git className="git" />
+                    <Git className="git load-in" />
                 </a>
                 <a href={myInfo.linkedInLink} target="_blank" rel="noopener noreferrer" >
-                    <LinkedIn className="linkedin" />
+                    <LinkedIn className="linkedin load-in" />
                 </a>
                 <a href={myInfo.cvLink} target="_blank" rel="noopener noreferrer" >
-                    <Doc className="doc" />
+                    <Doc className="doc load-in" />
                 </a>
                 <a href={myInfo.emailLink} target="_blank" rel="noopener noreferrer" >
-                    <Email className="email" />
+                    <Email className="email load-in" />
                 </a>
                 <a href={myInfo.twitterLink} target="_blank" rel="noopener noreferrer" >
-                    <Twitter className="twitter" />
+                    <Twitter className="twitter load-in" />
                 </a>
             </div>
 
