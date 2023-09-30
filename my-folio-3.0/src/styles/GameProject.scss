@@ -1,3 +1,5 @@
+@import './Animations.scss';
+
 $fancy-font: 'Gloria Hallelujah';
 $raleway-font: 'Raleway', sans-serif;
 $medium-purple: #443C68;
@@ -37,6 +39,8 @@ $padding-left: 20px;
         {          
             margin: 20px !important;
             padding-left: 50px;
+            animation: load-in 1.5s ease-in-out;
+            //animation-delay: 2s;
         }
 
         .game-title {
