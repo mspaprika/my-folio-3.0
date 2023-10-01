@@ -1,3 +1,5 @@
+@import './Animations.scss';
+
 $fancy-font: 'Gloria Hallelujah';
 $raleway-font: 'Raleway', sans-serif;
 $medium-purple: #443C68;
@@ -20,6 +22,7 @@ $light: #ECF2FF;
         opacity: 0.5;
         top: 10vh;
         left: 6vw;
+        
     }
 
     .skill-card {
@@ -97,6 +100,7 @@ $light: #ECF2FF;
         opacity: 0.7;
         top: 10vh;
         left: 7vw;
+        animation: load-in 1.5s ease-in-out;
     }
 }
 

@@ -10,6 +10,7 @@ $creamy-gray: #E5E5E5;
 $new-purple: #BFACE2;
 $light: #ECF2FF;
 $icons-panel-width: 100px;
+$links-animating-delay: 1s;
 
 #root {
   overflow: hidden;
@@ -107,25 +108,13 @@ $icons-panel-width: 100px;
     .doc {
       padding-right: 20px;
       width: 70px;
-      animation: load-in-icons 1.5s ease-in-out;
+      animation: load-in-icons 1.5s ease-in-out forwards;
+      transform: translateY(100%);
+
     }
 
-    .email {
-      margin-top: 50px;
-      /* animation-delay: 0.6; */
-    }
-    /* .linkedin {
-      animation-delay: 0.2s;
-    }
-
-    .doc {
-      animation-delay: 0.4s;
-    }
-    .twitter {
-      animation-delay: 0.8s;
-    } */
   }
-
+  
   .about {
     position: absolute;
     top: 50%;
@@ -160,6 +149,7 @@ $icons-panel-width: 100px;
     width: 60px;
     height: 80px;
     animation: say-hi 1.5s ease-in-out 1s;
+    animation-delay: calc($links-animating-delay + 0.7s);
   }
 
   .web,
@@ -271,13 +261,13 @@ $icons-panel-width: 100px;
     .web {
       top: 20%;
       left: 10px;
-      transform: rotate(-90deg);     
+      animation: pop-up-rotate 1s ease-in-out forwards;   
     }
 
     .games {
       bottom: 20%;
       left: 5px;
-      transform: rotate(-90deg);      
+      animation: pop-up-rotate 1s ease-in-out forwards;      
     }
 
     .about {
@@ -315,5 +305,7 @@ $icons-panel-width: 100px;
     }
   } 
 }
+
+
 
   

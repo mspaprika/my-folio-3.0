@@ -33,8 +33,10 @@ function WebProject(props) {
     }
 
     const onClickHandler = () => {
-        navigate("/webview")
         props.setCurrentWeb(nextProject)
+        navigate("/webview")
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 
     useEffect(() => {

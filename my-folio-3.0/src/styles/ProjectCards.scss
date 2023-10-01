@@ -1,3 +1,5 @@
+@import './Animations.scss';
+
 $fancy-font: 'Gloria Hallelujah';
 $raleway-font: 'Raleway', sans-serif;
 $medium-purple: #443C68;
@@ -145,6 +147,7 @@ $border-radius: 0 35px 0 35px;
             opacity: 0.7;
             top: 8vh;
             left: 7vw;
+            animation: load-in 1.5s ease-in-out;
         }
 
         .headline-game {
@@ -155,6 +158,7 @@ $border-radius: 0 35px 0 35px;
             opacity: 0.7;
             top: 8vh;
             left: 7vw;
+            animation: load-in 1.5s ease-in-out;
         }
 
         .headline-skills {
