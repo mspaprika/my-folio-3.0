@@ -32,7 +32,7 @@ function Home(props) {
 
             <div onClick={handleCircleClick()} className="big-circle">
                 <h1 className="main-text">I'm Arune</h1>
-                <h3 className="sub-text">Games / Web Developer</h3>
+                <h3 className="sub-text">Game / Web Developer</h3>
             </div>
 
             <div className='icon-wrapper'>
