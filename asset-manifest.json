@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-folio-3.0/static/css/main.e10b3ddd.css",
-    "main.js": "/my-folio-3.0/static/js/main.df9cbb78.js",
+    "main.js": "/my-folio-3.0/static/js/main.0670d026.js",
     "static/js/787.a6a197f2.chunk.js": "/my-folio-3.0/static/js/787.a6a197f2.chunk.js",
     "static/media/spyder_in_space.gif": "/my-folio-3.0/static/media/spyder_in_space.e69c83c8fc6e8cf05151.gif",
     "static/media/cat_newb2.gif": "/my-folio-3.0/static/media/cat_newb2.6a7ea71b64822ae11541.gif",
@@ -85,11 +85,11 @@
     "static/media/css.svg": "/my-folio-3.0/static/media/css.b072f246acdc133e21186cf72138a3b3.svg",
     "static/media/html.svg": "/my-folio-3.0/static/media/html.5a388de592bdf7a6f44ae2acc154efbc.svg",
     "main.e10b3ddd.css.map": "/my-folio-3.0/static/css/main.e10b3ddd.css.map",
-    "main.df9cbb78.js.map": "/my-folio-3.0/static/js/main.df9cbb78.js.map",
+    "main.0670d026.js.map": "/my-folio-3.0/static/js/main.0670d026.js.map",
     "787.a6a197f2.chunk.js.map": "/my-folio-3.0/static/js/787.a6a197f2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e10b3ddd.css",
-    "static/js/main.df9cbb78.js"
+    "static/js/main.0670d026.js"
   ]
 }
