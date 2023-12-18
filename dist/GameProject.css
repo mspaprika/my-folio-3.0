@@ -1,0 +1,201 @@
+@keyframes load-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes load-in-icons {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes circle {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: white;
+  }
+}
+@keyframes pop-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(0%);
+  }
+}
+@keyframes pop-up-left {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(50%);
+  }
+}
+@keyframes pop-down {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+    transform: translateX(0%);
+  }
+}
+@keyframes pop-up-rotate {
+  0% {
+    opacity: 0;
+    transform: translate(100%);
+    transform: rotate(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%);
+    transform: rotate(-90deg);
+  }
+}
+@keyframes say-hi {
+  30% {
+    transform: translate(0%);
+    transform: rotate(-15deg);
+  }
+  90% {
+    transform: translate(50%);
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: translate(0%);
+    transform: rotate(0deg);
+  }
+}
+.game-project-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  padding-bottom: 100px;
+}
+.game-project-container .game-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.game-project-container .game-wrapper .game-h3 {
+  width: 100%;
+  text-align: left;
+  padding-left: 50px;
+  font-family: "Gloria Hallelujah";
+}
+.game-project-container .game-wrapper .game-title,
+.game-project-container .game-wrapper .game-description,
+.game-project-container .game-wrapper .game-features,
+.game-project-container .game-wrapper .message {
+  margin: 20px !important;
+  padding-left: 50px;
+  animation: load-in 1.5s ease-in-out;
+}
+.game-project-container .game-wrapper .game-title {
+  margin: 30px;
+  font-family: "Gloria Hallelujah";
+  font-size: 3rem;
+}
+.game-project-container .game-wrapper .game-description {
+  width: 100%;
+  padding-bottom: 30px;
+}
+.game-project-container .game-wrapper .game-features {
+  width: 100%;
+  margin-bottom: 0 !important;
+}
+.game-project-container .game-wrapper .message {
+  width: 100%;
+  padding-top: 40px;
+  color: #BFACE2;
+}
+.game-project-container .game-wrapper .git {
+  scale: 1.5;
+  margin-left: 30px;
+}
+.game-project-container .game-wrapper .game-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.game-project-container .game-wrapper .last-updated {
+  margin-top: 30px;
+  color: #BFACE2;
+}
+.game-project-container .game-wrapper .project-image {
+  width: 400px;
+  height: 400px;
+}
+.game-project-container .game-wrapper .project-gif-bottom {
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.game-project-container .arrow-up:hover,
+.game-project-container .arrow-down:hover {
+  fill: #BFACE2;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 200px) and (max-width: 700px) {
+  .game-wrapper {
+    padding: 0 0 100px 0 !important;
+    font-size: 1.2rem;
+  }
+  .game-wrapper .game-description,
+  .game-wrapper .game-features,
+  .game-wrapper .message {
+    padding: 0 20px !important;
+  }
+  .game-wrapper .game-title {
+    padding: 0 !important;
+    text-align: center;
+  }
+  .game-wrapper .last-updated {
+    margin-bottom: 300px !important;
+  }
+  .game-wrapper .project-image {
+    width: 95%;
+  }
+  .game-wrapper .project-gif {
+    height: 400px;
+    overflow-x: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .game-wrapper .project-gif-bottom {
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=GameProject.css.map */

@@ -1,0 +1,36 @@
+.web-container {
+  color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.web-container .web-card {
+  border: 1px solid black;
+  border-radius: 35px;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+.web-container .web-card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 35px;
+  width: 100%;
+  height: 100%;
+}
+.web-container .headline {
+  position: absolute;
+  font-family: "Gloria Hallelujah";
+  color: #635985;
+  font-size: 66px;
+  opacity: 0.5;
+  top: 10vh;
+  left: 10vw;
+}
+.web-container .web-card:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}/*# sourceMappingURL=Web.css.map */
