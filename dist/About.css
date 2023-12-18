@@ -1,0 +1,192 @@
+@keyframes load-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes load-in-icons {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes circle {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: white;
+  }
+}
+@keyframes pop-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+    transform: translateX(50%);
+  }
+  99% {
+    scale: 1.05;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(0%);
+  }
+}
+@keyframes pop-up-left {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+    transform: translateX(0%);
+  }
+  99% {
+    scale: 1.05;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(50%);
+  }
+}
+@keyframes pop-down {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(50%);
+  }
+  99% {
+    scale: 1.05;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+    transform: translateX(0%);
+  }
+}
+@keyframes pop-up-rotate {
+  0% {
+    opacity: 0;
+    transform: translate(100%);
+    transform: rotate(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%);
+    transform: rotate(-90deg);
+  }
+}
+@keyframes say-hi {
+  30% {
+    transform: translate(0%);
+    transform: rotate(-15deg);
+  }
+  90% {
+    transform: translate(50%);
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: translate(0%);
+    transform: rotate(0deg);
+  }
+}
+.about-container {
+  background-color: #E5E5E5;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0 100px 0;
+}
+.about-container .headline {
+  position: absolute;
+  font-family: "Gloria Hallelujah";
+  color: white;
+  font-size: 96px;
+  opacity: 0.7;
+  top: 10vh;
+  left: 3vw;
+  animation: load-in 1.5s ease-in-out;
+}
+.about-container h6 {
+  color: #443C68;
+  font-size: 2.5rem;
+  font-family: "Gloria Hallelujah";
+}
+.about-container .my-info {
+  width: 100%;
+  padding: 45px;
+  color: #443C68;
+  font-size: 1.4rem;
+  animation: load-in 1.5s ease-in-out;
+}
+.about-container .tech-icon-wrapper {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  min-height: 50px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 30px;
+}
+.about-container .icon {
+  scale: 2.5;
+  margin-left: 20px;
+  margin-top: 20px;
+  animation: load-in-icons 1.5s ease-in-out;
+}
+.about-container .icon:hover {
+  animation: ciunga-cianga 1.5s ease-in-out infinite;
+}
+.about-container .another-wrapper {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  align-items: center;
+}
+
+@keyframes ciunga-cianga {
+  0% {
+    transform: rotate(-50deg);
+  }
+  20% {
+    transform: rotate(50deg);
+  }
+  40% {
+    transform: rotate(-50deg);
+  }
+  60% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(-410deg);
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  .headline {
+    font-size: 56px !important;
+  }
+  .my-info {
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=About.css.map */

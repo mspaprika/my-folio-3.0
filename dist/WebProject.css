@@ -1,0 +1,235 @@
+@keyframes load-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes load-in-icons {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes circle {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: white;
+  }
+}
+@keyframes pop-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(0%);
+  }
+}
+@keyframes pop-up-left {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(50%);
+  }
+}
+@keyframes pop-down {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+    transform: translateX(0%);
+  }
+}
+@keyframes pop-up-rotate {
+  0% {
+    opacity: 0;
+    transform: translate(100%);
+    transform: rotate(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%);
+    transform: rotate(-90deg);
+  }
+}
+@keyframes say-hi {
+  30% {
+    transform: translate(0%);
+    transform: rotate(-15deg);
+  }
+  90% {
+    transform: translate(50%);
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: translate(0%);
+    transform: rotate(0deg);
+  }
+}
+.web-project-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  padding-bottom: 100px;
+}
+.web-project-container .web-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px 0 50px;
+}
+.web-project-container .web-wrapper .top-image-wrapper {
+  width: max(760px, 99vw);
+  min-height: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.web-project-container .web-wrapper .top-image-wrapper .project-image {
+  width: 380px;
+  height: 380px;
+}
+.web-project-container .web-wrapper .collab-header {
+  font-family: "Gloria Hallelujah";
+  width: 100%;
+}
+.web-project-container .web-wrapper .web-title,
+.web-project-container .web-wrapper .web-description,
+.web-project-container .web-wrapper .web-features,
+.web-project-container .web-wrapper .collab-wrapper {
+  margin: 20px !important;
+}
+.web-project-container .web-wrapper .web-title {
+  margin: 30px;
+  font-family: "Gloria Hallelujah";
+  font-size: 3rem;
+  animation: load-in 1.5s ease-in-out;
+}
+.web-project-container .web-wrapper .web-description {
+  width: 100%;
+  margin-bottom: 40px !important;
+  animation: load-in 1.5s ease-in-out;
+}
+.web-project-container .web-wrapper .web-features,
+.web-project-container .web-wrapper .message {
+  width: 100%;
+  margin-bottom: 40px;
+  animation: load-in 1.5s ease-in-out;
+}
+.web-project-container .web-wrapper .message {
+  margin-top: 20px;
+  color: #BFACE2;
+}
+.web-project-container .web-wrapper .git {
+  scale: 1.5;
+  margin-left: 30px;
+}
+.web-project-container .web-wrapper .web-links {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.web-project-container .web-wrapper .web-links .link {
+  margin: 0 50px 0 20px;
+}
+.web-project-container .web-wrapper .last-updated {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: #BFACE2;
+}
+.web-project-container .web-wrapper .project-gif {
+  width: 800px;
+  height: 500px;
+}
+.web-project-container .web-wrapper .collab-header {
+  margin-bottom: 20px;
+  animation: load-in 1.5s ease-in-out;
+}
+.web-project-container .web-wrapper .collab-wrapper {
+  width: 100%;
+}
+.web-project-container .web-wrapper .collab-wrapper .my-collab {
+  margin-bottom: 40px;
+}
+.web-project-container .arr-up:hover,
+.web-project-container .arr-down:hover {
+  fill: #BFACE2;
+  cursor: pointer !important;
+}
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  .web-wrapper {
+    padding: 0 0 100px 0 !important;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .web-wrapper .web-title {
+    text-align: center;
+    line-height: 3rem;
+  }
+  .web-wrapper .top-image-wrapper {
+    width: 100% !important;
+    min-height: 500px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .web-wrapper .top-image-wrapper .project-image {
+    width: 100% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .web-wrapper .web-description,
+  .web-wrapper .web-features,
+  .web-wrapper .collab-wrapper,
+  .web-wrapper .message {
+    padding: 0 20px !important;
+  }
+  .web-wrapper .collab-header {
+    margin-left: 40px !important;
+  }
+  .web-wrapper .web-links .git-wrapper {
+    margin-left: 20px !important;
+    margin-bottom: 20px;
+  }
+  .web-wrapper .web-links .live-wrapper {
+    margin-bottom: 20px;
+  }
+  .web-wrapper .link {
+    margin-left: 10px !important;
+  }
+}/*# sourceMappingURL=WebProject.css.map */

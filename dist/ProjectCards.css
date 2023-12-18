@@ -1,0 +1,327 @@
+@keyframes load-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes load-in-icons {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes circle {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: white;
+  }
+}
+@keyframes pop-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+    transform: translateX(50%);
+  }
+  99% {
+    scale: 1.05;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(0%);
+  }
+}
+@keyframes pop-up-left {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+    transform: translateX(0%);
+  }
+  99% {
+    scale: 1.05;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(50%);
+  }
+}
+@keyframes pop-down {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(50%);
+  }
+  99% {
+    scale: 1.05;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+    transform: translateX(0%);
+  }
+}
+@keyframes pop-up-rotate {
+  0% {
+    opacity: 0;
+    transform: translate(100%);
+    transform: rotate(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%);
+    transform: rotate(-90deg);
+  }
+}
+@keyframes say-hi {
+  30% {
+    transform: translate(0%);
+    transform: rotate(-15deg);
+  }
+  90% {
+    transform: translate(50%);
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: translate(0%);
+    transform: rotate(0deg);
+  }
+}
+.games-container,
+.web-container,
+.skills-container,
+.about-container {
+  background-color: #E5E5E5;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset, rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  width: 100%;
+}
+.games-container .arr-up,
+.web-container .arr-up,
+.skills-container .arr-up,
+.about-container .arr-up {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  z-index: 1;
+  width: 50px;
+  fill: #443C68;
+}
+.games-container .arr-down,
+.web-container .arr-down,
+.skills-container .arr-down,
+.about-container .arr-down {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  z-index: 1;
+  width: 50px;
+  transform: rotate(180deg);
+  fill: #443C68;
+}
+.games-container .arr-up:hover,
+.games-container .arr-down:hover,
+.web-container .arr-up:hover,
+.web-container .arr-down:hover,
+.skills-container .arr-up:hover,
+.skills-container .arr-down:hover,
+.about-container .arr-up:hover,
+.about-container .arr-down:hover {
+  fill: #BFACE2;
+  cursor: pointer;
+}
+.games-container .card-wrapper,
+.web-container .card-wrapper,
+.skills-container .card-wrapper,
+.about-container .card-wrapper {
+  color: black;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30vh 0 30vh 0;
+}
+.games-container .card-wrapper .flip-card,
+.web-container .card-wrapper .flip-card,
+.skills-container .card-wrapper .flip-card,
+.about-container .card-wrapper .flip-card {
+  border-radius: 35px 35px 35px 0;
+  perspective: 1000px;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+.games-container .card-wrapper .flip-card .flip-card-inner,
+.web-container .card-wrapper .flip-card .flip-card-inner,
+.skills-container .card-wrapper .flip-card .flip-card-inner,
+.about-container .card-wrapper .flip-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0 35px 0 35px;
+}
+.games-container .card-wrapper .flip-card .flip-card-inner .flip-card-front,
+.games-container .card-wrapper .flip-card .flip-card-inner .flip-card-back,
+.web-container .card-wrapper .flip-card .flip-card-inner .flip-card-front,
+.web-container .card-wrapper .flip-card .flip-card-inner .flip-card-back,
+.skills-container .card-wrapper .flip-card .flip-card-inner .flip-card-front,
+.skills-container .card-wrapper .flip-card .flip-card-inner .flip-card-back,
+.about-container .card-wrapper .flip-card .flip-card-inner .flip-card-front,
+.about-container .card-wrapper .flip-card .flip-card-inner .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 35px;
+}
+.games-container .card-wrapper .flip-card .flip-card-inner .flip-card-front,
+.web-container .card-wrapper .flip-card .flip-card-inner .flip-card-front,
+.skills-container .card-wrapper .flip-card .flip-card-inner .flip-card-front,
+.about-container .card-wrapper .flip-card .flip-card-inner .flip-card-front {
+  background-color: #443C68;
+  color: #E5E5E5;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.games-container .card-wrapper .flip-card .flip-card-inner .flip-card-front img,
+.web-container .card-wrapper .flip-card .flip-card-inner .flip-card-front img,
+.skills-container .card-wrapper .flip-card .flip-card-inner .flip-card-front img,
+.about-container .card-wrapper .flip-card .flip-card-inner .flip-card-front img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 35px 0 35px;
+  width: 100%;
+  height: 100%;
+}
+.games-container .card-wrapper .flip-card .flip-card-inner .flip-card-back,
+.web-container .card-wrapper .flip-card .flip-card-inner .flip-card-back,
+.skills-container .card-wrapper .flip-card .flip-card-inner .flip-card-back,
+.about-container .card-wrapper .flip-card .flip-card-inner .flip-card-back {
+  background-color: #E5E5E5;
+  color: #443C68;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.games-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .card-title,
+.web-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .card-title,
+.skills-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .card-title,
+.about-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .card-title {
+  padding: 20px 20px 0px 10px;
+}
+.games-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .card-middle,
+.web-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .card-middle,
+.skills-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .card-middle,
+.about-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .card-middle {
+  font-size: 1.1rem;
+  padding: 10px 10px 20px 20px;
+  min-height: 100px;
+}
+.games-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .card-middle .skill-icons,
+.web-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .card-middle .skill-icons,
+.skills-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .card-middle .skill-icons,
+.about-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .card-middle .skill-icons {
+  margin: 10px 0 5px 0;
+}
+.games-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .card-button,
+.web-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .card-button,
+.skills-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .card-button,
+.about-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .card-button {
+  width: 100px;
+  height: 30px;
+  background-color: #f189a0;
+  color: white;
+  border: none;
+  border-radius: 0 15px 0 15px;
+  cursor: pointer;
+  outline: none;
+}
+.games-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .link-section,
+.web-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .link-section,
+.skills-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .link-section,
+.about-container .card-wrapper .flip-card .flip-card-inner .flip-card-back .link-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0 20px 0;
+}
+.games-container .card-wrapper .headline-web,
+.web-container .card-wrapper .headline-web,
+.skills-container .card-wrapper .headline-web,
+.about-container .card-wrapper .headline-web {
+  position: absolute;
+  font-family: "Gloria Hallelujah";
+  color: #443C68;
+  font-size: 106px;
+  opacity: 0.7;
+  top: 8vh;
+  left: 7vw;
+  animation: load-in 1.5s ease-in-out;
+}
+.games-container .card-wrapper .headline-game,
+.web-container .card-wrapper .headline-game,
+.skills-container .card-wrapper .headline-game,
+.about-container .card-wrapper .headline-game {
+  position: absolute;
+  font-family: "Gloria Hallelujah";
+  color: #443C68;
+  font-size: 106px;
+  opacity: 0.7;
+  top: 8vh;
+  left: 7vw;
+  animation: load-in 1.5s ease-in-out;
+}
+.games-container .card-wrapper .headline-skills,
+.web-container .card-wrapper .headline-skills,
+.skills-container .card-wrapper .headline-skills,
+.about-container .card-wrapper .headline-skills {
+  position: absolute;
+  font-family: "Gloria Hallelujah";
+  color: #443C68;
+  font-size: 86px;
+  opacity: 0.7;
+  top: 10vh;
+  left: 7vw;
+}
+.games-container .card-wrapper .flip-card:hover .flip-card-inner,
+.web-container .card-wrapper .flip-card:hover .flip-card-inner,
+.skills-container .card-wrapper .flip-card:hover .flip-card-inner,
+.about-container .card-wrapper .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  transform: rotateX(180);
+}
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  .arr-up,
+  .arr-down {
+    left: 45% !important;
+  }
+  .headline-skills,
+  .headline-game {
+    font-size: 76px !important;
+  }
+  .card-title {
+    font-size: 1.5rem !important;
+  }
+}/*# sourceMappingURL=ProjectCards.css.map */
