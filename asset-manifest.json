@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/my-folio-3.0/static/css/main.e10b3ddd.css",
-    "main.js": "/my-folio-3.0/static/js/main.0670d026.js",
+    "main.css": "/my-folio-3.0/static/css/main.39610320.css",
+    "main.js": "/my-folio-3.0/static/js/main.20ab5ba3.js",
     "static/js/787.a6a197f2.chunk.js": "/my-folio-3.0/static/js/787.a6a197f2.chunk.js",
     "static/media/spyder_in_space.gif": "/my-folio-3.0/static/media/spyder_in_space.e69c83c8fc6e8cf05151.gif",
-    "static/media/cat_newb2.gif": "/my-folio-3.0/static/media/cat_newb2.6a7ea71b64822ae11541.gif",
-    "static/media/cat_newb3.gif": "/my-folio-3.0/static/media/cat_newb3.4ee21a6ada323d8ef761.gif",
     "static/media/spy101.gif": "/my-folio-3.0/static/media/spy101.c3781315650f6a9ebde0.gif",
+    "static/media/cat&fleasPlay3.gif": "/my-folio-3.0/static/media/cat&fleasPlay3.805aaaa02443a42fec47.gif",
     "static/media/pc.jpg": "/my-folio-3.0/static/media/pc.ce619cfd210019948e26.jpg",
     "static/media/hurry.jpg": "/my-folio-3.0/static/media/hurry.ceed877e21dcfdf04577.jpg",
     "static/media/radar.jpg": "/my-folio-3.0/static/media/radar.4924d84f3ac3ace19a0a.jpg",
     "static/media/matrix.jpg": "/my-folio-3.0/static/media/matrix.b0b859f53eceed0037b3.jpg",
+    "static/media/cat&fleasHome.gif": "/my-folio-3.0/static/media/cat&fleasHome.ea8b17a43b615a1381ed.gif",
+    "static/media/animalSaga4.gif": "/my-folio-3.0/static/media/animalSaga4.d1c4ee6064e2b0542b53.gif",
     "static/media/ttt2.jpg": "/my-folio-3.0/static/media/ttt2.ed4b6acb4fc79071d82f.jpg",
     "static/media/cute.jpg": "/my-folio-3.0/static/media/cute.500082d9b938ec6afe8d.jpg",
+    "static/media/animalSaga3.gif": "/my-folio-3.0/static/media/animalSaga3.869a38fd94b4b9b8c7b5.gif",
     "static/media/milka.jpg": "/my-folio-3.0/static/media/milka.99692acabf7fd1f4a776.jpg",
     "static/media/torn.jpg": "/my-folio-3.0/static/media/torn.9d333e6e1e83b3a299ec.jpg",
     "static/media/baby-milka2.jpg": "/my-folio-3.0/static/media/baby-milka2.bba7915fa41967f8399d.jpg",
@@ -52,8 +54,9 @@
     "static/media/fit103.png": "/my-folio-3.0/static/media/fit103.52493a140fd45fa3df7c.png",
     "static/media/event33.png": "/my-folio-3.0/static/media/event33.c25815df3586bf49d153.png",
     "static/media/event101.png": "/my-folio-3.0/static/media/event101.76f8bf0a847c18838237.png",
-    "static/media/cat_new.png": "/my-folio-3.0/static/media/cat_new.c28e0e2f7195fe9e3408.png",
     "static/media/cypher.png": "/my-folio-3.0/static/media/cypher.78b6eb7f19c2b761d2b7.png",
+    "static/media/cat&fleas.png": "/my-folio-3.0/static/media/cat&fleas.c611408c399141840edc.png",
+    "static/media/animalSaga.png": "/my-folio-3.0/static/media/animalSaga.6b2ae564a5f14f7a6a62.png",
     "static/media/cat101.png": "/my-folio-3.0/static/media/cat101.27b996b1164d69bf86a5.png",
     "static/media/cypher11.png": "/my-folio-3.0/static/media/cypher11.4594ec0b6324196bf58b.png",
     "static/media/ttt101.png": "/my-folio-3.0/static/media/ttt101.2eb080a48d046cf9042b.png",
@@ -84,12 +87,12 @@
     "index.html": "/my-folio-3.0/index.html",
     "static/media/css.svg": "/my-folio-3.0/static/media/css.b072f246acdc133e21186cf72138a3b3.svg",
     "static/media/html.svg": "/my-folio-3.0/static/media/html.5a388de592bdf7a6f44ae2acc154efbc.svg",
-    "main.e10b3ddd.css.map": "/my-folio-3.0/static/css/main.e10b3ddd.css.map",
-    "main.0670d026.js.map": "/my-folio-3.0/static/js/main.0670d026.js.map",
+    "main.39610320.css.map": "/my-folio-3.0/static/css/main.39610320.css.map",
+    "main.20ab5ba3.js.map": "/my-folio-3.0/static/js/main.20ab5ba3.js.map",
     "787.a6a197f2.chunk.js.map": "/my-folio-3.0/static/js/787.a6a197f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e10b3ddd.css",
-    "static/js/main.0670d026.js"
+    "static/css/main.39610320.css",
+    "static/js/main.20ab5ba3.js"
   ]
 }
