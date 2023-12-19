@@ -1,9 +1,9 @@
 /*
 1. Sky High Spyder
-2. Bouncy Game
+2. Cat & Fleas
 3. Escape Nuclear Mine
 4. Tic Tac Toe
-5. X (in progress)
+5. Animal Saga
 
 */
 
@@ -20,11 +20,15 @@ import ttt3 from "../data/screens/ttt101.png";
 import ttt4 from "../data/images/ttt3.jpg";
 
 import spy from "../data/screens/spy12.png";
-import cat from "../data/screens/cat_new.png";
+import cat from "../data/screens/cat&fleas.png";
 import spyGif from "../data/gifs/spy101.gif";
 import spyGif2 from "../data/gifs/spyder_in_space.gif";
-import catGif from "../data/gifs/cat_newb2.gif";
-import catGif2 from "../data/gifs/cat_newb3.gif";
+import catGif from "../data/gifs/cat&fleasHome.gif";
+import catGif2 from "../data/gifs/cat&fleasPlay3.gif";
+
+import animalSaga from "../data/gifs/animalSaga3.gif";
+import animalSaga2 from "../data/gifs/animalSaga4.gif";
+import animalImage from "../data/screens/animalSaga.png";
 
 
 export const gameProjects = [
@@ -36,7 +40,7 @@ export const gameProjects = [
         description: "I created this game as part of internship at Sumo Digital. It's my very own version of Sky High Spy game! Built using C++ and playbuffer.",
         image: spy,
         gifs: [spyGif, spyGif2],
-        mainFeatures: "C++, playbuffer, Visual Studio.",
+        mainFeatures: "C++, PlayBuffer, Visual Studio.",
         gitHub: "https://github.com/mspaprika/Sky-High-Spyder",
         live: "",
         lastUpdated: "28/09/2023",
@@ -48,13 +52,13 @@ export const gameProjects = [
         next: 1,
         type: "game",
         title: "Cat & Fleas",
-        description: "My very first platform game created using playbuffer and C++. More info soon! ",
+        description: "My very first 2D platformer game created using Sumo Digital's PlayBuffer library. Finally finished (ish), although needs some work with bugs and levels. Noneless it's really fun! The cat must eat all the treats and flowers but must stay away from fleas - they're deadly and you only have 9 lives! Cat jumps, climbs on waffle and poops, and poo attracts a fly. There's also a special power to activate ( SHIFT ) and fly might restore a life. So far only 2 levels exist but in the future I'll add some more...",
         image: cat,
         gifs: [catGif, catGif2],
-        mainFeatures: "C++, playbuffer, Visual Studio.",
+        mainFeatures: "C++, PlayBuffer, Visual Studio.",
         gitHub: "https://github.com/mspaprika/Bouncy-Game/tree/main/Tutorial%2003%20Solution/Tutorial03-A",
         live: "",
-        lastUpdated: "29/09/2023",
+        lastUpdated: "19/12/2023",
         message: "",
         icons: ["cpp"],
     },
@@ -63,7 +67,7 @@ export const gameProjects = [
         next: 4,
         type: "game",
         title: "Escape Nuclear Mine",
-        description: "This project is my favourite. You have no Idea how much fun I had while creating it! Sometimes life is harsh and we need some good silly laugh. This is a text game which works when you enter a right command. After entering START you'll find yourself in a cave system with lots of strange creatures. In each cave you'll be prompted to answer a question. And there's only 3 tries to get it right.",
+        description: "This project is my favourite. I had so much fun while creating it! Sometimes life is harsh and we need some good silly laugh. This is a text game which works when you enter a right command. After entering START you'll find yourself in a cave system with lots of strange creatures. In each cave you'll be prompted to answer a question. And there's only 3 tries to get it right.",
         image: cave,
         images: [cave2, cave3, cave4, cave5],
         gifs: [],
@@ -90,15 +94,36 @@ export const gameProjects = [
         message: "",
         icons: ["react", "javascript"],
     },
+    {
+        id: 5,
+        next: 1,
+        type: "game",
+        title: "Animal Saga",
+        description: "My attempt to recreate one of my favourites games ( Candy Crush Soda ). It's not a fully game yet but has basic functionality. This project was rather a way to understand how it works than to create a fully working game. I might as well make it a full game one day, who knows :)",
+        image: [animalImage],
+        gifs: [animalSaga, animalSaga2],
+        mainFeatures: "C++, PlayBuffer, Visual Studio.",
+        gitHub: "https://github.com/mspaprika/Animal-Crush-Saga",
+        live: "",
+        lastUpdated: "18/12/2023",
+        message: "",
+        icons: ["cpp"],
+    },
+
     /* {
         id: 5,
-        title: "X",
+        next: 6,
+        type: "game",
+        title: "Animal Saga",
         description: "",
-        image: "",
+        image: ,
+        images: [],
+        gifs: [],
         mainFeatures: "",
         gitHub: "",
         live: "",
         lastUpdated: "",
         message: "",
-    }, */
+        icons: ["react", "javascript"],
+    },  */
 ]
