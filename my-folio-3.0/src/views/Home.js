@@ -26,13 +26,13 @@ function Home(props) {
     return (
         <>
             <Link to="/skills" className="top link load-in load-out">Skills</Link>
-            <Link to="/games" className="games link load-in load-out ">Games</Link>
+            <Link to="/games" className="games link load-in load-out ">My Games</Link>
             <Link to="/web" className="web link load-in load-out">Web</Link>
             <Link to="/about" className="about link load-in load-out">About Me</Link>
 
             <div onClick={handleCircleClick()} className="big-circle">
                 <h1 className="main-text">I'm Arune</h1>
-                <h3 className="sub-text">Game / Web Developer</h3>
+                <h3 className="sub-text">Game Developer</h3>
             </div>
 
             <div className='icon-wrapper'>

@@ -13,6 +13,7 @@ $padding-left: 20px;
 
 .game-project-container {
     width: 100%;
+    max-width: 1700px;
     min-height: 100vh;
     display: flex;
     padding-bottom: 100px;
@@ -23,7 +24,6 @@ $padding-left: 20px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-       
 
         .game-h3 {
             width: 100%;

@@ -86,6 +86,7 @@ $links-animating-delay: 1s;
       margin: 0;
       animation: rotateOpposite 50s linear infinite;
     }
+
   }
 
   .icon-wrapper {
@@ -152,8 +153,7 @@ $links-animating-delay: 1s;
     animation-delay: calc($links-animating-delay + 0.7s);
   }
 
-  .web,
-  .games {
+  .web {
     font-weight: 300 !important;
     color: $medium-purple;
     position: absolute;
@@ -163,18 +163,31 @@ $links-animating-delay: 1s;
     width: fit-content;
     height: fit-content;
     bottom: 20px;
-    right: 20%;
     animation: pop-up 1s ease-in-out;
+    right: 20%;
   }
 
   .games {
+    font-weight: 800 !important;
+    font-size: larger;
+    letter-spacing: 1px;
+    color: $medium-purple;
+  }
+  
+  .games {
+    position: absolute;
     width: fit-content;
     height: fit-content;
     bottom: 20px;
-    left: 20%;
     animation: pop-up-left 1s ease-in-out forwards;
+    left: 20%;
   }
-    
+
+  .skills
+  {
+    font-weight: 500;
+  }
+
   .arrow-up,
   .home-link {
     position: fixed;
@@ -260,14 +273,15 @@ $links-animating-delay: 1s;
 
     .web {
       top: 20%;
-      left: 10px;
       animation: pop-up-rotate 1s ease-in-out forwards;   
+      left: 10px;
     }
 
     .games {
       bottom: 20%;
-      left: 5px;
-      animation: pop-up-rotate 1s ease-in-out forwards;      
+      animation: pop-up-rotate 1s ease-in-out forwards;   
+      left: -30px;
+
     }
 
     .about {

@@ -1,7 +1,7 @@
 import "../styles/GameProject.scss"
 
 import { Link, useNavigate } from 'react-router-dom';
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { ReactComponent as Arrow } from '../data/svg/arrow.svg';
 import { ReactComponent as Git } from '../data/svg/git2.svg';
@@ -31,7 +31,6 @@ function GameProjectView(props) {
         window.localStorage.setItem("currentGame", JSON.stringify(project))
     }, [project])
 
-
     const onClickHandler = () => {
         props.setCurrentGame(nextProject)
         navigate("/gameview")
@@ -39,9 +38,23 @@ function GameProjectView(props) {
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 
+    const elementRefMain = useRef(null);  
+  const [size, setSize] = useState({ width: 0, height: 0 });  
+
+  const elementRefBot = useRef(null);  
+
+
+  useEffect(() => {
+    if (elementRefBot.current) {
+      const { width, height } = elementRefBot.current.getBoundingClientRect();
+      setSize({ width, height }); 
+    }
+  }, []);
+
+
     return (
         <>
-            <div className="game-project-container">
+            <div ref={elementRefMain} className="game-project-container">
 
                 <div className="game-wrapper" >
                     <img className="project-gif" src={project?.gifs[0]} alt=""></img>
@@ -73,7 +86,7 @@ function GameProjectView(props) {
                         </span> : ""}
 
                     {project.gifs[1] ?
-                        <img className="project-gif-bottom" src={project.gifs[1]} alt=""></img> : ""}
+                        <img ref={elementRefBot} className="project-gif-bottom" src={project.gifs[1]} alt=""></img> : ""}
                 </div>
 
                 <Link to="/games" className="home-link">
