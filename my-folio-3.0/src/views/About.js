@@ -1,10 +1,23 @@
 import "../styles/ProjectCards.scss"
 import "../styles/About.scss"
+import "../library/common.js"
 
 import { ReactComponent as Leet } from "../data/svg/leet.svg";
 import { ReactComponent as CodeWars } from "../data/svg/codewars.svg";
 import { ReactComponent as Logo } from '../data/svg/logop.svg';
 import { ReactComponent as Arrow } from '../data/svg/arrow.svg';
+
+import TCity from '../data/png/tc.png';
+import Ado from '../data/png/ado.png';
+import Blend from '../data/png/blender.png';
+import Gimp from '../data/png/gimp.png';
+import Git from '../data/png/git.png';
+import P4 from '../data/png/p4.png';
+import Rend from '../data/png/render.png';
+import UE from '../data/png/ue.png';
+import Unity from '../data/png/unity.png';
+import Aud from '../data/png/aud.png';
+import VTune from '../data/png/vtune.png';
 
 import { myInfo } from "../library/myInfo";
 import { icons } from "../library/icons";
@@ -24,6 +37,19 @@ function About(props) {
             <p className="my-info">
                 {myInfo.mainInfo}
             </p>
+            <div className="tech-icon-wrapper">
+                <img src={TCity} className="png"></img>
+                <img src={Ado} className="png"></img>
+                <img src={Blend} className="png"></img>
+                <img src={Gimp} className="png"></img>
+                <img src={Git} className="png"></img>
+                <img src={P4} className="png"></img>
+                <img src={Rend} className="png"></img>
+                <img src={UE} className="png"></img>
+                <img src={Unity} className="png"></img>
+                <img src={VTune} className="png"></img>
+                <img src={Aud} className="png"></img>
+            </div>
 
             <div className="tech-icon-wrapper">
                 {icons.cpp}

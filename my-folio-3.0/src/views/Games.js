@@ -27,8 +27,8 @@ function Games(props) {
                 <Link to="/" className="home">
                     <Arrow className="arr-up" />
                 </Link>
+                <h1 className="headline-game">Games...</h1>
                 <div className="card-wrapper">
-                    <h1 className="headline-game">Games...</h1>
                     {generateCards()}
                 </div>
             </div>

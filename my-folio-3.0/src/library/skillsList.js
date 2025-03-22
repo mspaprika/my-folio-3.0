@@ -8,15 +8,27 @@ export const skills = [
             "C++",
             "C#",
             "JavaScript",
+            "Python",
+            "Lua",
         ],
         tech: [
-            "Visual Studio",
-            "PlayBuffer",
-            "Unity"
+            "Unreal Engine",
+            "Unity",
+            "Render Doc",
+            "Blender",
+            "Intel VTune",
+            "DirectX",
         ],
         icons: [
             "cpp",
             "cSharp",
+        ],
+        png: [
+            "UE",
+            "Unity",
+            "Render",
+            "Blender",
+            "VTune"
         ]
     },
 
@@ -81,7 +93,13 @@ export const skills = [
             "Jest",
         ],
         tech: [
-
+            "Visual Studio",
+            "Gimp",
+            "Audacity",
+            "Perforce",
+            "Team City",
+            "Azure DevOps",
+            "Git"
         ],
         icons: [
             "python",

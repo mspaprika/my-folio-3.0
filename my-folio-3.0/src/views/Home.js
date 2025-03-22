@@ -26,7 +26,7 @@ function Home(props) {
     return (
         <>
             <Link to="/skills" className="top link load-in load-out">Skills</Link>
-            <Link to="/games" className="games link load-in load-out ">My Games</Link>
+            <Link to="/games" className="games link load-in load-out ">Games</Link>
             <Link to="/web" className="web link load-in load-out">Web</Link>
             <Link to="/about" className="about link load-in load-out">About Me</Link>
 

@@ -1,4 +1,5 @@
 import "../styles/GameProject.scss"
+import "../library/common.js"
 
 import { Link, useNavigate } from 'react-router-dom';
 import { useEffect, useRef, useState } from "react";
@@ -7,6 +8,7 @@ import { ReactComponent as Arrow } from '../data/svg/arrow.svg';
 import { ReactComponent as Git } from '../data/svg/git2.svg';
 
 import { gameProjects } from "../library/gameProjects";
+
 
 
 function GameProjectView(props) {
@@ -51,18 +53,21 @@ function GameProjectView(props) {
     }
   }, []);
 
-
     return (
         <>
             <div ref={elementRefMain} className="game-project-container">
 
-                <div className="game-wrapper" >
-                    <img className="project-gif" src={project?.gifs[0]} alt=""></img>
+                <div className="game-wrapper">
+                        <img className="project-gif"  src={project?.gifs[0]} alt=""></img>
 
                     <div className="game-title">{project.title}</div>
 
                     <p className="game-description">
                         {project.description}
+                    </p>
+                    {project?.myCollab ? <h3 className="game-features game-h3">My collaboration...</h3> : null}
+                    <p className="game-description">
+                        {project?.myCollab}
                     </p>
 
                     <h3 className="game-features game-h3">Main features...</h3>

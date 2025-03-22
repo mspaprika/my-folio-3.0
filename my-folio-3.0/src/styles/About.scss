@@ -13,7 +13,7 @@ $border-radius: 0 35px 0 35px;
 
 .about-container {
     background-color: $creamy-gray;
-    width: 100%;
+    width: clamp(1200px, 100%, 2000px);
     min-height: 100vh;
     position: relative;
     display: flex;
@@ -23,13 +23,14 @@ $border-radius: 0 35px 0 35px;
     padding: 200px 0 100px 0;;
     
     .headline {
+        padding-left: clamp(45px, 10%, 200px);
         position: absolute;
         font-family: 'Gloria Hallelujah';
         color: white;
         font-size: 96px;
         opacity: 0.7;
         top: 10vh;
-        left: 3vw;
+        left: 0;
         animation: load-in 1.5s ease-in-out;
     }
 
@@ -42,6 +43,8 @@ $border-radius: 0 35px 0 35px;
     .my-info {
         width: 100%;
         padding: 45px;
+        padding-left: clamp(45px, 10%, 200px);
+        padding-right: clamp(45px, 10%, 200px);
         color: $medium-purple;
         font-size: 1.4rem;
         animation: load-in 1.5s ease-in-out;
@@ -49,7 +52,7 @@ $border-radius: 0 35px 0 35px;
 
     .tech-icon-wrapper {
      
-        padding: 50px;
+        padding: 50px 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -67,6 +70,7 @@ $border-radius: 0 35px 0 35px;
         animation: load-in-icons 1.5s ease-in-out;
     }
 
+    .png:hover,
     .icon:hover {
         animation: ciunga-cianga 1.5s ease-in-out infinite;
     }
@@ -78,6 +82,14 @@ $border-radius: 0 35px 0 35px;
         justify-content: center;
         column-gap: 100px;
         align-items: center;
+    }
+
+    .png
+    {
+        width: clamp(70px, 10%, 90px);
+        height: clamp(70px, 10%, 90px);
+        animation: load-in-icons 1.5s ease-in-out;
+
     }
 }
 

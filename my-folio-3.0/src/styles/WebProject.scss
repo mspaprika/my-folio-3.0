@@ -48,7 +48,6 @@ $padding-left: 20px;
 
         .web-title,
         .web-description,
-        .web-features,
         .collab-wrapper
         {
             margin: 20px !important;
@@ -106,12 +105,11 @@ $padding-left: 20px;
             
         
         .project-gif {
-            width: 800px;
+            width: 1000px;
             height: 500px;
         }
 
         .collab-header {
-            margin-bottom: 20px;
             animation: load-in 1.5s ease-in-out;
         }
 

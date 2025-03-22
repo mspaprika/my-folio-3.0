@@ -25,8 +25,8 @@ function Web(props) {
                 <Link to="/" className="home">
                     <Arrow className="arr-up" />
                 </Link>
+                <h1 className="headline-web">Web...</h1>
                 <div className="card-wrapper">
-                    <h1 className="headline-web">Web...</h1>
                     {generateCards()}
                 </div>
             </div>

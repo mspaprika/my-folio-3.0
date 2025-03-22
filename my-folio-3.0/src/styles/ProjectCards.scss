@@ -17,7 +17,8 @@ $border-radius: 0 35px 0 35px;
 .about-container {
     background-color: $creamy-gray;
     box-shadow:  rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset, rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    width: 100%;
+    min-height: 100vh;
+    width: clamp(1200px, 100%, 2000px);
 
     .arr-up {
         position: fixed;
@@ -46,13 +47,11 @@ $border-radius: 0 35px 0 35px;
     
     .card-wrapper {
         color: black;
-        width: 100%;
-        min-height: 100vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        padding: 30vh 0 30vh 0;
+        padding:  5vh clamp(1vw, 2%, 3vw);
 
         .flip-card {
             border-radius: 35px 35px 35px 0;
@@ -113,7 +112,13 @@ $border-radius: 0 35px 0 35px;
                         min-height: 100px;
 
                         .skill-icons {
-                            margin: 10px 0 5px 0;
+                            margin: 10px 0 10px 0;
+                        }
+
+                        .skill-png{
+                            width: clamp(20px, 12%, 50px);
+                            height: clamp(20px, 12%, 50px);
+                            margin: 0 10px;
                         }
                     }
 
@@ -139,43 +144,29 @@ $border-radius: 0 35px 0 35px;
             }           
         }
 
-        .headline-web{
-            position: absolute;
-            font-family: 'Gloria Hallelujah';
-            color: $medium-purple;
-            font-size: 106px;
-            opacity: 0.7;
-            top: 8vh;
-            left: 7vw;
-            animation: load-in 1.5s ease-in-out;
-        }
-
-        .headline-game {
-            position: absolute;
-            font-family: 'Gloria Hallelujah';
-            color: $medium-purple;
-            font-size: 106px;
-            opacity: 0.7;
-            top: 8vh;
-            left: 7vw;
-            animation: load-in 1.5s ease-in-out;
-        }
-
-        .headline-skills {
-            position: absolute;
-            font-family: 'Gloria Hallelujah';
-            color: $medium-purple;
-            font-size: 86px;
-            opacity: 0.7;
-            top: 10vh;
-            left: 7vw;
-        }
-
+        
         .flip-card:hover .flip-card-inner {
             transform: rotateY(180deg);
             transform: rotateX(180);
         }
     }   
+    .headline-web{
+        font-family: 'Gloria Hallelujah';
+        color: $medium-purple;
+        font-size: 106px;
+        opacity: 0.7;
+        animation: load-in 1.5s ease-in-out;
+        padding: 10vh clamp(5vw, 8%, 15vw) 0;
+    }
+
+    .headline-game {
+        font-family: 'Gloria Hallelujah';
+        color: $medium-purple;
+        font-size: 106px;
+        opacity: 0.7;
+        animation: load-in 1.5s ease-in-out;
+        padding: 10vh clamp(5vw, 8%, 15vw) 0;
+    }
 }
 
 @media screen and (min-width: 200px) and (max-width: 768px) {

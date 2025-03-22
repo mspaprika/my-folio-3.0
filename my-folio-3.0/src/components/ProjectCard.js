@@ -6,6 +6,9 @@ import { ReactComponent as Git } from '../data/svg/git.svg';
 import { ReactComponent as Host } from '../data/svg/tower.svg';
 
 import { icons } from "../library/icons";
+import UE from '../data/png/ue.png';
+
+const pngs = [ UE ];
 
 function ProjectCard(props) {
 
@@ -48,9 +51,17 @@ function ProjectCard(props) {
 
                             <div className="skill-icons">
                                 {project.icons.map((icon, index) =>
-                                    <span key={index}>
+                                <>
+                                <span key={index}>
                                         {icons[icon] ? icons[icon] : ""}
-                                    </span>
+                                </span>   
+                                </>
+                                )}
+                                {pngs.map((png, index) =>
+                                project.png?.[index] ? 
+                                <img src={pngs[index]} className="skill-png">
+                                </img> 
+                                : null
                                 )}
                             </div>
                             {project.mainFeatures}

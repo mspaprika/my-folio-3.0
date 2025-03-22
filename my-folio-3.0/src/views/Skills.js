@@ -22,7 +22,7 @@ function Skills(props) {
     }
 
     return (
-        <>
+        <div className="skills-wrapper">
             <div className="skills-container">
 
                 <Link to="/" className="home">
@@ -43,7 +43,7 @@ function Skills(props) {
                 </Link>
 
             </div>
-        </>
+        </div>
     );
 }
 
