@@ -70,9 +70,12 @@ function ProjectCard(props) {
 
 
                         <div className="link-section">
-                            <a href={project.gitHub} target="_blank" rel="noopener noreferrer" >
-                                <Git className="git" />
-                            </a>
+                        { project.gitHub === ""  ? null :
+                        <>
+                                <a href={project.gitHub} target="_blank" rel="noopener noreferrer" >
+                                    <Git className="git" />
+                                </a>
+                            </>}
                             {project.type === "game" ? "" :
 
                                 <a href={project.live} target="_blank" rel="noopener noreferrer" >

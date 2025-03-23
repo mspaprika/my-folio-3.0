@@ -65,6 +65,7 @@ export const gameProjects = [
         icons: ["cpp"],
         png: [""],
         scale: 1.3,
+        offset: "60vw",
     },
     {
         id: 2,
@@ -99,6 +100,7 @@ export const gameProjects = [
         icons: ["cpp"],
         png: [""],
         scale: 1.3,
+        offset: "20vw",
     },
     {
         id: 4,

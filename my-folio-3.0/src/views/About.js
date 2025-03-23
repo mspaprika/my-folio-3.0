@@ -49,9 +49,6 @@ function About(props) {
                 <img src={Unity} className="png"></img>
                 <img src={VTune} className="png"></img>
                 <img src={Aud} className="png"></img>
-            </div>
-
-            <div className="tech-icon-wrapper">
                 {icons.cpp}
                 {icons.cSharp}
                 {icons.react}
@@ -63,6 +60,9 @@ function About(props) {
                 {icons.mongo}
                 {icons.mySql}
             </div>
+
+            {/* <div className="tech-icon-wrapper">
+            </div> */}
 
             <h6>How I solve it...</h6>
 

@@ -24,6 +24,7 @@ function GameProjectView(props) {
     const nextProject = nextGameProject[0];
 
 
+
     useEffect(() => {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -58,14 +59,21 @@ function GameProjectView(props) {
             <div ref={elementRefMain} className="game-project-container">
 
                 <div className="game-wrapper">
-                        <img className="project-gif"  src={project?.gifs[0]} alt=""></img>
+                        <img 
+                            className={`project-gif ${ project?.offset ? "offset-left" : "" }`} 
+                            src={project?.gifs[0]} alt="">
+                        </img>
 
                     <div className="game-title">{project.title}</div>
 
                     <p className="game-description">
                         {project.description}
                     </p>
-                    {project?.myCollab ? <h3 className="game-features game-h3">My collaboration...</h3> : null}
+
+                    { project?.myCollab ? 
+                    <h3 className="game-features game-h3">My collaboration...</h3> 
+                    : null }
+
                     <p className="game-description">
                         {project?.myCollab}
                     </p>
@@ -78,20 +86,29 @@ function GameProjectView(props) {
 
                     <span className="message"><i>{project.message}</i></span>
                     <div className="game-links">
-                        GitHub:
-                        <a href={project.gitHub} target="_blank" rel="noopener noreferrer" >
-                            <Git className="git" />
-                        </a>
+                       { project.gitHub === ""  ? null :
+                       <>
+                            GitHub:
+                            <a href={project.gitHub} target="_blank" rel="noopener noreferrer" >
+                                <Git className="git" />
+                            </a>
+                        </>}
                     </div>
                     {project.lastUpdated ?
                         <span className="last-updated"
-                            style={project.gifs[1] ? { marginBottom: "800px" } : { marginBottom: "30px" }}
+                            style={project.gifs[1] ? 
+                                { marginBottom: "800px" } : 
+                                { marginBottom: "30px" }}
                         >
                             Last updated: {project.lastUpdated}
                         </span> : ""}
 
                     {project.gifs[1] ?
-                        <img ref={elementRefBot} className="project-gif-bottom" src={project.gifs[1]} alt=""></img> : ""}
+                        <img 
+                        ref={elementRefBot} 
+                        className={`project-gif-bottom ${ project?.offset ? "offset-right" : "" }`}
+                        src={project.gifs[1]} 
+                        alt=""></img> : ""}
                 </div>
 
                 <Link to="/games" className="home-link">

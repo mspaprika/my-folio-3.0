@@ -29,7 +29,6 @@ $padding-left: 20px;
         .game-h3 {
             width: 100%;
             text-align: left;
-            padding-left: 50px;
             font-family: $fancy-font;
         }
 
@@ -38,7 +37,7 @@ $padding-left: 20px;
         .game-features, 
         .message
         {          
-            padding: 0px clamp(2vw, 4%, 5vw);
+            //padding: 0px clamp(2vw, 4%, 5vw);
             animation: load-in 1.5s ease-in-out;
         }
 
@@ -108,6 +107,8 @@ $padding-left: 20px;
     }   
 }
 
+
+
 @media screen and (min-width: 200px) and (max-width: 700px) {
 
     .game-wrapper {
@@ -115,9 +116,17 @@ $padding-left: 20px;
         font-size: 1.2rem;
 
         .game-description,
-        .game-features,
-        .message{
+        .game-features{
             padding: 0 20px !important;
+        }
+
+        .message{
+            padding: 20px;
+        }
+
+        .game-description
+        {
+            padding-bottom: 20px !important;
         }
 
         .game-title{
@@ -134,14 +143,24 @@ $padding-left: 20px;
         }
         
         .project-gif {         
-            height: 400px;
+            min-height: 400px;
             overflow-x: hidden;
             object-fit: cover;
         }
 
         .project-gif-bottom {
-            height: 400px;
+            min-height: 400px;
             object-fit: cover;
         }
+    }
+
+    .offset-left
+    {
+        padding-right: 60vw;
+    }
+
+    .offset-right
+    {
+        padding-left: 60vw;
     }
 }
