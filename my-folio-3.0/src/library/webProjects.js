@@ -71,7 +71,9 @@ export const webProjects = [
         id: 1,
         next: 2,
         title: "Cats",
-        description: "Cats is a family website created using my own cat pictures. It is a very special project for me, because I really love cats! Moreover, it's the first website I have ever created with Bootstrap and the first one fully compatible on mobile screen. I plan to upload more cat pictures, so if you like cats too, stay tuned!",
+        description: `Cats is a family website created using my own cat pictures. It is a very special project for me, because I really love cats! Moreover, it's the first website I have ever created with Bootstrap and the first one fully compatible on mobile screen.
+        
+        I plan to expand the website and include more cats, so if you like cats too, stay tuned!`,
         images: [cats, cats2, cats4, cats3],
         image: cats5,
         mainFeatures: "HTML, CSS, JavaScript, Bootstrap.",
@@ -80,15 +82,17 @@ export const webProjects = [
         gitHubFront: "",
         gitHubBack: "",
         live: "https://mspaprika.github.io/Cats/",
-        lastUpdated: "10/03/2023",
-        message: "",
+        lastUpdated: "23/03/2025",
+        message: "More cats added!",
         icons: ["html", "css", "javascript"],
     },
     {
         id: 2,
         next: 3,
         title: "Escape Nuclear Mine",
-        description: "This project is my favourite. You have no Idea how much fun I had while creating it! Sometimes life is harsh and we need some good silly laugh. This is a text game which works when you enter a right command. After entering START you'll find yourself in a cave system with lots of strange creatures. In each cave you'll be prompted to answer a question. And there's only 3 tries to get it right.",
+        description: `This project is my favourite. I had so much fun while creating it! Sometimes life is harsh and we need some good silly laugh. 
+        
+        Main idea: a simple text game which works when you enter a right command. After entering START you'll find yourself in a cave system with lots of strange creatures. In each cave you'll be prompted to answer a question. And there's only 3 tries to get it right.`,
         images: [cave5, cave2, cave3, cave4],
         image: cave,
         mainFeatures: "HTML, CSS, JavaScript, Bootstrap, OOP.",
@@ -105,11 +109,25 @@ export const webProjects = [
         id: 3,
         next: 4,
         title: "Fitness App",
-        description: "A collaborative 4 week full-stack project developed during a bootcamp. The app is about wellness, food and social interractions. The user is able to register and login, set prefferences and account settings. Innitially temporrary username is assigned but its possible to change it (ONCE). Other features include: search for recipes and nutritional info; search for exercises and build workouts; create posts, write comments; search for users and add them to contacts list; send direct messages. The app is fully responsive and works on mobile devices as well. For authentication we used Express sessions, please note it takes a bit longer on mobile screens. ",
+        description: `A collaborative 4 week full-stack project developed during a bootcamp. We worked in groups of 4 people and used GitHub version control and used Scrum for daily collaboration.
+        
+        App is about wellness, food and social interractions. The user is able to register and login, set prefferences and account settings. Innitially, temporary username is assigned but its possible to change it later (ONCE). Passwords are protected with one-way encryption utilizing bcrypt library. There is both authentification (express sessions) and authorization (cookies) services.
+        
+        Other features include: search for recipes and nutritional info; search for exercises and build workouts; create posts, write comments; search for users and add them to contacts list; send direct messages. The app is fully responsive and works on mobile devices as well. 
+
+        Frontend is made out of React, backend implemented using node express, fetch requests are handled with axios and database used is No-SQL MongoDB. Both back and front is hosted through Render platform.
+        `,
         images: [fitness4, fitness5, fitness2, fitness3],
         image: fitness,
-        mainFeatures: "Express.js, Node.js, MongoDB, Mongoose, React, React Router, APIs, SASS, Bootstrap, bcrypt, Axios.",
-        myCollab: "[frontend] Recipes, Community, Custom workout and Library pages; [backend] Login/ Logout functionality, internal / external API calls, database models, routes, controllers.",
+        mainFeatures: "Express.js, Node.js, MongoDB, Mongoose, React, React Router, APIs, SASS, Bootstrap, bcrypt, Axios, Render.",
+        myCollab: `[frontend] 
+        Recipes - using free Restful API recipes are fetched and formated in the recipe cards.
+        Community - a place for posts and reactions, similar to soacial media. It accepts posts, comments, likes and other reactions - these are synced directly with a database before are updated on screen. 
+        Custom Workout - option to craft your own workout with custom duration, reps and exercises from API.
+
+        [backend] 
+        Login/ Logout functionality - Express Sessions to manage login requests, tokens and authorization.
+        Internal / External API calls, database models, routes, controllers.`,
         gitHub: "https://github.com/mspaprika/fitness-app",
         gitHubFront: "https://github.com/mspaprika/fitness-app",
         gitHubBack: "https://github.com/mspaprika/fitness-backend",
@@ -122,7 +140,11 @@ export const webProjects = [
         id: 4,
         next: 5,
         title: "Quiz",
-        description: "A simple quiz that displays a question and 4 possible answers. There are no good or bad answers, it's just for fun. The theme of this quiz is 'Which Simpson's character you are?'. I love Simpsons and really enjoyed coding this quiz. I created it very early on coding bootcamp when I didn't have much CSS skills. That's why layout is not responsive and might crash if you use it on a mobile device. ",
+        description: `A simple quiz that displays a question and 4 possible answers. There are no good or bad answers, it's just for fun. 
+        
+        Main theme of this quiz is 'Which Simpson's character you are?'. I love Simpsons and whatch it daily, so really enjoyed coding this quiz. I tried to add all favourite characters, but they didn't fit! That means, I'll need to find another ways to squeeze them...
+        
+        I created it very early on coding bootcamp when I didn't have much CSS skills. That's why layout is not responsive and might look funny if you use it on a mobile device. I plan to fix it in the future. `,
         images: [quiz2, quiz3, quiz4, quiz5],
         image: quiz,
         mainFeatures: "HTML, CSS, JavaScript, Bootstrap, DOM manipulation.",
@@ -139,7 +161,11 @@ export const webProjects = [
         id: 5,
         next: 6,
         title: "Events App",
-        description: "A collaborative full-stack project. The app is a platform for users to create an event post which then is displayed on the dashboard. Frontend is built with React and backend with Node.js/ MongoDB. Only logged in users can see the dashboard and their upcoming events. Some good events added for a laugh.",
+        description: `A collaborative full-stack project, created during full-stack web bootcamp. 
+        
+        App is a platform for users to create an event post which then is displayed on the dashboard. It acts like a wall where all users can contribute.
+        
+        Frontend is built with React and backend with Node.js/ MongoDB. Only logged in users can see the dashboard and their upcoming events. Some good events added for a laugh.`,
         images: [event2, event3, event4, event5],
         image: event,
         mainFeatures: "React, Node.js, Express.js, MongoDB, Mongoose, Axios, React Router, React Bootstrap.",

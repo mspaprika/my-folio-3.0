@@ -45,7 +45,7 @@ function ProjectCard(props) {
                     </div>
                     <div className="flip-card-back">
                         <div className="card-title">
-                            <h3>{project.title}</h3>
+                            <h3>{project.title}{project?.emoji}</h3>
                         </div>
                         <div className="card-middle">
 

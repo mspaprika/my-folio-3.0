@@ -34,7 +34,7 @@ function About(props) {
 
             <h1 className="headline">About Me...</h1>
 
-            <p className="my-info">
+            <p className="my-info text">
                 {myInfo.mainInfo}
             </p>
             <div className="tech-icon-wrapper">
@@ -60,9 +60,6 @@ function About(props) {
                 {icons.mongo}
                 {icons.mySql}
             </div>
-
-            {/* <div className="tech-icon-wrapper">
-            </div> */}
 
             <h6>How I solve it...</h6>
 

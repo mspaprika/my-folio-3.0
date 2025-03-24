@@ -23,7 +23,6 @@ $padding-left: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: top;
         padding: 0px 50px 0px 50px;
 
         .top-image-wrapper {
@@ -33,6 +32,7 @@ $padding-left: 20px;
             justify-content: center;
             align-items: center;
             box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            animation: slide-down 1.5s ease-in-out;
 
             .project-image {
                 width: 400px;
@@ -50,26 +50,27 @@ $padding-left: 20px;
         .collab-wrapper
         {
             margin: 20px !important;
+            animation: load-in-solid 1.5s ease-in-out;
         }
           
         .web-title {
             margin: 30px;
             font-family: $fancy-font;
             font-size: 3rem;
-            animation: load-in 1.5s ease-in-out;
+            animation: load-in-solid 1.5s ease-in-out;
         }
 
         .web-description {
             width: 100%;
             margin-bottom: 40px !important;  
-            animation: load-in 1.5s ease-in-out;        
+            animation: load-in-solid 1.5s ease-in-out;        
         }
 
         .web-features,
         .message {
             width: 100%;
-            margin-bottom: 40px;
-            animation: load-in 1.5s ease-in-out;
+            margin-bottom: 20px;
+            animation: load-in-solid 1.5s ease-in-out;
         }
 
         .message {
@@ -77,9 +78,15 @@ $padding-left: 20px;
             color: $new-purple;
         }
 
+        .text
+        {
+            white-space: pre-line !important;
+        }
+
         .git {
             scale: 1.5;
             margin-left: 30px;
+            animation: load-in-solid 1.5s ease-in-out;
         }
 
         .web-links {
@@ -89,10 +96,12 @@ $padding-left: 20px;
             justify-content: center;
             align-items: center;
             margin-top: 30px;
+            animation: load-in-solid 1.5s ease-in-out;
 
             .link {
                 margin: 0 50px 0 20px;              
             }
+
         }
 
         .last-updated {
@@ -109,7 +118,8 @@ $padding-left: 20px;
         }
 
         .collab-header {
-            animation: load-in 1.5s ease-in-out;
+            width: 100%;
+            animation: load-in-solid 1.5s ease-in-out;
         }
 
 
@@ -129,11 +139,18 @@ $padding-left: 20px;
     }
 }
 
+@media screen and (min-width: 700px) and (max-width: 2000px) {
+    .web-wrapper {
+        .top-image-wrapper{
+            box-shadow: none !important;
+        }
+    }
+}
+
 @media  screen and (min-width: 200px) and (max-width: 768px) {
     .web-wrapper {
         padding:  0 0 100px 0 !important;
         font-size: 1.2rem;
-        line-height: 1.8rem;
 
         .web-title {
             text-align: center;
@@ -156,12 +173,15 @@ $padding-left: 20px;
         .web-description,
         .web-features,
         .collab-wrapper, 
+        .collab-header,
         .message{
             padding: 0 20px !important;
         }
 
-        .collab-header {
-            margin-left: 40px !important;
+        .web-description,
+        .web-features
+        {
+            padding-bottom: 20px;
         }
 
         .web-links {

@@ -56,29 +56,29 @@ function GameProjectView(props) {
 
     return (
         <>
-            <div ref={elementRefMain} className="game-project-container">
+            <div key={JSON.stringify(project)} ref={elementRefMain} className="game-project-container">
 
                 <div className="game-wrapper">
-                        <img 
-                            className={`project-gif ${ project?.offset ? "offset-left" : "" }`} 
-                            src={project?.gifs[0]} alt="">
-                        </img>
+                    <img 
+                        className={`project-gif ${ project?.offset ? "offset-left" : "" }`} 
+                        src={project?.gifs[0]} alt="">
+                    </img>
 
                     <div className="game-title">{project.title}</div>
 
-                    <p className="game-description">
+                    <p className="game-description text">
                         {project.description}
                     </p>
 
                     { project?.myCollab ? 
-                    <h3 className="game-features game-h3">My collaboration...</h3> 
+                    <h3 className="game-h3">My collaboration...</h3> 
                     : null }
 
-                    <p className="game-description">
+                    <p className="game-description text">
                         {project?.myCollab}
                     </p>
 
-                    <h3 className="game-features game-h3">Main features...</h3>
+                    <h3 className="game-h3">Main features...</h3>
 
                     <div className="game-features">
                         {project.mainFeatures}
@@ -106,7 +106,7 @@ function GameProjectView(props) {
                     {project.gifs[1] ?
                         <img 
                         ref={elementRefBot} 
-                        className={`project-gif-bottom ${ project?.offset ? "offset-right" : "" }`}
+                        className={`project-gif-bottom ${ project?.offset && project.offset !== 0 ? "offset-right" : "" }`}
                         src={project.gifs[1]} 
                         alt=""></img> : ""}
                 </div>

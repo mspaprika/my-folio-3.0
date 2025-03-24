@@ -18,19 +18,16 @@ $border-radius: 0 35px 0 35px;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 200px 0 100px 0;;
     
     .headline {
         padding-left: clamp(45px, 10%, 200px);
-        position: absolute;
+        width: 100%;
         font-family: 'Gloria Hallelujah';
         color: white;
         font-size: 96px;
         opacity: 0.7;
-        top: 10vh;
-        left: 0;
         animation: load-in 1.5s ease-in-out;
     }
 
@@ -38,6 +35,12 @@ $border-radius: 0 35px 0 35px;
         color: $medium-purple;
         font-size: 2.5rem;
         font-family: $fancy-font;
+        animation: load-in-icons 1.5s ease-in-out;
+    }
+
+    .text
+    {
+        white-space: pre-line !important;
     }
 
     .my-info {
@@ -47,7 +50,7 @@ $border-radius: 0 35px 0 35px;
         padding-right: clamp(45px, 10%, 200px);
         color: $medium-purple;
         font-size: 1.4rem;
-        animation: load-in 1.5s ease-in-out;
+        animation: load-in-solid 1.5s ease-in-out;
     }
 
     .tech-icon-wrapper {
@@ -67,7 +70,7 @@ $border-radius: 0 35px 0 35px;
         scale: 2.5;
         margin-left: 20px;
         margin-top : 20px;
-        animation: load-in-icons 1.5s ease-in-out;
+        animation: scale-up 1.5s ease-in-out;
     }
 
     .png:hover,
@@ -88,7 +91,7 @@ $border-radius: 0 35px 0 35px;
     {
         width: clamp(70px, 10%, 90px);
         height: clamp(70px, 10%, 90px);
-        animation: load-in-icons 1.5s ease-in-out;
+        animation: scale-up-sm 1.5s ease-in-out;
 
     }
 }

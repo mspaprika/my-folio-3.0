@@ -50,7 +50,7 @@ function WebProject(props) {
 
     return (
         <>
-            <div className="web-project-container">
+            <div key={JSON.stringify(project)} className="web-project-container">
 
 
                 <div className="web-wrapper">
@@ -62,13 +62,17 @@ function WebProject(props) {
                         {project.title}
                     </div>
 
-                    <p className="web-description">
+                    <p className="web-description text">
                         {project.description}
                     </p>
-                    {project.myCollab ? <div className="collab-wrapper">
-                        <h2 className="collab-header">My collaboration...</h2>
-                        <p className="my-collab">{project.myCollab}</p>
-                    </div> : ""}
+                       
+                        {project.myCollab ? 
+                        <>
+                            <h2 className="collab-header">My collaboration...</h2>
+                            <div className="collab-wrapper">
+                                <p className="my-collab">{project.myCollab}</p>
+                            </div>
+                        </> : ""}
 
 
                     <h2 className="collab-header">Main features...</h2>
