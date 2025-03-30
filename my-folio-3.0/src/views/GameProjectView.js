@@ -9,7 +9,24 @@ import { ReactComponent as Git } from '../data/svg/git2.svg';
 
 import { gameProjects } from "../library/gameProjects";
 
+import Snake from '../data/games/SnakePass.png';
+import Bendy from '../data/games/Bendy.png';
+import Dark from '../data/games/Darkside.png';
+import Pac from '../data/games/Pacman.png';
+import Spy from '../data/games/Spy.png';
+import Shroom from '../data/games/MushroomWar.png';
+import Nuts from '../data/games/NutsMilk.png';
 
+const games = 
+{
+    "SnakePass": Snake,
+    "NutsMilk": Nuts,
+    "Darkside": Dark,
+    "Pacman": Pac,
+    "Spy": Spy,
+    "MushroomWar": Shroom,
+    "Bendy": Bendy,
+}
 
 function GameProjectView(props) {
 
@@ -83,6 +100,20 @@ function GameProjectView(props) {
                     <div className="game-features">
                         {project.mainFeatures}
                     </div>
+
+                    { project?.inspiredMsg ? 
+                    <>
+                        <h3 className="game-h3">Inspiration...</h3>
+                        <div className="game-inspired">
+                            <p className="msg">
+                                {project?.inspiredMsg}
+                            </p>
+                            <a href={project?.inspiredLink} target="_blank" rel="noopener noreferrer" >
+                                <img className="" src={games[project.inspiredPic]}></img>
+                            </a>
+                        </div>
+                    </>
+                    : null}
 
                     <span className="message"><i>{project.message}</i></span>
                     <div className="game-links">
