@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-folio-3.0/static/css/main.8f9248a3.css",
-    "main.js": "/my-folio-3.0/static/js/main.14bb94a6.js",
+    "main.css": "/my-folio-3.0/static/css/main.bd8efc1d.css",
+    "main.js": "/my-folio-3.0/static/js/main.330c8842.js",
     "static/js/453.43a01bf7.chunk.js": "/my-folio-3.0/static/js/453.43a01bf7.chunk.js",
     "static/media/snakeParty.gif": "/my-folio-3.0/static/media/snakeParty.bffdbf379da9164223be.gif",
     "static/media/snakeParty2.gif": "/my-folio-3.0/static/media/snakeParty2.365e6512f9d2d67b661e.gif",
@@ -20,13 +20,17 @@
     "static/media/matrix.jpg": "/my-folio-3.0/static/media/matrix.b0b859f53eceed0037b3.jpg",
     "static/media/cat&fleasHome.gif": "/my-folio-3.0/static/media/cat&fleasHome.ea8b17a43b615a1381ed.gif",
     "static/media/ttt2.jpg": "/my-folio-3.0/static/media/ttt2.ed4b6acb4fc79071d82f.jpg",
+    "static/media/Spy.png": "/my-folio-3.0/static/media/Spy.3cdfffdfcf592e728ee1.png",
     "static/media/cute.jpg": "/my-folio-3.0/static/media/cute.500082d9b938ec6afe8d.jpg",
     "static/media/pacman.gif": "/my-folio-3.0/static/media/pacman.b388f715b5d8c7cbe523.gif",
     "static/media/milka.jpg": "/my-folio-3.0/static/media/milka.99692acabf7fd1f4a776.jpg",
     "static/media/torn.jpg": "/my-folio-3.0/static/media/torn.9d333e6e1e83b3a299ec.jpg",
+    "static/media/Bendy.png": "/my-folio-3.0/static/media/Bendy.c19327ef7b19550b2432.png",
+    "static/media/MushroomWar.png": "/my-folio-3.0/static/media/MushroomWar.538afb1331c838d69c72.png",
     "static/media/baby-milka2.jpg": "/my-folio-3.0/static/media/baby-milka2.bba7915fa41967f8399d.jpg",
     "static/media/ttt3.jpg": "/my-folio-3.0/static/media/ttt3.25ce90205372b9faaee2.jpg",
     "static/media/cave1.png": "/my-folio-3.0/static/media/cave1.5afdaf397f16ec4af328.png",
+    "static/media/Darkside.png": "/my-folio-3.0/static/media/Darkside.428330147d3cb37d6ed9.png",
     "static/media/light.jpg": "/my-folio-3.0/static/media/light.d391557fa64b814d6d78.jpg",
     "static/media/cat&shroomsm.png": "/my-folio-3.0/static/media/cat&shroomsm.9d9a7f47d83b82a2b113.png",
     "static/media/folio1.png": "/my-folio-3.0/static/media/folio1.60c8c4261049c5033c4c.png",
@@ -36,6 +40,7 @@
     "static/media/event3.png": "/my-folio-3.0/static/media/event3.b4ef18d298fb7a31b520.png",
     "static/media/cave103.png": "/my-folio-3.0/static/media/cave103.65016f87edb700089100.png",
     "static/media/clouds.png": "/my-folio-3.0/static/media/clouds.11b4765b819c159cc20f.png",
+    "static/media/SnakePass.png": "/my-folio-3.0/static/media/SnakePass.e56f60f8456022da6bfc.png",
     "static/media/quiz101.png": "/my-folio-3.0/static/media/quiz101.944342a2ebe768f22b74.png",
     "static/media/folio.png": "/my-folio-3.0/static/media/folio.1c892f6be00d751a2179.png",
     "static/media/cave102.png": "/my-folio-3.0/static/media/cave102.661e83971a38ab269095.png",
@@ -51,6 +56,7 @@
     "static/media/quiz102.png": "/my-folio-3.0/static/media/quiz102.1d30ab4a146027186789.png",
     "static/media/fit104.png": "/my-folio-3.0/static/media/fit104.f0dc0baf5a26f9bd2fe6.png",
     "static/media/sunny3.png": "/my-folio-3.0/static/media/sunny3.e1f790c9e35e8fce1237.png",
+    "static/media/NutsMilk.png": "/my-folio-3.0/static/media/NutsMilk.891f8c12f56ec4bf02d7.png",
     "static/media/spy12.png": "/my-folio-3.0/static/media/spy12.3f531805e1b6f6f64529.png",
     "static/media/fit101.png": "/my-folio-3.0/static/media/fit101.22305c72d9711e27e9e8.png",
     "static/media/folio103.png": "/my-folio-3.0/static/media/folio103.ca59bdbe9c4cbcb5d489.png",
@@ -59,6 +65,7 @@
     "static/media/folio102.png": "/my-folio-3.0/static/media/folio102.aae418a5c894daeb5cbc.png",
     "static/media/cypher2.png": "/my-folio-3.0/static/media/cypher2.5158b4a876b86577b561.png",
     "static/media/fit33.png": "/my-folio-3.0/static/media/fit33.27586c423382c402b9fe.png",
+    "static/media/Pacman.png": "/my-folio-3.0/static/media/Pacman.95e6b2e8c0ef49e3da14.png",
     "static/media/gonk.png": "/my-folio-3.0/static/media/gonk.85f51c34b45c20d7b798.png",
     "static/media/fit11.png": "/my-folio-3.0/static/media/fit11.1cc614960588a8df6b1f.png",
     "static/media/fit103.png": "/my-folio-3.0/static/media/fit103.52493a140fd45fa3df7c.png",
@@ -108,12 +115,12 @@
     "index.html": "/my-folio-3.0/index.html",
     "static/media/css.svg": "/my-folio-3.0/static/media/css.b072f246acdc133e21186cf72138a3b3.svg",
     "static/media/html.svg": "/my-folio-3.0/static/media/html.5a388de592bdf7a6f44ae2acc154efbc.svg",
-    "main.8f9248a3.css.map": "/my-folio-3.0/static/css/main.8f9248a3.css.map",
-    "main.14bb94a6.js.map": "/my-folio-3.0/static/js/main.14bb94a6.js.map",
+    "main.bd8efc1d.css.map": "/my-folio-3.0/static/css/main.bd8efc1d.css.map",
+    "main.330c8842.js.map": "/my-folio-3.0/static/js/main.330c8842.js.map",
     "453.43a01bf7.chunk.js.map": "/my-folio-3.0/static/js/453.43a01bf7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f9248a3.css",
-    "static/js/main.14bb94a6.js"
+    "static/css/main.bd8efc1d.css",
+    "static/js/main.330c8842.js"
   ]
 }
