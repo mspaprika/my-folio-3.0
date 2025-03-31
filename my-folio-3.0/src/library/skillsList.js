@@ -1,3 +1,4 @@
+import { pngs } from "../library/icons";
 
 export const skills = [
     {
@@ -19,16 +20,19 @@ export const skills = [
             "Intel VTune",
             "DirectX",
         ],
-        icons: [
-            "cpp",
-            "cSharp",
+        iconPng: [
+            pngs.CPP,
+            pngs.CSHARP,
+            pngs.JS,
+            pngs.Py,
+            pngs.Lua
         ],
         png: [
-            "UE",
-            "Unity",
-            "Render",
-            "Blender",
-            "VTune"
+            pngs.UE,
+            pngs.Unity,
+            pngs.Rend,
+            pngs.Blend,
+            pngs.VTune
         ]
     },
 
@@ -41,7 +45,7 @@ export const skills = [
             "MySQL",
             "Node.js",
             "Express",
-            "REST API",
+            "RESTful API",
         ],
         tech: [
             "MongoDB Atlas",
@@ -52,6 +56,13 @@ export const skills = [
         icons: [
             "mongo",
             "mySql",
+            "nodeJS"
+        ],
+        png: [
+            pngs.MongoDB,
+            pngs.Post,
+            pngs.Insomnia,
+            pngs.Host
         ]
     },
 
@@ -80,6 +91,10 @@ export const skills = [
             "javascript",
             "react",
             "sass",
+        ],
+        png: [
+            pngs.GHub,
+            pngs.VSCode
         ]
     },
     {
@@ -101,9 +116,20 @@ export const skills = [
             "Azure DevOps",
             "Git"
         ],
-        icons: [
-            "python",
-            "react",
+        iconPng: [
+            pngs.Py,
+            pngs.ReactPng,
+            pngs.C
+
+        ],
+        png: [
+            pngs.VS,
+            pngs.Gimp,
+            pngs.Audacity,
+            pngs.Perf,
+            pngs.TCity,
+            pngs.ADO,
+            pngs.Git
         ]
     },
 ]

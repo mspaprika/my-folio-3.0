@@ -2,13 +2,7 @@ import "../styles/SkillsCards.scss"
 import "../styles/ProjectCards.scss"
 
 import { icons } from "../library/icons";
-import Rend from '../data/png/render.png';
-import UE from '../data/png/ue.png';
-import Unity from '../data/png/unity.png';
-import VTune from '../data/png/vtune.png';
-import Blend from '../data/png/blender.png';
-
-const pngs = [ UE, Unity, Rend, VTune, Blend];
+import { pngMap } from "../library/icons";
 
 
 function SkillsCard(props) {
@@ -30,18 +24,28 @@ function SkillsCard(props) {
                         {skill.list.map((item, index) =>
                             <li className="list-item" key={index}>
                                 {item}
-                                <span className="skill-icon">
-                                    {[skill.icons[index]] ? icons[skill.icons[index]] : ""}
-                                </span>
+                                {skill.icons ? 
+                                    <span className="skill-icon">
+                                        {[skill.icons[index]] ? icons[skill.icons[index]] : ""}
+                                    </span> :
+
+                                    skill?.iconPng.length > index ?
+                                    <img className="skill-png" src={skill?.iconPng[index]}></img> : null
+                                }
                             </li>
                         )}
                        
                         <hr className="hr" />
                         {skill.tech.map((item, index) =>
+
                             <li className="list-item" key={index}>{item}
-                            <img className="skill-png" src={skill?.png?.[index] ? pngs?.[index] : ""}>
-                            </img>
+                                {skill?.png && skill?.png.length > index ? 
+                                    <img className="skill-png" src={skill?.png[index]}>
+                                    </img>
+                                    
+                                : null}
                             </li>
+                            
                         )}
                     </div>
 

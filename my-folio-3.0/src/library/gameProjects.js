@@ -101,10 +101,10 @@ export const gameProjects = [
         icons: ["cpp"],
         png: ["UE"],
         scale: 1.3,
-        emoji: `🐈‍⬛`,
+        emoji: `🐈‍`,
         inspiredPic: "Bendy",
-        inspiredMsg: "My favourite horror franchise - Bendy and the Ink Machine -->",
-        inspiredLink: "https://store.steampowered.com/bundle/37767/Bendy_Studio_Collection/",
+        inspiredMsg: "My favourite horror franchise -->",
+        inspiredLink: "https://www.joeydrewstudios.com/",
     },
     {
         id: 3,
@@ -153,8 +153,8 @@ export const gameProjects = [
         scale: 1.3,
         emoji: `👻`,
         inspiredPic: "Pacman",
-        inspiredMsg: "Original Pacman live page -->",
-        inspiredLink: "https://pacman.live/",
+        inspiredMsg: "Here's the Pacman Doodle for its 30th Anniversary from Google archives -->",
+        inspiredLink: "https://www.google.com/logos/2010/pacman10-i.html",
     },
     {
         id: 5,
@@ -194,7 +194,7 @@ export const gameProjects = [
         
         Fun Fact: 🐈 must eat 🍏 to pass the level; 
                 when cat eats 🍏 it does 💩; 
-                💩 atracts a 🪰!`,
+                💩 atracts a 🦟!`,
         image: cat,
         gifs: [catGif, catGif2],
         mainFeatures: "2D, Platformer, C++, PlayBuffer, Visual Studio, Cat.",
@@ -207,8 +207,8 @@ export const gameProjects = [
         scale: 1.0,
         emoji: `🐈`,
         inspiredPic: "NutsMilk",
-        inspiredMsg: "Nuts & Milk (NES) -->",
-        inspiredLink: "https://www.retrogames.cz/play_086-NES.php",
+        inspiredMsg: "You can't play original Nuts & Milk (NES) without emulator, so check out its Wiki -->",
+        inspiredLink: "https://en.wikipedia.org/wiki/Nuts_%26_Milk",
     },
     {
         id: 7,
