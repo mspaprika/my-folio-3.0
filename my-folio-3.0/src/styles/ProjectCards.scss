@@ -47,6 +47,7 @@ $border-radius: 0 35px 0 35px;
     .arr-down:hover {
         fill: $new-purple;
         cursor: pointer;
+        transform: scale(1.1);
     }
     
     .card-wrapper {
@@ -137,6 +138,12 @@ $border-radius: 0 35px 0 35px;
                         cursor: pointer;
                         outline: none;
                         margin: 15px 0 20px 0;
+                        will-change: transform;
+                        transition: transform 1s ease-in-out;
+                    }
+
+                    .card-button:hover{
+                        transform: scale(1.3);
                     }
 
                     .link-section {

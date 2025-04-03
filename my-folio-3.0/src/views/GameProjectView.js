@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { ReactComponent as Arrow } from '../data/svg/arrow.svg';
 import { ReactComponent as Git } from '../data/svg/git2.svg';
+import { ReactComponent as Host } from '../data/svg/tower2.svg';
 
 import { gameProjects } from "../library/gameProjects";
 
@@ -16,6 +17,7 @@ import Pac from '../data/games/Pacman.png';
 import Spy from '../data/games/Spy.png';
 import Shroom from '../data/games/MushroomWar.png';
 import Nuts from '../data/games/NutsMilk.png';
+import Honse from '../data/games/Honse.png';
 
 const games = 
 {
@@ -26,6 +28,7 @@ const games =
     "Spy": Spy,
     "MushroomWar": Shroom,
     "Bendy": Bendy,
+    "Honse": Honse,
 }
 
 function GameProjectView(props) {
@@ -118,12 +121,19 @@ function GameProjectView(props) {
                     <span className="message"><i>{project.message}</i></span>
                     <div className="game-links">
                        { project.gitHub === ""  ? null :
-                       <>
+                        <div className="git-wrapper">
                             GitHub:
                             <a href={project.gitHub} target="_blank" rel="noopener noreferrer" >
                                 <Git className="git" />
                             </a>
-                        </>}
+                        </div>}
+                        { project?.live === ""  ? null :
+                        <div className="live-wrapper">
+                            Live:
+                            <a href={project.live} target="_blank" rel="noopener noreferrer" >
+                                <Host className="host link" />
+                            </a>
+                        </div>}
                     </div>
                     {project.lastUpdated ?
                         <span className="last-updated"

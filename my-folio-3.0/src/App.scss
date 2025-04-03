@@ -91,7 +91,7 @@ $links-animating-delay: 1s;
 
   .icon-wrapper {
     position: absolute;
-    bottom: 0;
+    bottom: 30;
     right: 0;
     display: flex;
     flex-direction: column;
@@ -110,9 +110,17 @@ $links-animating-delay: 1s;
     .doc {
       padding-right: 20px;
       width: 70px;
-      animation: load-in-icons 1.5s ease-in-out forwards;
-      transform: translateY(100%);
+      animation: pop-in-icons 1.5s ease-in-out;
+      will-change: transform;
+      transition: transform 1s ease-in-out !important;
+    }
 
+    .email:hover,
+    .twitter:hover,
+    .git:hover,
+    .doc:hover,
+    .linkedin:hover{
+      transform: scale(1.5);
     }
 
   }
@@ -123,7 +131,7 @@ $links-animating-delay: 1s;
     left: 0;
     z-index: 1;
     font-weight: 300;
-    animation: pop-up-rotate 1s ease-in-out forwards;
+    animation: pop-up-rotate 1s ease-in-out;
     transform: rotate(-90deg);
   }
   
@@ -139,7 +147,7 @@ $links-animating-delay: 1s;
     left: 20%;
     z-index: 1;
     font-weight: 300;
-    animation: pop-up-left 1s ease-in-out forwards;
+    animation: pop-up-left 1s ease-in-out;
   }
 
   .top-logo,
@@ -152,6 +160,12 @@ $links-animating-delay: 1s;
     height: 80px;
     animation: say-hi 1.5s ease-in-out 1s;
     animation-delay: calc($links-animating-delay + 0.7s);
+  }
+  
+  .top-logo
+  {
+    transition: transform 1s ease-in-out;
+
   }
 
   .web {
@@ -180,7 +194,7 @@ $links-animating-delay: 1s;
     width: fit-content;
     height: fit-content;
     bottom: 20px;
-    animation: pop-up-left 1s ease-in-out forwards;
+    animation: pop-up-left 1s ease-in-out;
     left: 15%;
   }
 
@@ -210,9 +224,35 @@ $links-animating-delay: 1s;
     fill: $creamy-gray;
   }  
 
+
+  .games,
+  .top,
+  .about,
+  .web
+  {
+    will-change: transform;
+    transition: transform 1s ease-in-out !important;
+  }
+
+  .about:hover
+  {
+    color: $new-purple !important;
+    transform: scale(1.5)  rotate(-90deg);
+  }
+
+  .games:hover,
+  .top:hover,
+  .web:hover
+  {
+    transform: scale(1.5);
+    color: $new-purple !important;
+  }
+
   .arrow-up:hover,
+  .top-logo:hover,
   .arrow-down:hover {
-    fill: $new-purple;
+    scale: 1.1;
+    fill: $new-purple !important;
   }
 }
 

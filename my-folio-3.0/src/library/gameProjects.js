@@ -46,6 +46,28 @@ import gonkImage from "../data/screens/gonk.png";
 import gonk from "../data/gifs/gonkMissile.gif";
 import gonk2 from "../data/gifs/gonkDie.gif";
 
+import HonseImage from "../data/screens/honseImg.png";
+import honse from "../data/gifs/honse3.gif";
+import honse2 from "../data/gifs/honse4.gif";
+
+
+import UE from '../data/png/ue.png';
+import Unity from '../data/png/unity.png';
+import VS from '../data/png/vs.png';
+import TC from '../data/png/tc.png';
+import Git from '../data/png/ghub.png';
+import P4 from '../data/png/p4.png';
+import VsCode from '../data/png/vsCode.png';
+
+export const pngs =  {
+    "UE": UE,
+    "Unity": Unity,
+    "VS": VS,
+    "TC": TC,
+    "Git": Git,
+    "P4": P4,
+    "VsCode": VsCode
+}
 
 export const gameProjects = [
     {
@@ -69,7 +91,7 @@ export const gameProjects = [
         lastUpdated: "08/2024",
         message: "Game is finished but there's no public release yet. GitHub repo is not available.",
         icons: ["cpp"],
-        png: [""],
+        png: ["P4","TC", "VS"],
         scale: 1.3,
         offset: "60vw",
         emoji: `🐍`,
@@ -99,7 +121,7 @@ export const gameProjects = [
         lastUpdated: "03/2025",
         message: "Game is in active development. GitHub repo will be available soon.",
         icons: ["cpp"],
-        png: ["UE"],
+        png: ["UE", "VS", "Git"],
         scale: 1.3,
         emoji: `🐈‍`,
         inspiredPic: "Bendy",
@@ -124,7 +146,7 @@ export const gameProjects = [
         lastUpdated: "05/2024",
         message: "Game is finished and GitHub repo will be available soon.",
         icons: ["cpp"],
-        png: [""],
+        png: ["VS", "Git"],
         scale: 1.3,
         emoji: `🪐`,
         inspiredPic: "Darkside",
@@ -149,7 +171,7 @@ export const gameProjects = [
         lastUpdated: "01/2024",
         message: "Game is finished, but I plan on improving ghost AI movement algorithm soon.",
         icons: ["cpp"],
-        png: [""],
+        png: ["VS", "Git"],
         scale: 1.3,
         emoji: `👻`,
         inspiredPic: "Pacman",
@@ -159,6 +181,31 @@ export const gameProjects = [
     {
         id: 5,
         next: 6,
+        type: "game",
+        title: "Honse",
+        description: `This game was created by Sumo Academy apprentices for Ludum Dare 55 (Theme == Summoning), marking my first experience with Unity—and with game engines in general. Due to my limited familiarity with the engine, my contribution was relatively small, but it was still an incredible learning opportunity. It's been a mreally fun couple of days of my life and I'm looking forward to more game jams.
+        
+        In HONSE, you play as a boy trying to enjoy a new demon game—but your mum keeps summoning you to do chores. 
+        The challenge? Survive in HONSE without dying and manage household chores to avoid making your mum angry. Balancing both tasks makes for a hilarious gameplay experience!`,
+        image: [HonseImage],
+        gifs: [honse, honse2],
+        mainFeatures: "2D/3D, C#, Unity, Ludum Dare",
+        gitHub: "",
+        live: " https://rickylee.itch.io/honse",
+        lastUpdated: "03/2024",
+        message: "",
+        icons: ["cSharp"],
+        png: ["Unity", "Git"],
+        scale: 1.0,
+        offset: 0,
+        emoji: `🤖`,
+        inspiredPic: "Honse",
+        inspiredMsg: "Honse page at Ludum Dare 55 --> ",
+        inspiredLink: "https://ldjam.com/events/ludum-dare/55/honse",
+    },
+    {
+        id: 6,
+        next: 7,
         type: "game",
         title: "Sky High Spy",
         description: `I created this game during my game programming internship at Sumo Digital Academy, building it in C++ with the Playbuffer framework—all while having very little prior experience. Despite that, I successfully recreated the original Sky High Spy while also adding my own unique twists!
@@ -172,7 +219,7 @@ export const gameProjects = [
         lastUpdated: "28/09/2023",
         message: "",
         icons: ["cpp"],
-        png: [""],
+        png: ["VS", "Git"],
         scale: 1.0,
         emoji: `🕷️`,
         inspiredPic: "Spy",
@@ -180,8 +227,8 @@ export const gameProjects = [
         inspiredLink: "https://www.spyderthegame.com/",
     },
     {
-        id: 6,
-        next: 7,
+        id: 7,
+        next: 8,
         type: "game",
         title: "Cat & Fleas",
         description: `This was my second skills project during my internship at Sumo Digital. It features a level editor for easier design, though collision resolution still needs improvement.
@@ -203,7 +250,7 @@ export const gameProjects = [
         lastUpdated: "19/12/2023",
         message: "I have BIG plans for improving this game 🐈",
         icons: ["cpp"],
-        png: [""],
+        png: ["VS", "Git"],
         scale: 1.0,
         emoji: `🐈`,
         inspiredPic: "NutsMilk",
@@ -211,7 +258,7 @@ export const gameProjects = [
         inspiredLink: "https://en.wikipedia.org/wiki/Nuts_%26_Milk",
     },
     {
-        id: 7,
+        id: 8,
         next: 1,
         type: "game",
         title: "Gonquered",
@@ -226,7 +273,7 @@ export const gameProjects = [
         lastUpdated: "04/2024",
         message: "GitHub repo will be awailable soon.",
         icons: ["cpp"],
-        png: [""],
+        png: ["VS", "Git"],
         scale: 1.0,
         offset: 0,
         emoji: `🧙`,
@@ -235,8 +282,8 @@ export const gameProjects = [
         inspiredLink: "https://mushroomwars2.com/",
     },
     {
-        id: 8,
-        next: 9,
+        id: 9,
+        next: 10,
         type: "game",
         title: "Escape Nuclear Mine",
         description: `This project is by far my favorite. I had so much fun creating it! Sometimes life can be tough, and we all need a little silly laugh to lighten the mood.
@@ -255,11 +302,12 @@ export const gameProjects = [
         lastUpdated: "",
         message: "Game is NOT mobile compatible yet (working on it...).",
         icons: ["html", "css", "javascript"],
+        png: ["VsCode", "Git"],
         emoji: `☢️`,
     },
     {
-        id: 9,
-        next: 8,
+        id: 10,
+        next: 9,
         type: "game",
         title: "Tic Tac Toe",
         description: `Tic Tac Toe is a game built in React Native, marking my first project after completing the full-stack web bootcamp—and just after I fell in love with game development.
@@ -276,6 +324,7 @@ export const gameProjects = [
         lastUpdated: "",
         message: "",
         icons: ["react", "javascript"],
+        png: ["VsCode", "Git"],
         emoji: `🐾`,
     },
 ]
