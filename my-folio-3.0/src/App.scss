@@ -64,8 +64,8 @@ $links-animating-delay: 1s;
     justify-content: center;
     align-items: center;
     color: $medium-purple;
-    width: clamp(350px, 40vw, 400px);
-    height: clamp(350px, 40vw, 400px);
+    width: clamp(340px, 40vw, 400px);
+    height: clamp(340px, 40vw, 400px);
     border-radius: 50%;
     background-color: $creamy-gray;
 
@@ -112,7 +112,7 @@ $links-animating-delay: 1s;
       width: 70px;
       animation: pop-in-icons 1.5s ease-in-out;
       will-change: transform;
-      transition: transform 1s ease-in-out !important;
+      transition: transform 0.5s ease-in-out !important;
     }
 
     .email:hover,
@@ -120,7 +120,7 @@ $links-animating-delay: 1s;
     .git:hover,
     .doc:hover,
     .linkedin:hover{
-      transform: scale(1.5);
+      transform: scale(1.3);
     }
 
   }
@@ -164,7 +164,7 @@ $links-animating-delay: 1s;
   
   .top-logo
   {
-    transition: transform 1s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 
   }
 
@@ -231,20 +231,20 @@ $links-animating-delay: 1s;
   .web
   {
     will-change: transform;
-    transition: transform 1s ease-in-out !important;
+    transition: transform 0.5s ease-in-out !important;
   }
 
   .about:hover
   {
     color: $new-purple !important;
-    transform: scale(1.5)  rotate(-90deg);
+    transform: scale(1.3)  rotate(-90deg);
   }
 
   .games:hover,
   .top:hover,
   .web:hover
   {
-    transform: scale(1.5);
+    transform: scale(1.3);
     color: $new-purple !important;
   }
 
@@ -296,9 +296,18 @@ $links-animating-delay: 1s;
       bottom: 0px !important;
       right: 0px;
 
+
+      .linkedin,
+      .email,
+      .twitter,
+      .git,
+      .doc {
+        width: 60px;
+      }
+
       .email {
         margin-top: 0px;
-        margin-left: 50px;
+        //margin-left: 50px;
       }
 
     } 

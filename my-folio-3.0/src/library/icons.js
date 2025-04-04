@@ -12,6 +12,7 @@ import { ReactComponent as Python } from '../data/svg/python.svg';
 import { ReactComponent as NodeJS } from '../data/svg/nodejs.svg';
 
 
+
 import Rend from '../data/png/render.png';
 import UE from '../data/png/ue.png';
 import Unity from '../data/png/unity.png';

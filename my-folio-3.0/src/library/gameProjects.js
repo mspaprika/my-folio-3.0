@@ -200,8 +200,8 @@ export const gameProjects = [
         offset: 0,
         emoji: `🤖`,
         inspiredPic: "Honse",
-        inspiredMsg: "Honse page at Ludum Dare 55 --> ",
-        inspiredLink: "https://ldjam.com/events/ludum-dare/55/honse",
+        inspiredMsg: "Check me out at Ludum Dare --> ",
+        inspiredLink: "https://ldjam.com/users/daspaprika/games",
     },
     {
         id: 6,

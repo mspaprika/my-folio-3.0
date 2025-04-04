@@ -9,6 +9,7 @@ import { ReactComponent as Twitter } from '../data/svg/twitter.svg';
 import { ReactComponent as Doc } from '../data/svg/doc.svg';
 import { ReactComponent as Arrow } from '../data/svg/arrow.svg';
 import { ReactComponent as Logo } from '../data/svg/logo.svg';
+import { ReactComponent as Discord } from '../data/svg/discord.svg';
 
 import { myInfo } from '../library/myInfo';
 
@@ -47,6 +48,9 @@ function Home(props) {
                 </a>
                 <a href={myInfo.emailLink} target="_blank" rel="noopener noreferrer" >
                     <Email className="email load-in" />
+                </a>
+                <a href={myInfo.discordLink} target="_blank" rel="noopener noreferrer" >
+                    <Discord className="twitter load-in" />
                 </a>
                 <a href={myInfo.twitterLink} target="_blank" rel="noopener noreferrer" >
                     <Twitter className="twitter load-in" />
