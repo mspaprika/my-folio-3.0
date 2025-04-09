@@ -91,12 +91,15 @@ function GameProjectView(props) {
                     </p>
 
                     { project?.myCollab ? 
-                    <h3 className="game-h3">My collaboration...</h3> 
-                    : null }
+                    <>
+                        <h3 className="game-h3">My collaboration...</h3> 
+                        
 
-                    <p className="game-description text">
-                        {project?.myCollab}
-                    </p>
+                        <p className="game-description text">
+                            {project?.myCollab}
+                        </p>
+                    </>
+                    : null }
 
                     <h3 className="game-h3">Main features...</h3>
 

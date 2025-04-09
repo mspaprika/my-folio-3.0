@@ -50,7 +50,7 @@ $border-radius: 0 35px 0 35px;
         padding-left: clamp(45px, 10%, 200px);
         padding-right: clamp(45px, 10%, 200px);
         color: $medium-purple;
-        font-size: 1.4rem;
+        font-size: clamp(0.8rem, 2vw, 1rem);
         animation: slide-right-solid 1.5s ease-in-out;
     }
 

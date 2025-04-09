@@ -68,14 +68,14 @@ function WebProject(props) {
                        
                         {project.myCollab ? 
                         <>
-                            <h2 className="collab-header">My collaboration...</h2>
+                            <h3 className="collab-header">My collaboration...</h3>
                             <div className="collab-wrapper">
                                 <p className="my-collab">{project.myCollab}</p>
                             </div>
                         </> : ""}
 
 
-                    <h2 className="collab-header">Main features...</h2>
+                    <h3 className="collab-header">Main features...</h3>
                     <div className="web-features">
                         {project.mainFeatures}
                     </div>
