@@ -53,6 +53,10 @@ $light: #ECF2FF;
         font-size: 2.2rem;
     }
 
+    .extra-padding{
+        padding-top: 20px !important;
+    }
+
     .flip-card-back {
         display: flex;
         flex-wrap: wrap;
@@ -60,6 +64,7 @@ $light: #ECF2FF;
         align-items: left;
         padding: 20px;
         position: relative;
+
 
         .list-item {
             width: 100%;

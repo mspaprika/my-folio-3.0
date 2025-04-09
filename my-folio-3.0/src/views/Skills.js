@@ -1,4 +1,4 @@
-import "../styles/ProjectCards.scss"
+//import "../styles/ProjectCards.scss"
 import "../styles/SkillsCards.scss"
 
 import { Link } from 'react-router-dom';

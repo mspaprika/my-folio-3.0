@@ -19,7 +19,7 @@ function SkillsCard(props) {
                         {skill.type}
                     </div>
 
-                    <div className="flip-card-back">
+                    <div className="flip-card-back extra-padding">
                      
                         {skill.list.map((item, index) =>
                             <li className="list-item" key={index}>

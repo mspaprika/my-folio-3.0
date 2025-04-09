@@ -75,17 +75,30 @@ export const gameProjects = [
         next: 2,
         type: "game",
         title: "Snake Party",
-        description: `Snake Party 🐍 originally began as a skills project but soon evolved into a Half-Time Game featured during Wednesday Football Matches at Sheffield Arena (Season '24-'25). It also serves as a spiritual extension of Snake Pass (2017), bringing back Noodle for a brand-new adventure alongside a new companion—Spageth.
+        description: `Snake Party 🐍 originally began as a skills project but soon evolved into a Half-Time Game, featured during Wednesday Football Matches at their Sheffield Arena (Season '24-'25). It also serves as a spiritual extension of Snake Pass (2017), bringing back Noodle for a brand-new adventure alongside a new companion — Spageth!
 
-        The core gameplay is inspired by the classic Snake game that many grew up playing in the early 2000s: eat food, grow longer, and survive. However, Snake Party introduces a competitive twist—a second player and an attack/defend mode, where you can steal food from your opponent to shrink their snake and gain the upper hand!
+        The core gameplay is inspired by the classic Snake game that many grew up playing in the early 2000s: 
+
+        • Eat 
+        • Grow  
+        • Survive 
+        
+        However, Snake Party introduces a competitive twist—a second player and an attack/defend mode, where you can: 
+
+        • Steal food from your opponent 
+        • Shrink their snake 
+        • Gain the upper hand!
 
         The game was developed by a talented team of apprentices at Sumo Digital Academy, using an in-house C++ framework. Snake movement is powered by a native physics engine, ensuring smooth and realistic wiggle.`,
-        myCollab: `I was responsible for designing and implementing particle systems and visual effects, including food orbs, snake growth effects, bees, nature particles, and more. The primary goal was to replicate the visual style of Snake Pass as closely as possible, ensuring a consistent feel and atmosphere. To achieve this, I analyzed the original UE4 Blueprint-based effects and meticulously recreated them in pure C++.
-        
-        The particles were rendered using DirectX 11 billboarding, with additional techniques such as: Perlin Noise for natural leaf movement; Fresnel shading for color and opacity of food orbs.`,
+        myCollab: `• Design particle systems and visual effects: food orbs, snake growth effects, bees, nature particles, and more 
+        • Replicate visual style of Snake Pass as closely as possible, ensuring a similar feel and atmosphere
+        • Analyze original UE4 Blueprint-based effects to recreate them in pure C++
+        • Particles rendered using DirectX 11 billboarding
+        • Perlin Noise for natural leaf movement
+        • Fresnel shading for color and opacity of food orbs`,
         image: snekImage,
         gifs: [snek, snek2],
-        mainFeatures: "3D, C++, Visual Studio, Premake5, Deffered Rendering, Procedural Mesh Generation, PostFX.",
+        mainFeatures: "3D, C++, Multiplayer(2), Visual Studio, Premake5, Perforce, Team City, Deffered Rendering, Procedural Mesh Generation, PostFX.",
         gitHub: "",
         live: "",
         lastUpdated: "08/2024",
@@ -104,22 +117,30 @@ export const gameProjects = [
         next: 3,
         type: "game",
         title: "Cat Cafe",
-        description: `This is my first Unreal Engine game, currently in early development. Finding time to work on it has been challenging, but it's a project I'm deeply passionate about and high on my priority list.
+        description: `This is my first Unreal Engine game, currently in early development.
         
-        At first glance, it’s a Cat Café—but not the cozy, relaxing kind you might expect. Instead, it's a horror game, where the main protagonist is a cat struggling to survive against evil mushrooms. The goal is to find, reclaim, and rebuild the café with the help of friendly mushrooms, restoring a safe haven amidst the danger.
-        
-        The game world is set within a procedurally generated forest, created using a Wave Function Collapse (WFC) algorithm. This system dynamically spawns trees, flowers, bushes, and intricate spider-webbed paths, shaping the eerie atmosphere. Both hostile and friendly mushroom AI are already in the game, although not fully evolved yet.
-        
-        While core gameplay is still in development, my next steps include: Implementing a Quest Manager for structured progression; Designing the UI to enhance player interaction; Introducing a Day/Night cycle to deepen the atmosphere.
+        At first glance, it’s a Cat Café—but not the cozy, relaxing kind you might expect. Instead, it's a horror game, where the main protagonist is a cat struggling to survive against evil mushrooms. The goal is to: 
+        • Find, reclaim, and rebuild the café
+        • Meet and tame friendly mushrooms
+        • Survive evil shroom attacks and fight them back
+        • Complete quests
 
-        The project initially started as Blueprint-only, but as development progressed, I began integrating C++ for better performance and flexibility. My goal is to strike a balance between C++ and Blueprints, leveraging the strengths of both for an optimized and scalable game.`,
+        Other features:
+        • World: Procedurally generated forest, created using a Wave Function Collapse algorithm
+        • Both hostile and friendly mushroom AI are already in the game, although not fully evolved yet
+        • Multiplayer 
+        
+        While core gameplay is still in development, my future plans include: 
+        • Implementing a Quest Manager 
+        • Designing the UI 
+        • Introducing a Day/Night cycle`,
         image: cafeImage,
         gifs: [cafe, cafe2],
-        mainFeatures: "Unreal Engine 5, C++, Visual Studio, Wave Function Collapse, Procedural Generation, Cat.",
-        gitHub: "",
+        mainFeatures: "Unreal Engine 5, Multiplayer, C++, Visual Studio, Wave Function Collapse, Procedural Generation, Cat.",
+        gitHub: "https://github.com/mspaprika/CatCafe",
         live: "",
-        lastUpdated: "03/2025",
-        message: "Game is in active development. GitHub repo will be available soon.",
+        lastUpdated: "04/2025",
+        message: "Game is in active development and updated frequently.",
         icons: ["cpp"],
         png: ["UE", "VS", "Git"],
         scale: 1.3,
@@ -133,24 +154,27 @@ export const gameProjects = [
         next: 4,
         type: "game",
         title: "Brightside",
-        description: `This was my first attempt at creating a 3D game, developed as part of a skills project at Sumo Academy. I worked on this one entirely solo, and fully unleashed my creativity. Inspired by Darkside by Clockwork Pixels, the game is planet-based with orbital dynamics, where the player navigates around a planet while dodging incoming meteors or launching missiles to destroy them.
-
-        Over the course of just three weeks, I managed to build a simple yet fully playable game featuring multiple levels, sound controls and various power-ups. Since time was limited, the game lacks a traditional UI, relying instead on debug text for displaying information.
-
-        One of the most exciting mechanics is the UFO enemy ship, which reacts dynamically to player's visibility: if the player is hidden, the UFO’s light remains white; if the player is detected, the light shifts to red, triggering attack mode. To emphasize this shift, I integrated audio cues, randomly activated missile launches, as well as particle effects and camera shakes, adding to the tension and thrill.`,
+        description: `This was my first attempt at creating a 3D game, developed as part of a skills project at Sumo Academy. Inspired by Darkside (Clockwork Pixels).
+       
+        • Navigate around a planet while dodging incoming meteors 
+        • Launch missiles to destroy all asteroids 
+        • Stay out of UFO's sight
+        • Collect power-ups and unlock superpowers
+        • Activate power blast for instant radial destruction
+        • Control sound and music`,
         image: brightImage,
         gifs: [bright, bright2],
         mainFeatures: "3D, C++, Visual Studio, Premake5, Graphics.",
-        gitHub: "",
+        gitHub: "https://github.com/mspaprika/Brightside",
         live: "",
         lastUpdated: "05/2024",
-        message: "Game is finished and GitHub repo will be available soon.",
+        message: "",
         icons: ["cpp"],
         png: ["VS", "Git"],
         scale: 1.3,
         emoji: `🪐`,
         inspiredPic: "Darkside",
-        inspiredMsg: "Check out original Darkside on Itch.io -->",
+        inspiredMsg: "Play original Darkside on Itch.io -->",
         inspiredLink: "https://clockworkpixels.itch.io/darkside",
     },
     {
@@ -158,24 +182,26 @@ export const gameProjects = [
         next: 5,
         type: "game",
         title: "Pacman",
-        description: `This was my attempt at recreating a classic arcade game, built in the Playbuffer framework before I formally began learning game development. While the entire game code resides in a single file—a reflection of my early coding style—I’m still proud of how it turned out.
+        description: `My recreation of a classic arcade game, built in Playbuffer with minimal coding expierence.
 
-        The game is implemented using a tile-based system, which serves as the foundation for both Pacman's movement and the Ghost AI. For Ghost behavior, I designed a simple AI where each of the four Ghosts has a unique chase target. Ghosts can exist in four different states and their pathfinding is currently based on Manhattan Distance calculations.
-
-        Even Pacman’s movement incorporates a light AI system to ensure smoother navigation, despite being player-controlled. This small addition greatly improves movement feel and responsiveness.`,
+        • Tile-based system is the foundation for both Pacman's movement and the Ghost AI 
+        • Ghost behavior designed as simple AI where each of the four Ghosts has a unique chase target
+        • Ghosts can exist in four different states  
+        • Pathfinding currently based on Manhattan Distance calculations
+        • Pacman’s movement incorporates a light AI system for smoother navigation`,
         image: pacImage,
         gifs: [pacman, pacman2],
-        mainFeatures: "C++, PlayBuffer, Visual Studio.",
+        mainFeatures: "C++, PlayBuffer, Visual Studio, Git.",
         gitHub: "https://github.com/mspaprika/Pac-Man-Paprika",
         live: "",
         lastUpdated: "01/2024",
-        message: "Game is finished, but I plan on improving ghost AI movement algorithm soon.",
+        message: "Game is finished, but I plan on improving ghost AI movement algorithm.",
         icons: ["cpp"],
         png: ["VS", "Git"],
         scale: 1.3,
         emoji: `👻`,
         inspiredPic: "Pacman",
-        inspiredMsg: "Here's the Pacman Doodle for its 30th Anniversary from Google archives -->",
+        inspiredMsg: "Qick Play Pacman Doodle from old Google archives -->",
         inspiredLink: "https://www.google.com/logos/2010/pacman10-i.html",
     },
     {
@@ -183,13 +209,21 @@ export const gameProjects = [
         next: 6,
         type: "game",
         title: "Honse",
-        description: `This game was created by Sumo Academy apprentices for Ludum Dare 55 (Theme == Summoning), marking my first experience with Unity—and with game engines in general. Due to my limited familiarity with the engine, my contribution was relatively small, but it was still an incredible learning opportunity. It's been a mreally fun couple of days of my life and I'm looking forward to more game jams.
+        description: `This game was created by Sumo Academy apprentices for Ludum Dare 55 (Theme == Summoning), marking my first experience with Unity—and with game engines in general. Due to my limited familiarity with the engine, my contribution was relatively small, but it was still an incredible learning opportunity. It's been a mreally fun couple of days of my life and I'm looking forward to more game jams!
         
-        In HONSE, you play as a boy trying to enjoy a new demon game—but your mum keeps summoning you to do chores. 
-        The challenge? Survive in HONSE without dying and manage household chores to avoid making your mum angry. Balancing both tasks makes for a hilarious gameplay experience!`,
+        In HONSE:
+        • Play as a boy trying to enjoy a new demon game
+        • Your mum keeps summoning you to do chores 
+
+        The challenge? 
+        • Survive in HONSE without dying 
+        • Manage household chores
+        • Avoid making your mum angry 
+
+        Balancing both tasks makes for a hilarious gameplay experience!`,
         image: [HonseImage],
         gifs: [honse, honse2],
-        mainFeatures: "2D/3D, C#, Unity, Ludum Dare",
+        mainFeatures: "2D/3D, C#, Unity, Ludum Dare, Team Project",
         gitHub: "",
         live: " https://rickylee.itch.io/honse",
         lastUpdated: "03/2024",
@@ -208,12 +242,15 @@ export const gameProjects = [
         next: 7,
         type: "game",
         title: "Sky High Spy",
-        description: `I created this game during my game programming internship at Sumo Digital Academy, building it in C++ with the Playbuffer framework—all while having very little prior experience. Despite that, I successfully recreated the original Sky High Spy while also adding my own unique twists!
-
-        I introduced several new mechanics, including a pink gem collectible that grants a special power shield; a rocket boost that the spyder can hop onto for extra speed; also sound and music controls. This project was an invaluable learning experience, allowing me to apply C++ fundamentals while experimenting with game mechanics, UI, and dynamic player interactions.`,
+        description: `I created this game during my game programming internship at Sumo Digital Academy with C++ and Playbuffer.
+        
+        Introduced several new mechanics, including:
+        • Pink gem collectible that grants a special power shield
+        • Rocket boost that the spyder can hop onto for extra speed
+        • Sound and music controls`,
         image: spy,
         gifs: [spyGif, spyGif2],
-        mainFeatures: "2D, C++, PlayBuffer, Visual Studio.",
+        mainFeatures: "2D, C++, PlayBuffer, Visual Studio, Git.",
         gitHub: "https://github.com/mspaprika/Sky-High-Spyder",
         live: "",
         lastUpdated: "28/09/2023",
@@ -231,17 +268,21 @@ export const gameProjects = [
         next: 8,
         type: "game",
         title: "Cat & Fleas",
-        description: `This was my second skills project during my internship at Sumo Digital. It features a level editor for easier design, though collision resolution still needs improvement.
-        
-        At its core, this is a 2D platformer starring my favorite character—a Cat. The idea stemmed from a real-life struggle: at the time of development, I was dealing with a flea infestation at home with my own cat. This inspired the game’s main conflict—fleas as the cat’s greatest enemy. Fleas sense the cat and immediately jump onto it, but unlike real life, the cat can only endure a limited number of fleas before losing.
+        description: `This was my second skills project during my internship at Sumo Digital. Main features include:
 
-        The game draws inspiration from the classic NES title Nuts & Milk, which I played as a child. My main takeaway from that game was the ladder mechanic, allowing the player to climb between platforms. Implementing ladders turned out to be the hardest challenge, and they still need some improvements.
+        • 2D platformer
+        • Level editor 
+        • Fleas are an ultimate enemy of a cat
+        • Fleas sense the cat and immediately jump onto it
+        • Cat can only endure a limited number of fleas before losing
+        • Game inspired by a flea infestation at home with my own cat and classic NES title Nuts & Milk
 
-        In Nuts & Milk, there were helicopter hazard levels, where small helicopters moved in sinewave patterns to challenge the player. I adapted this mechanic by replacing helicopters with flies, but instead of being enemies, they serve as allies—catching a fly restores a life! 
+        Fun Fact: 
         
-        Fun Fact: 🐈 must eat 🍏 to pass the level; 
-                when cat eats 🍏 it does 💩; 
-                💩 atracts a 🦟!`,
+        🐈 must eat 🍏 to pass the level
+        when cat eats 🍏 it does 💩
+            💩 atracts a 🦟
+            🦟 restores a life!`,
         image: cat,
         gifs: [catGif, catGif2],
         mainFeatures: "2D, Platformer, C++, PlayBuffer, Visual Studio, Cat.",
@@ -254,7 +295,7 @@ export const gameProjects = [
         scale: 1.0,
         emoji: `🐈`,
         inspiredPic: "NutsMilk",
-        inspiredMsg: "You can't play original Nuts & Milk (NES) without emulator, so check out its Wiki -->",
+        inspiredMsg: "Find out more about Nuts & Milk -->",
         inspiredLink: "https://en.wikipedia.org/wiki/Nuts_%26_Milk",
     },
     {
@@ -262,16 +303,22 @@ export const gameProjects = [
         next: 1,
         type: "game",
         title: "Gonquered",
-        description: `This was my first solo skills project at Sumo Academy, built using the Playbuffer framework. The game is rendered in isometric view, utilizing an orthogonal projection matrix for visual perspective. The idea for the game was inspired by Mushrooms Wars (2009), with the goal of recreating the core mechanics and gameplay from the original. I think I got it pretty close to the original experience, capturing the same strategic, real-time combat.
+        description: `This was my first solo skills project at Sumo Academy, built using the Playbuffer framework. 
 
-        Alongside the recreated mechanics, I introduced some cool, original features, like ghost animations after the Gonks die in battle and gonks splitting in half when struck by missile. The game includes a full game loop and supports Xbox Controller. `,
+        • Rendered in isometric view, utilizing an orthogonal projection matrix
+        • Game inspired by Mushrooms Wars (2009), with the goal of recreating the core mechanics and gameplay from the original
+        • Includes a full game loop and supports Xbox Controller
+
+        Alongside the recreated mechanics, I introduced some cool features:
+        • Ghost animations after the Gonks die in battle 
+        • Gonks splitting in half when struck by missile`,
         image: [gonkImage],
         gifs: [gonk, gonk2],
         mainFeatures: "2D, C++, PlayBuffer, Visual Studio, Isometric World.",
-        gitHub: "",
+        gitHub: "https://github.com/mspaprika/Gonquered",
         live: "",
         lastUpdated: "04/2024",
-        message: "GitHub repo will be awailable soon.",
+        message: "",
         icons: ["cpp"],
         png: ["VS", "Git"],
         scale: 1.0,
@@ -288,11 +335,11 @@ export const gameProjects = [
         title: "Escape Nuclear Mine",
         description: `This project is by far my favorite. I had so much fun creating it! Sometimes life can be tough, and we all need a little silly laugh to lighten the mood.
 
-        The game is a simple text-based adventure, where you enter commands to progress through a mysterious cave system filled with strange creatures. 
-        * Upon entering START, you find yourself in a series of caves, each with a new question to answer.
-        * You have only three attempts to get each question right before facing a consequence.
-
-        The combination of silly questions, mysterious creatures, and limited attempts makes for a fun experience, perfect for those moments when you just need a laugh!`,
+        • Simple text-based adventure, where you enter commands 
+        • Progress through a mysterious cave system filled with strange creatures 
+        • Upon entering START, you find yourself in a series of caves, each with a new question to answer
+        • You have only three attempts to get each question right before facing a consequence
+        • Silly questions + mysterious creatures + limited attempts == fun experience`,
         image: cave,
         images: [cave2, cave3, cave4, cave5],
         gifs: [],
@@ -310,11 +357,10 @@ export const gameProjects = [
         next: 9,
         type: "game",
         title: "Tic Tac Toe",
-        description: `Tic Tac Toe is a game built in React Native, marking my first project after completing the full-stack web bootcamp—and just after I fell in love with game development.
-
-        I’ve always wanted to create a mobile app, and this project provided the perfect opportunity. Using Expo, I tested the app directly on my phone, and with Android Studio, I ran it on an emulator. The game’s state management is handled using React hooks—UseEffect and UseState.
-
-        While it’s a simple game, creating it was a fantastic learning experience, and I gained valuable insights into mobile development. I’m excited to continue building more mobile apps in the future!`,
+        description: `• Built with React Native
+        • Tested with Expo
+        • Emulated in Android Studio
+        • React Hooks used for state managements`,
         image: ttt,
         images: [ttt2, ttt1, ttt3, ttt4],
         gifs: [],

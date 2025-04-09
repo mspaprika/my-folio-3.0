@@ -51,14 +51,14 @@ function About(props) {
                 <img src={Aud} className="png"></img>
                 {icons.cpp}
                 {icons.cSharp}
-                {icons.react}
                 {icons.sass}
+                {icons.react}
                 {icons.html}
                 {icons.css}
                 {icons.javascript}
                 {icons.python}
-                {icons.mongo}
                 {icons.mySql}
+                {icons.mongo}
             </div>
 
             <h6>How I solve it...</h6>

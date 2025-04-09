@@ -90,9 +90,13 @@ export const webProjects = [
         id: 2,
         next: 3,
         title: "Escape Nuclear Mine",
-        description: `This project is my favourite. I had so much fun while creating it! Sometimes life is harsh and we need some good silly laugh. 
-        
-        Main idea: a simple text game which works when you enter a right command. After entering START you'll find yourself in a cave system with lots of strange creatures. In each cave you'll be prompted to answer a question. And there's only 3 tries to get it right.`,
+        description: `This project is by far my favorite. I had so much fun creating it! Sometimes life can be tough, and we all need a little silly laugh to lighten the mood.
+
+        • Simple text-based adventure, where you enter commands 
+        • Progress through a mysterious cave system filled with strange creatures 
+        • Upon entering START, you find yourself in a series of caves, each with a new question to answer
+        • You have only three attempts to get each question right before facing a consequence
+        • Silly questions + mysterious creatures + limited attempts == fun experience`,
         images: [cave5, cave2, cave3, cave4],
         image: cave,
         mainFeatures: "HTML, CSS, JavaScript, Bootstrap, OOP.",
