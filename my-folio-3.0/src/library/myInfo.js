@@ -12,7 +12,7 @@ export const myInfo = {
     leetCodeLink: "https://leetcode.com/MsPaprika/",
     mainInfo: `I’m a junior game developer from Sheffield, currently working as a game programming apprentice while pursuing a Level 7 degree in the field. Over the past few years, I’ve worked on multiple projects—both professional and personal—gaining invaluable experience across all aspects of game development. My primary focus is C++ programming, and every day I strengthen my skills through coding, learning and research.
     
-    The beauty of game development lies in its ever-evolving nature, and I thrive on learning new technologies, experimenting with advanced techniques, and pushing the boundaries of what games can achieve. My goal is to keep growing, improving, and contributing to the future of interactive entertainment. I can’t wait to see where this journey takes me next!`,
+    While beauty of game development lies in its ever-evolving nature, I thrive on learning new technologies and experimenting with advanced techniques. My goal is to keep growing, improving, and contributing to the future of interactive entertainment. I can’t wait to see where this journey takes me next!`,
     gameProjectsInfo: "",
     webProjectsInfo: "",
 }

@@ -38,7 +38,7 @@ function Skills(props) {
                     <Logo className="top-logo" />
                 </Link>
 
-                <Link to="/about" className="">
+                <Link to="/games" className="">
                     <Arrow className="arrow-down" />
                 </Link>
 
